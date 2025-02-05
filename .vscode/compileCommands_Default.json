@@ -1,0 +1,3194 @@
+[
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonGame\\Source\\CommonGame.Build.cs",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\Source.47.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonGame\\Source\\Private\\Actions\\AsyncAction_CreateWidgetAsync.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\Source.47.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonGame\\Source\\Private\\Actions\\AsyncAction_PushContentToLayerForPlayer.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\Source.47.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonGame\\Source\\Private\\Actions\\AsyncAction_ShowConfirmation.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\Source.47.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonGame\\Source\\Private\\CommonGameInstance.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\Source.47.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonGame\\Source\\Private\\CommonGameModule.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\Source.47.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonGame\\Source\\Private\\CommonLocalPlayer.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\Source.47.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonGame\\Source\\Private\\CommonPlayerController.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\Source.47.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonGame\\Source\\Private\\CommonPlayerInputKey.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\Source.47.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonGame\\Source\\Private\\CommonUIExtensions.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\Source.47.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonGame\\Source\\Private\\GameUIManagerSubsystem.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\Source.47.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonGame\\Source\\Private\\GameUIPolicy.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\Source.47.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonGame\\Source\\Private\\LogCommonGame.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\Source.47.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonGame\\Source\\Private\\LogCommonGame.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\Source.47.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonGame\\Source\\Private\\Messaging\\CommonGameDialog.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\Source.47.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonGame\\Source\\Private\\Messaging\\CommonMessagingSubsystem.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\Source.47.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonGame\\Source\\Private\\PrimaryGameLayout.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\Source.47.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonGame\\Source\\Public\\Actions\\AsyncAction_CreateWidgetAsync.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\Source.47.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonGame\\Source\\Public\\Actions\\AsyncAction_PushContentToLayerForPlayer.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\Source.47.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonGame\\Source\\Public\\Actions\\AsyncAction_ShowConfirmation.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\Source.47.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonGame\\Source\\Public\\CommonGameInstance.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\Source.47.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonGame\\Source\\Public\\CommonLocalPlayer.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\Source.47.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonGame\\Source\\Public\\CommonPlayerController.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\Source.47.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonGame\\Source\\Public\\CommonPlayerInputKey.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\Source.47.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonGame\\Source\\Public\\CommonUIExtensions.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\Source.47.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonGame\\Source\\Public\\GameUIManagerSubsystem.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\Source.47.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonGame\\Source\\Public\\GameUIPolicy.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\Source.47.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonGame\\Source\\Public\\Messaging\\CommonGameDialog.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\Source.47.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonGame\\Source\\Public\\Messaging\\CommonMessagingSubsystem.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\Source.47.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonGame\\Source\\Public\\PrimaryGameLayout.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\Source.47.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonInput\\CommonInput.Build.cs",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonInput.50.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonInput\\Private\\CommonInputActionDomain.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonInput.50.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonInput\\Private\\CommonInputBaseTypes.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonInput.50.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonInput\\Private\\CommonInputModule.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonInput.50.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonInput\\Private\\CommonInputPreprocessor.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonInput.50.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonInput\\Private\\CommonInputPrivate.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonInput.50.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonInput\\Private\\CommonInputSettings.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonInput.50.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonInput\\Private\\CommonInputSubsystem.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonInput.50.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonInput\\Public\\CommonInputActionDomain.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonInput.50.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonInput\\Public\\CommonInputBaseTypes.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonInput.50.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonInput\\Public\\CommonInputModeTypes.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonInput.50.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonInput\\Public\\CommonInputPreprocessor.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonInput.50.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonInput\\Public\\CommonInputSettings.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonInput.50.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonInput\\Public\\CommonInputSubsystem.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonInput.50.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonInput\\Public\\CommonInputTypeEnum.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonInput.50.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonInput\\Public\\ICommonInputModule.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonInput.50.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUIEditor\\CommonUIEditor.Build.cs",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUIEditor.49.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUIEditor\\Private\\CommonAssetTypeActions_GenericInputActionDataTable.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUIEditor.49.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUIEditor\\Private\\CommonAssetTypeActions_GenericInputActionDataTable.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUIEditor.49.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUIEditor\\Private\\CommonGenericInputActionDataTableFactory.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUIEditor.49.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUIEditor\\Private\\CommonUIEditorModule.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUIEditor.49.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUIEditor\\Private\\CommonVideoPlayerCustomization.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUIEditor.49.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUIEditor\\Private\\CommonVideoPlayerCustomization.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUIEditor.49.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUIEditor\\Public\\CommonGenericInputActionDataTableFactory.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUIEditor.49.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUIEditor\\Public\\CommonUIEditorModule.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUIEditor.49.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\CommonUI.Build.cs",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\AnalogSlider.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonActionHandlerInterface.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonActionWidget.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonActivatableWidget.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonActivatableWidgetSwitcher.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonAnimatedSwitcher.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonBorder.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonButtonBase.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonButtonTypes.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonButtonTypes.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonCustomNavigation.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonCustomVersion.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonCustomVersion.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonDateTimeTextBlock.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonGameViewportClient.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonHardwareVisibilityBorder.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonHierarchicalScrollBox.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonLazyImage.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonLazyWidget.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonListView.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonLoadGuard.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonNumericTextBlock.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonPoolableWidgetInterface.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonRichTextBlock.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonRotator.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonTabListWidgetBase.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonTextBlock.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonTileView.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonTreeView.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonUIEditorSettings.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonUILibrary.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonUIModule.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonUIObjectVersion.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonUIObjectVersion.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonUIPrivate.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonUIRichTextData.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonUISettings.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonUISubsystemBase.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonUITypes.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonUIUtils.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonUIVisibilitySubsystem.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonUserWidget.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonVideoPlayer.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonVisibilitySwitcher.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonVisibilitySwitcherSlot.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonVisibilityWidgetBase.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonVisualAttachment.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonWidgetCarousel.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonWidgetCarouselNavBar.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\CommonWidgetPaletteCategories.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\Groups\\CommonButtonGroupBase.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\Groups\\CommonWidgetGroupBase.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\Input\\CommonAnalogCursor.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\Input\\CommonBoundActionBar.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\Input\\CommonBoundActionButton.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\Input\\CommonGenericInputActionDataTable.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\Input\\CommonUIActionRouterBase.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\Input\\CommonUIInputSettings.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\Input\\UIActionRouterTypes.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\Input\\UIActionRouterTypes.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\SAnalogSlider.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\SCommonHierarchicalScrollBox.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\SVisualAttachementBox.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\Slate\\SCommonAnimatedSwitcher.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Private\\Widgets\\CommonActivatableWidgetContainer.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\AnalogSlider.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonActionHandlerInterface.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonActionWidget.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonActivatableWidget.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonActivatableWidgetSwitcher.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonAnimatedSwitcher.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonBorder.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonButtonBase.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonCustomNavigation.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonDateTimeTextBlock.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonGameViewportClient.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonHardwareVisibilityBorder.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonHierarchicalScrollBox.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonLazyImage.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonLazyWidget.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonListView.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonLoadGuard.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonNativeListItem.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonNumericTextBlock.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonPoolableWidgetInterface.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonRichTextBlock.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonRotator.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonTabListWidgetBase.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonTextBlock.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonTileView.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonTreeView.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonUIEditorSettings.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonUILibrary.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonUIRichTextData.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonUISettings.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonUISubsystemBase.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonUITypes.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonUIUtils.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonUIVisibilitySubsystem.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonUserWidget.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonVideoPlayer.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonVisibilitySwitcher.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonVisibilitySwitcherSlot.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonVisibilityWidgetBase.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonVisualAttachment.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonWidgetCarousel.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\CommonWidgetCarouselNavBar.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\Groups\\CommonButtonGroupBase.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\Groups\\CommonWidgetGroupBase.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\ICommonUIModule.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\Input\\CommonAnalogCursor.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\Input\\CommonBoundActionBar.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\Input\\CommonBoundActionButton.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\Input\\CommonBoundActionButtonInterface.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\Input\\CommonGenericInputActionDataTable.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\Input\\CommonInputMode.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\Input\\CommonUIActionRouterBase.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\Input\\CommonUIInputSettings.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\Input\\CommonUIInputTypes.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\Input\\UIActionBinding.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\Input\\UIActionBindingHandle.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\Misc\\Passkey.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\SAnalogSlider.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\SCommonButtonTableRow.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\SCommonHierarchicalScrollBox.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\SCommonTileView.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\SVisualAttachmentBox.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\Slate\\SCommonAnimatedSwitcher.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\UITag.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\WidgetFactory.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUI\\Source\\CommonUI\\Public\\Widgets\\CommonActivatableWidgetContainer.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUI.48.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUser\\Source\\CommonUser\\CommonUser.Build.cs",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUser.55.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUser\\Source\\CommonUser\\Private\\AsyncAction_CommonUserInitialize.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUser.55.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUser\\Source\\CommonUser\\Private\\CommonSessionSubsystem.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUser.55.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUser\\Source\\CommonUser\\Private\\CommonUserBasicPresence.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUser.55.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUser\\Source\\CommonUser\\Private\\CommonUserModule.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUser.55.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUser\\Source\\CommonUser\\Private\\CommonUserSubsystem.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUser.55.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUser\\Source\\CommonUser\\Private\\CommonUserTypes.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUser.55.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUser\\Source\\CommonUser\\Public\\AsyncAction_CommonUserInitialize.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUser.55.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUser\\Source\\CommonUser\\Public\\CommonSessionSubsystem.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUser.55.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUser\\Source\\CommonUser\\Public\\CommonUserBasicPresence.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUser.55.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUser\\Source\\CommonUser\\Public\\CommonUserModule.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUser.55.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUser\\Source\\CommonUser\\Public\\CommonUserSubsystem.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUser.55.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\CommonUser\\Source\\CommonUser\\Public\\CommonUserTypes.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\CommonUser.55.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\DialogueEditor.Build.cs",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Private\\Asset\\DialogueAssetAction.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Private\\Asset\\DialogueAssetAppMode.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Private\\Asset\\DialogueAssetEditor.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Private\\Asset\\DialogueEditorToolbar.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Private\\Asset\\DialogueFactory.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Private\\DetailCustomizations\\DialogueGraphCustomization.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Private\\DetailCustomizations\\DialogueSocketCustomizationBase.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Private\\DetailCustomizations\\DialogueSpeakerSocketCustomization.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Private\\DialogueEditorCommands.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Private\\DialogueEditorLogChannels.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Private\\DialogueEditorModule.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Private\\DialogueEditorStyle.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Private\\Graph\\DialogueEdGraph.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Private\\Graph\\DialogueEdGraphSchema.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Private\\Graph\\DialogueGraphSchema_Action.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Private\\Graph\\DialogueTreeConnectionDrawingPolicy.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Private\\Graph\\Nodes\\DialogueNodeFactory.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Private\\Graph\\Nodes\\GraphNodeDialogue.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Private\\Graph\\Nodes\\GraphNodeDialogueBase.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Private\\Graph\\Nodes\\GraphNodeDialogueEntry.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Private\\Graph\\Nodes\\GraphNodeDialogueSpeech.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Private\\Graph\\Slate\\SDialogueGraphEditor.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Private\\Graph\\Slate\\SDialogueObjectPicker.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Private\\Graph\\Slate\\SDialoguePins.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Private\\Graph\\Slate\\SGraphNodeDialogueBase.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Private\\Graph\\Slate\\SGraphNodeDialogueSpeech.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Private\\Tabs\\DialogueEditorTabs.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Private\\Tabs\\DialogueNodeDetailsTabFactory.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Private\\Tabs\\DialoguePropertiesTabFactory.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Private\\Tabs\\DialogueViewportTabFactory.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Public\\Asset\\DialogueAssetAction.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Public\\Asset\\DialogueAssetAppMode.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Public\\Asset\\DialogueAssetEditor.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Public\\Asset\\DialogueEditorToolbar.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Public\\Asset\\DialogueFactory.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Public\\DetailCustomizations\\DialogueGraphCustomization.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Public\\DetailCustomizations\\DialogueSocketCustomizationBase.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Public\\DetailCustomizations\\DialogueSpeakerSocketCustomization.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Public\\DialogueEditorCommands.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Public\\DialogueEditorLogChannels.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Public\\DialogueEditorModule.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Public\\DialogueEditorStyle.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Public\\Graph\\DialogueEdGraph.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Public\\Graph\\DialogueEdGraphSchema.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Public\\Graph\\DialogueGraphSchema_Action.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Public\\Graph\\DialogueTreeConnectionDrawingPolicy.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Public\\Graph\\Nodes\\DialogueNodeFactory.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Public\\Graph\\Nodes\\GraphNodeDialogue.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Public\\Graph\\Nodes\\GraphNodeDialogueBase.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Public\\Graph\\Nodes\\GraphNodeDialogueEntry.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Public\\Graph\\Nodes\\GraphNodeDialogueSpeech.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Public\\Graph\\Slate\\SDialogueGraphEditor.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Public\\Graph\\Slate\\SDialogueObjectPicker.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Public\\Graph\\Slate\\SDialoguePins.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Public\\Graph\\Slate\\SGraphNodeDialogueBase.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Public\\Graph\\Slate\\SGraphNodeDialogueSpeech.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Public\\Tabs\\DialogueEditorTabs.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Public\\Tabs\\DialogueNodeDetailsTabFactory.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Public\\Tabs\\DialoguePropertiesTabFactory.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueEditor\\Public\\Tabs\\DialogueViewportTabFactory.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueEditor.73.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\DialogueRuntime.Build.cs",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Private\\Dialogue.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Private\\DialogueController.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Private\\DialogueInterface.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Private\\DialogueManagerSubsystem.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Private\\DialogueRuntimeLogChannels.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Private\\DialogueRuntimeModule.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Private\\DialogueSettings.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Private\\DialogueSpeakerComponent.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Private\\DialogueSpeakerSocket.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Private\\Nodes\\DialogueEntryNode.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Private\\Nodes\\DialogueNode.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Private\\Nodes\\DialogueSpeechNode.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Private\\Transitions\\AutoDialogueTransition.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Private\\Transitions\\DialogueTransition.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Private\\Transitions\\InputDialogueTransition.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Private\\UI\\DialogueTextBlock.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Private\\UI\\DialogueWidget.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Private\\UI\\DialogueWidgetBase.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Private\\UI\\OptionsWidget.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Public\\Dialogue.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Public\\DialogueConnectionLimit.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Public\\DialogueController.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Public\\DialogueInterface.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Public\\DialogueManagerSubsystem.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Public\\DialogueOption.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Public\\DialogueRuntimeLogChannels.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Public\\DialogueRuntimeModule.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Public\\DialogueSettings.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Public\\DialogueSpeakerComponent.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Public\\DialogueSpeakerSocket.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Public\\Nodes\\DialogueEntryNode.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Public\\Nodes\\DialogueNode.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Public\\Nodes\\DialogueSpeechNode.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Public\\SpeechDetails.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Public\\Transitions\\AutoDialogueTransition.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Public\\Transitions\\DialogueTransition.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Public\\Transitions\\InputDialogueTransition.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Public\\UI\\DialogueTextBlock.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Public\\UI\\DialogueWidget.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Public\\UI\\DialogueWidgetBase.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\DialogueTree\\Source\\DialogueRuntime\\Public\\UI\\OptionsWidget.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\DialogueRuntime.74.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\GameplayMessageRouter\\Source\\GameplayMessageNodes\\GameplayMessageNodes.Build.cs",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\GameplayMessageNodes.76.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\GameplayMessageRouter\\Source\\GameplayMessageNodes\\Private\\GameplayMessageNodesModule.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\GameplayMessageNodes.76.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\GameplayMessageRouter\\Source\\GameplayMessageNodes\\Private\\K2Node_AsyncAction_ListenForGameplayMessages.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\GameplayMessageNodes.76.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\GameplayMessageRouter\\Source\\GameplayMessageNodes\\Public\\K2Node_AsyncAction_ListenForGameplayMessages.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\GameplayMessageNodes.76.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\GameplayMessageRouter\\Source\\GameplayMessageRuntime\\GameplayMessageRuntime.Build.cs",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\GameplayMessageRuntime.75.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\GameplayMessageRouter\\Source\\GameplayMessageRuntime\\Private\\GameFramework\\AsyncAction_ListenForGameplayMessage.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\GameplayMessageRuntime.75.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\GameplayMessageRouter\\Source\\GameplayMessageRuntime\\Private\\GameFramework\\GameplayMessageRuntime.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\GameplayMessageRuntime.75.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\GameplayMessageRouter\\Source\\GameplayMessageRuntime\\Private\\GameFramework\\GameplayMessageSubsystem.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\GameplayMessageRuntime.75.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\GameplayMessageRouter\\Source\\GameplayMessageRuntime\\Public\\GameFramework\\AsyncAction_ListenForGameplayMessage.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\GameplayMessageRuntime.75.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\GameplayMessageRouter\\Source\\GameplayMessageRuntime\\Public\\GameFramework\\GameplayMessageSubsystem.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\GameplayMessageRuntime.75.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\GameplayMessageRouter\\Source\\GameplayMessageRuntime\\Public\\GameFramework\\GameplayMessageTypes2.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\GameplayMessageRuntime.75.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\LyraInventory.Build.cs",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\LyraLogChannels.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\LyraLogChannels.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Private\\AbilitySystem\\LyraAttributeSet.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Private\\AbilitySystem\\LyraInventoryAttributeSet.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Private\\AbilitySystem\\Tasks\\LyraAbilityTask_DropItem.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Private\\AbilitySystem\\Tasks\\LyraAbilityTask_PickupItem.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Private\\AbilitySystem\\Tasks\\LyraAbilityTask_SimpleTarget.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Private\\Equipment\\LyraEquipmentTypes.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Private\\Equipment\\LyraItemDefinition_Equipment.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Private\\Fragment\\LyraInventoryFragment_Equipment.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Private\\Fragment\\LyraInventoryFragment_Icon.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Private\\Fragment\\LyraInventoryFragment_StaticMesh.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Private\\Fragment\\LyraInventoryFragment_Text.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Private\\InstancedStruct\\LyraInventoryTableRow.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Private\\Inventory\\ItemBase.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Private\\Inventory\\LyraInventoryComponent.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Private\\Inventory\\LyraInventoryItemDefinition.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Private\\Inventory\\LyraInventoryItemFragment.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Private\\Inventory\\LyraInventoryItemInstance.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Private\\Inventory\\LyraInventoryItemTypes.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Private\\Inventory\\LyraItemComponent.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Private\\LyraInventory.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Private\\LyraInventoryLibrary.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Private\\LyraInventorySubsystem.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Private\\Processors\\LyraInventoryProcessor.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Private\\Processors\\LyraInventoryProcessor_Bag.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Public\\AbilitySystem\\LyraAttributeSet.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Public\\AbilitySystem\\LyraInventoryAttributeSet.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Public\\AbilitySystem\\Tasks\\LyraAbilityTask_DropItem.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Public\\AbilitySystem\\Tasks\\LyraAbilityTask_PickupItem.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Public\\AbilitySystem\\Tasks\\LyraAbilityTask_SimpleTarget.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Public\\Equipment\\LyraEquipmentTypes.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Public\\Equipment\\LyraItemDefinition_Equipment.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Public\\Fragment\\LyraInventoryFragment_Equipment.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Public\\Fragment\\LyraInventoryFragment_Icon.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Public\\Fragment\\LyraInventoryFragment_StaticMesh.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Public\\Fragment\\LyraInventoryFragment_Text.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Public\\InstancedStruct\\LyraInventoryTableRow.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Public\\Inventory\\ItemBase.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Public\\Inventory\\LyraInventoryComponent.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Public\\Inventory\\LyraInventoryItemDefinition.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Public\\Inventory\\LyraInventoryItemFragment.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Public\\Inventory\\LyraInventoryItemInstance.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Public\\Inventory\\LyraInventoryItemTypes.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Public\\Inventory\\LyraItemComponent.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Public\\Inventory\\LyraItemEnum.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Public\\LyraInventory.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Public\\LyraInventoryLibrary.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Public\\LyraInventorySettings.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Public\\LyraInventorySubsystem.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Public\\Processors\\LyraInventoryProcessor.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Public\\Processors\\LyraInventoryProcessor_Bag.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\ModularGameplayActors\\Source\\ModularGameplayActors\\ModularGameplayActors.Build.cs",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\ModularGameplayActors.63.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\ModularGameplayActors\\Source\\ModularGameplayActors\\Private\\ModularAIController.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\ModularGameplayActors.63.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\ModularGameplayActors\\Source\\ModularGameplayActors\\Private\\ModularCharacter.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\ModularGameplayActors.63.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\ModularGameplayActors\\Source\\ModularGameplayActors\\Private\\ModularGameMode.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\ModularGameplayActors.63.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\ModularGameplayActors\\Source\\ModularGameplayActors\\Private\\ModularGameState.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\ModularGameplayActors.63.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\ModularGameplayActors\\Source\\ModularGameplayActors\\Private\\ModularGameplayActorsModule.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\ModularGameplayActors.63.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\ModularGameplayActors\\Source\\ModularGameplayActors\\Private\\ModularPawn.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\ModularGameplayActors.63.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\ModularGameplayActors\\Source\\ModularGameplayActors\\Private\\ModularPlayerController.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\ModularGameplayActors.63.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\ModularGameplayActors\\Source\\ModularGameplayActors\\Private\\ModularPlayerState.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\ModularGameplayActors.63.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\ModularGameplayActors\\Source\\ModularGameplayActors\\Public\\ModularAIController.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\ModularGameplayActors.63.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\ModularGameplayActors\\Source\\ModularGameplayActors\\Public\\ModularCharacter.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\ModularGameplayActors.63.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\ModularGameplayActors\\Source\\ModularGameplayActors\\Public\\ModularGameMode.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\ModularGameplayActors.63.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\ModularGameplayActors\\Source\\ModularGameplayActors\\Public\\ModularGameState.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\ModularGameplayActors.63.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\ModularGameplayActors\\Source\\ModularGameplayActors\\Public\\ModularPawn.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\ModularGameplayActors.63.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\ModularGameplayActors\\Source\\ModularGameplayActors\\Public\\ModularPlayerController.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\ModularGameplayActors.63.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\ModularGameplayActors\\Source\\ModularGameplayActors\\Public\\ModularPlayerState.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\ModularGameplayActors.63.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\TargetIndicator\\Source\\TargetIndicator\\Private\\IndicatorManagerSubsystem.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\TargetIndicator.29.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\TargetIndicator\\Source\\TargetIndicator\\Private\\IndicatorWidgetBase.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\TargetIndicator.29.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\TargetIndicator\\Source\\TargetIndicator\\Private\\TargetIndicatorLogChannels.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\TargetIndicator.29.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\TargetIndicator\\Source\\TargetIndicator\\Private\\TargetIndicatorModule.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\TargetIndicator.29.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\TargetIndicator\\Source\\TargetIndicator\\Public\\IndicatorManagerSubsystem.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\TargetIndicator.29.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\TargetIndicator\\Source\\TargetIndicator\\Public\\IndicatorWidgetBase.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\TargetIndicator.29.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\TargetIndicator\\Source\\TargetIndicator\\Public\\TargetIndicatorLogChannels.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\TargetIndicator.29.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\TargetIndicator\\Source\\TargetIndicator\\Public\\TargetIndicatorModule.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\TargetIndicator.29.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\TargetIndicator\\Source\\TargetIndicator\\TargetIndicator.Build.cs",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\TargetIndicator.29.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Source\\ZeroGame\\ZeroGame.Build.cs",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\ZeroGame.1.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Source\\ZeroGame\\ZeroGame.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\ZeroGame.1.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Source\\ZeroGame\\ZeroGame.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\ZeroGame.1.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Source\\ZeroGame\\ZeroGameCharacter.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\ZeroGame.1.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Source\\ZeroGame\\ZeroGameCharacter.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\ZeroGame.1.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Source\\ZeroGame\\ZeroGameGameMode.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\ZeroGame.1.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Source\\ZeroGame\\ZeroGameGameMode.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\ZeroGame.1.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	}
+]

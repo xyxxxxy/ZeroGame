@@ -1,0 +1,27 @@
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "NativeGameplayTags.h"
+#include "Modules/ModuleManager.h"
+
+LYRAINVENTORY_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(FLyraInvBagSlotTag);
+LYRAINVENTORY_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(FLyraInvEquipSlotTag);
+LYRAINVENTORY_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(FLyraInvActiveSlotTag);
+
+LYRAINVENTORY_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(FLyraItemPropTag);
+LYRAINVENTORY_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(FLyraItemPropAppleTag);
+LYRAINVENTORY_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(FLyraItemPropMilkTag);
+
+LYRAINVENTORY_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(FLyraItemWeaponTag);
+LYRAINVENTORY_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(FLyraItemArmorTag);
+
+LYRAINVENTORY_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(FLyraInvPickupItemAbilityTag);
+LYRAINVENTORY_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(FLyraInvDropItemAbilityTag);
+
+class FLyraInventoryModule : public IModuleInterface
+{
+public:
+	virtual void StartupModule() override;
+	virtual void ShutdownModule() override;
+};
