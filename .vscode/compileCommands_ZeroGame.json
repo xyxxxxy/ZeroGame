@@ -3494,37 +3494,5 @@
 			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\ZeroGame.1.rsp"
 		],
 		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
-	},
-	{
-		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Source\\ZeroGame\\ZeroGameCharacter.cpp",
-		"arguments": [
-			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
-			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\ZeroGame.1.rsp"
-		],
-		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
-	},
-	{
-		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Source\\ZeroGame\\ZeroGameCharacter.h",
-		"arguments": [
-			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
-			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\ZeroGame.1.rsp"
-		],
-		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
-	},
-	{
-		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Source\\ZeroGame\\ZeroGameGameMode.cpp",
-		"arguments": [
-			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
-			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\ZeroGame.1.rsp"
-		],
-		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
-	},
-	{
-		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Source\\ZeroGame\\ZeroGameGameMode.h",
-		"arguments": [
-			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
-			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\ZeroGame.1.rsp"
-		],
-		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
 	}
 ]

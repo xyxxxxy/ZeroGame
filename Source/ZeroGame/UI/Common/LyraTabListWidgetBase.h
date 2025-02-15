@@ -112,7 +112,7 @@ protected:
 	virtual void HandlePostLinkedSwitcherChanged() override;
 
 	virtual void HandleTabCreation_Implementation(FName TabId, UCommonButtonBase* TabButton) override;
-
+ 
 private:
 	void SetupTabs();
 

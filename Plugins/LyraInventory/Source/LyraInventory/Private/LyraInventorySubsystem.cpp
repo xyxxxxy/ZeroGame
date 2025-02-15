@@ -43,7 +43,7 @@ ULyraInventoryItemInstance* ULyraInventorySubsystem::GenerateItemInstance(
 void ULyraInventorySubsystem::FindItemDefRowDefine(FName RowName, FLyraItemInfoRowDefine& OutItemDef) const
 {
 	const UDataTable* DataTable = GetItemDefDataTable();
-	if(!IsValid(DataTable))return;
+	//if(!IsValid(DataTable))return;
 	
 	OutItemDef = *DataTable->FindRow<FLyraItemInfoRowDefine>(RowName, FString("ItemDef"), true);
 }
@@ -52,11 +52,11 @@ UDataTable* ULyraInventorySubsystem::GetItemDefDataTable() const
 {
 	static const ULyraInventorySettings* InventorySettings = GetDefault<ULyraInventorySettings>();
 	UDataTable* DataTable = InventorySettings->ItemDefDataTable.Get();
-	if(!IsValid(DataTable))
-	{
-		UE_LOG(LogLyraInventorySystem, Error, TEXT("Can't find DataTable for ItemDef!"));
-		return nullptr;
-	}
+	
+	ensureMsgf(DataTable,TEXT("Can't find DataTable for ItemDef!"));
+
+	//UE_LOG(LogLyraInventorySystem, Error, TEXT("Can't find DataTable for ItemDef!"));
+
 	return DataTable;
 }
 

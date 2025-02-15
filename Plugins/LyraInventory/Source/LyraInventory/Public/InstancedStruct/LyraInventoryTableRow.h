@@ -34,8 +34,8 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Inventory")
 	int32 MaxStackSize = 1;
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Inventory")
-	ELyraItemCategory ItemCategory = ELyraItemCategory::Prop;
+	// UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Inventory")
+	// ELyraItemCategory ItemCategory = ELyraItemCategory::Prop;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (MultiLine = true), Category = "Inventory")
 	FText Description;

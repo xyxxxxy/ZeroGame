@@ -159,7 +159,7 @@ bool FDialogueAssetEditor::OnRequestClose(EAssetEditorCloseReason InCloseReason)
 void FDialogueAssetEditor::AddReferencedObjects(FReferenceCollector& Collector)
 {
 	check(Dialogue);
-	UEdGraph* TargetGraph = Dialogue->GetGraph();
+	TObjectPtr<UEdGraph> TargetGraph = Dialogue->GetGraph();
 	check(TargetGraph);
 
 	Collector.AddReferencedObject(Dialogue);

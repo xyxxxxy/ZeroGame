@@ -87,7 +87,7 @@ bool FLyraInventoryQuery::MatchesSlot(const FLyraInventoryItemSlot& ItemSlot) co
 
 		bMatches &= ItemTypeQuery.Matches(StackContainer);
 	}
-	return bMatches && ItemSlot.ItemCategory == Category;
+	return bMatches;
 }
 
 FLyraInventoryQuery FLyraInventoryQuery::QuerySlotMatchingTag(FGameplayTag Tag)

@@ -3,7 +3,6 @@
 
 #include "CoreMinimal.h"
 #include "GameplayTagContainer.h"
-#include "LyraItemEnum.h"
 #include "LyraInventoryItemTypes.generated.h"
 
 class ULyraInventoryComponent;
@@ -20,9 +19,6 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Inventory)
 	FGameplayTagContainer SlotTags;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Inventory)
-	ELyraItemCategory ItemCategory = ELyraItemCategory::None;
 
 };
 
@@ -109,12 +105,12 @@ struct LYRAINVENTORY_API FLyraInventoryItemSlot
 	GENERATED_BODY()
 public:
 	FLyraInventoryItemSlot()
-	:ItemInstance(nullptr), SlotId(0), SlotTags(),ItemCategory(ELyraItemCategory::Prop)
+	:ItemInstance(nullptr), SlotId(0), SlotTags()
 	{
 	}
 	
 	FLyraInventoryItemSlot(const FLyraInventoryItemSlot& InSlot)
-	:ItemInstance(InSlot.ItemInstance), SlotId(InSlot.SlotId), SlotTags(InSlot.SlotTags), ItemCategory(InSlot.ItemCategory), ItemSlotFilter(InSlot.ItemSlotFilter)
+	:ItemInstance(InSlot.ItemInstance), SlotId(InSlot.SlotId), SlotTags(InSlot.SlotTags), ItemSlotFilter(InSlot.ItemSlotFilter)
 	{
 	}
 	
@@ -127,31 +123,30 @@ public:
 	UPROPERTY(BlueprintReadOnly, VisibleInstanceOnly, Category = "Inventory")
 	FGameplayTagContainer SlotTags;
 	
-	UPROPERTY(BlueprintReadOnly, VisibleInstanceOnly, Category = "Inventory")
-	ELyraItemCategory ItemCategory;
-
 	UPROPERTY()
 	FLyraInventoryItemFilterHandle ItemSlotFilter;
 	
 	bool operator==(const FLyraInventoryItemSlot& Other) const{return this->SlotId == Other.SlotId && this->ItemInstance == Other.ItemInstance;}
-	bool operator!=(const FLyraInventoryItemSlot& Other) const{return !(FLyraInventoryItemSlot::operator==(Other));}
+	bool operator!=(const FLyraInventoryItemSlot& Other) const{return !(FLyraInventoryItemSlot::operator == (Other));}
 
 protected:
 	TObjectPtr<ULyraInventoryComponent> Owner;
-	//friend class ULyraInventoryComponent;
+
+	// TODO: check
+	friend class ULyraInventoryComponent;
 	friend class ULyraInventoryProcessor_Bag;
 	
 };
 
 USTRUCT(BlueprintType)
-struct LYRAINVENTORY_API FAuraInventoryItemArray
+struct LYRAINVENTORY_API FLyraInventoryItemArray
 {
 	GENERATED_BODY()
 public:
-	FAuraInventoryItemArray()
-	: FAuraInventoryItemArray(nullptr)
+	FLyraInventoryItemArray()
+	: FLyraInventoryItemArray(nullptr)
 	{}
-	FAuraInventoryItemArray(ULyraInventoryComponent* InOwner)
+	FLyraInventoryItemArray(ULyraInventoryComponent* InOwner)
 		: Owner(InOwner)
 	{}
 	
@@ -169,26 +164,26 @@ struct LYRAINVENTORY_API FLyraInventoryItemSlotHandle
 	GENERATED_BODY()
 public:
 	FLyraInventoryItemSlotHandle()
-	: SlotId(-1), SlotTags(), ItemCategory(ELyraItemCategory::Prop), ParentInventory(nullptr)
+	: SlotId(-1), SlotTags(), ParentInventory(nullptr)
 	{
 	}
 	
 	FLyraInventoryItemSlotHandle(const FLyraInventoryItemSlotHandle& InHandle)
-	: SlotId(InHandle.SlotId), SlotTags(InHandle.SlotTags), ItemCategory(InHandle.ItemCategory), ParentInventory(InHandle.ParentInventory)
+	: SlotId(InHandle.SlotId), SlotTags(InHandle.SlotTags), ParentInventory(InHandle.ParentInventory)
 	{
 	}
 	
 	FLyraInventoryItemSlotHandle(const FLyraInventoryItemSlot& FromSlot, ULyraInventoryComponent* InParentInventory)
-	: SlotId(FromSlot.SlotId), SlotTags(FromSlot.SlotTags), ItemCategory(FromSlot.ItemCategory), ParentInventory(InParentInventory)
+	: SlotId(FromSlot.SlotId), SlotTags(FromSlot.SlotTags), ParentInventory(InParentInventory)
 	{
 	}
 
 	FLyraInventoryItemSlotHandle(int32 InSlotId, ULyraInventoryComponent* InParentInventory)
-	: SlotId(InSlotId), SlotTags(), ItemCategory(ELyraItemCategory::Prop), ParentInventory(InParentInventory)
+	: SlotId(InSlotId), SlotTags(), ParentInventory(InParentInventory)
 	{
 	}
 	FLyraInventoryItemSlotHandle(FGameplayTag Tag, ULyraInventoryComponent* InParentInventory)
-	: SlotId(0), SlotTags(Tag.GetSingleTagContainer()), ItemCategory(ELyraItemCategory::Prop), ParentInventory(InParentInventory)
+	: SlotId(0), SlotTags(Tag.GetSingleTagContainer()), ParentInventory(InParentInventory)
 	{
 	}
 	
@@ -201,8 +196,6 @@ public:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Inventory)
 	FGameplayTagContainer SlotTags;
 
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Inventory)
-	ELyraItemCategory ItemCategory;
 	
 	UPROPERTY(BlueprintReadOnly, Category = Inventory)
 	TObjectPtr<ULyraInventoryComponent> ParentInventory;
@@ -212,8 +205,8 @@ public:
 		const bool bIdMatch = SlotId == Other.SlotId;
 		const bool bInventoryMatch = ParentInventory == Other.ParentInventory;
 		const bool bTagsMatch = SlotTags.HasAllExact(Other.SlotTags);
-		const bool bIsCategoryMatch = ItemCategory == Other.ItemCategory;
-		return bIdMatch && bInventoryMatch && bTagsMatch && bIsCategoryMatch;
+		//const bool bIsCategoryMatch = ItemCategory == Other.ItemCategory;
+		return bIdMatch && bInventoryMatch && bTagsMatch;
 	}
 
 	bool operator!=(const FLyraInventoryItemSlotHandle& Other) const
@@ -225,8 +218,8 @@ public:
 	{
 		const bool bIdMatch = SlotId == Other.SlotId;
 		const bool bTagsMatch = SlotTags.HasAllExact(Other.SlotTags);
-		const bool bIsCategoryMatch = ItemCategory == Other.ItemCategory;
-		return bIdMatch && bTagsMatch && bIsCategoryMatch;
+		//const bool bIsCategoryMatch = ItemCategory == Other.ItemCategory;
+		return bIdMatch && bTagsMatch;
 	}
 
 	bool operator!=(const FLyraInventoryItemSlot& Slot) const
@@ -243,8 +236,6 @@ public:
 	FLyraInventoryQuery()
 	{
 	}
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Filter")
-	ELyraItemCategory Category = ELyraItemCategory::Prop;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Filter")
 	FGameplayTagQuery ItemTypeQuery;
