@@ -21,7 +21,7 @@ void ULyraTabListWidgetBase::NativeConstruct()
 
 void ULyraTabListWidgetBase::NativeDestruct()
 {
-	for (FLyraTabDescriptor& TabInfo : PreregisteredTabInfoArray)
+	for (FLyraTabDescriptor &TabInfo : PreregisteredTabInfoArray)
 	{
 		if (TabInfo.CreatedTabContentWidget)
 		{
@@ -33,12 +33,10 @@ void ULyraTabListWidgetBase::NativeDestruct()
 	Super::NativeDestruct();
 }
 
-bool ULyraTabListWidgetBase::GetPreregisteredTabInfo(const FName TabNameId, FLyraTabDescriptor& OutTabInfo)
+bool ULyraTabListWidgetBase::GetPreregisteredTabInfo(const FName TabNameId, FLyraTabDescriptor &OutTabInfo)
 {
-	const FLyraTabDescriptor* const FoundTabInfo = PreregisteredTabInfoArray.FindByPredicate([&](FLyraTabDescriptor& TabInfo) -> bool
-	{
-		return TabInfo.TabId == TabNameId;
-	});
+	const FLyraTabDescriptor *const FoundTabInfo = PreregisteredTabInfoArray.FindByPredicate([&](FLyraTabDescriptor &TabInfo) -> bool
+												 { return TabInfo.TabId == TabNameId; });
 
 	if (!FoundTabInfo)
 	{
@@ -51,7 +49,7 @@ bool ULyraTabListWidgetBase::GetPreregisteredTabInfo(const FName TabNameId, FLyr
 
 void ULyraTabListWidgetBase::SetTabHiddenState(FName TabNameId, bool bHidden)
 {
-	for (FLyraTabDescriptor& TabInfo : PreregisteredTabInfoArray)
+	for (FLyraTabDescriptor &TabInfo : PreregisteredTabInfoArray)
 	{
 		if (TabInfo.TabId == TabNameId)
 		{
@@ -61,14 +59,14 @@ void ULyraTabListWidgetBase::SetTabHiddenState(FName TabNameId, bool bHidden)
 	}
 }
 
-bool ULyraTabListWidgetBase::RegisterDynamicTab(const FLyraTabDescriptor& TabDescriptor)
+bool ULyraTabListWidgetBase::RegisterDynamicTab(const FLyraTabDescriptor &TabDescriptor)
 {
 	// If it's hidden we just ignore it.
 	if (TabDescriptor.bHidden)
 	{
 		return true;
 	}
-	
+
 	PendingTabLabelInfoMap.Add(TabDescriptor.TabId, TabDescriptor);
 
 	return RegisterTab(TabDescriptor.TabId, TabDescriptor.TabButtonType, TabDescriptor.CreatedTabContentWidget);
@@ -76,7 +74,7 @@ bool ULyraTabListWidgetBase::RegisterDynamicTab(const FLyraTabDescriptor& TabDes
 
 void ULyraTabListWidgetBase::HandlePreLinkedSwitcherChanged()
 {
-	for (const FLyraTabDescriptor& TabInfo : PreregisteredTabInfoArray)
+	for (const FLyraTabDescriptor &TabInfo : PreregisteredTabInfoArray)
 	{
 		// Remove tab content widget from linked switcher, as it is being disassociated.
 		if (TabInfo.CreatedTabContentWidget)
@@ -99,10 +97,10 @@ void ULyraTabListWidgetBase::HandlePostLinkedSwitcherChanged()
 	Super::HandlePostLinkedSwitcherChanged();
 }
 
-void ULyraTabListWidgetBase::HandleTabCreation_Implementation(FName TabId, UCommonButtonBase* TabButton)
+void ULyraTabListWidgetBase::HandleTabCreation_Implementation(FName TabId, UCommonButtonBase *TabButton)
 {
-	FLyraTabDescriptor* TabInfoPtr = nullptr;
-	
+	FLyraTabDescriptor *TabInfoPtr = nullptr;
+
 	FLyraTabDescriptor TabInfo;
 	if (GetPreregisteredTabInfo(TabId, TabInfo))
 	{
@@ -112,7 +110,7 @@ void ULyraTabListWidgetBase::HandleTabCreation_Implementation(FName TabId, UComm
 	{
 		TabInfoPtr = PendingTabLabelInfoMap.Find(TabId);
 	}
-	
+
 	if (TabButton->GetClass()->ImplementsInterface(ULyraTabButtonInterface::StaticClass()))
 	{
 		if (ensureMsgf(TabInfoPtr, TEXT("A tab button was created with id %s but no label info was specified. RegisterDynamicTab should be used over RegisterTab to provide label info."), *TabId.ToString()))
@@ -146,12 +144,10 @@ bool ULyraTabListWidgetBase::IsLastTabActive() const
 
 bool ULyraTabListWidgetBase::IsTabVisible(FName TabId)
 {
-	if (const UCommonButtonBase* Button = GetTabButtonBaseByID(TabId))
+	if (const UCommonButtonBase *Button = GetTabButtonBaseByID(TabId))
 	{
 		const ESlateVisibility TabVisibility = Button->GetVisibility();
-		return (TabVisibility == ESlateVisibility::Visible
-			|| TabVisibility == ESlateVisibility::HitTestInvisible
-			|| TabVisibility == ESlateVisibility::SelfHitTestInvisible);
+		return (TabVisibility == ESlateVisibility::Visible || TabVisibility == ESlateVisibility::HitTestInvisible || TabVisibility == ESlateVisibility::SelfHitTestInvisible);
 	}
 
 	return false;
@@ -161,9 +157,9 @@ int32 ULyraTabListWidgetBase::GetVisibleTabCount()
 {
 	int32 Result = 0;
 	const int32 TabCount = GetTabCount();
-	for ( int32 Index = 0; Index < TabCount; Index++ )
+	for (int32 Index = 0; Index < TabCount; Index++)
 	{
-		if (IsTabVisible(GetTabIdAtIndex( Index )))
+		if (IsTabVisible(GetTabIdAtIndex(Index)))
 		{
 			Result++;
 		}
@@ -174,7 +170,7 @@ int32 ULyraTabListWidgetBase::GetVisibleTabCount()
 
 void ULyraTabListWidgetBase::SetupTabs()
 {
-	for (FLyraTabDescriptor& TabInfo : PreregisteredTabInfoArray)
+	for (FLyraTabDescriptor &TabInfo : PreregisteredTabInfoArray)
 	{
 		if (TabInfo.bHidden)
 		{
@@ -189,7 +185,7 @@ void ULyraTabListWidgetBase::SetupTabs()
 			OnTabContentCreated.Broadcast(TabInfo.TabId, Cast<UCommonUserWidget>(TabInfo.CreatedTabContentWidget));
 		}
 
-		if (UCommonAnimatedSwitcher* CurrentLinkedSwitcher = GetLinkedSwitcher())
+		if (UCommonAnimatedSwitcher *CurrentLinkedSwitcher = GetLinkedSwitcher())
 		{
 			// Add the tab content to the newly linked switcher.
 			if (!CurrentLinkedSwitcher->HasChild(TabInfo.CreatedTabContentWidget))
@@ -205,4 +201,3 @@ void ULyraTabListWidgetBase::SetupTabs()
 		}
 	}
 }
-

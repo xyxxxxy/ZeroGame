@@ -1,0 +1,89 @@
+[
+	{
+		"Name": "B001",
+		"ItemName": "Apple",
+		"CustomItemInfo":
+		{
+			"ItemTags":
+			{
+				"GameplayTags": [
+					{
+						"TagName": "Item.Prop.Apple"
+					}
+				],
+				"ParentTags": [
+					{
+						"TagName": "Item.Prop"
+					},
+					{
+						"TagName": "Item"
+					}
+				]
+			},
+			"ItemStructs": [
+				{
+				},
+				{
+				}
+			]
+		}
+	},
+	{
+		"Name": "B002",
+		"ItemName": "Milk",
+		"CustomItemInfo":
+		{
+			"ItemTags":
+			{
+				"GameplayTags": [
+					{
+						"TagName": "Item.Prop.Milk"
+					}
+				],
+				"ParentTags": [
+					{
+						"TagName": "Item.Prop"
+					},
+					{
+						"TagName": "Item"
+					}
+				]
+			},
+			"ItemStructs": [
+				{
+				},
+				{
+				}
+			]
+		}
+	},
+	{
+		"Name": "B003",
+		"ItemName": "Book",
+		"CustomItemInfo":
+		{
+			"ItemTags":
+			{
+				"GameplayTags": [
+					{
+						"TagName": "Item.Prop.Book"
+					}
+				],
+				"ParentTags": [
+					{
+						"TagName": "Item.Prop"
+					},
+					{
+						"TagName": "Item"
+					}
+				]
+			},
+			"ItemStructs": [
+				{
+				},
+				{
+				}
+			]
+		}
+	}
+]

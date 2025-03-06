@@ -12,41 +12,6 @@ void ULyraInventoryProcessor_Bag::OnInventoryBeginPlay_Implementation()
 	UE_LOG(LogLyraInventorySystem, Warning, TEXT("%s : OnInventoryBeginPlay"), *GetNameSafe(this));
 	//InitInventorySlots();
 	//TArray<FLyraInventoryItemSlotHandle>& OutSlotHandles;
-	BulkCreateInventorySlots(SlotTags, FLyraInventoryItemFilterHandle(new FLyraInventoryItemSlotFilter(SlotFilter)), BagSlotCount, BagSlotHandles);
+	BulkCreateInventorySlots(SlotTags, FLyraInventoryItemFilterHandle(new FLyraInventoryItemSlotFilter(SlotFilter)), BagSlotCount, GetOwningInventory()->AllSlotHandles);
 }
 
-
-
-//void ULyraInventoryProcessor_Bag::PostInventoryUpdate(FAuraInventoryItemArray& InventoryRef, TArray<FLyraInventoryItemSlotHandle>& SlotHandles)
-//{
-//	SlotHandles.Empty(SlotHandles.Num() + 1);
-//	PopulateSlotReferenceArray(InventoryRef, SlotHandles);
-//}
-//
-//void ULyraInventoryProcessor_Bag::PopulateSlotReferenceArray(FAuraInventoryItemArray& InventoryRef, TArray<FLyraInventoryItemSlotHandle>& SlotHandles)
-//{
-//	for (int i = 0; i < InventoryRef.Slots.Num(); ++i)
-//	{
-//		FLyraInventoryItemSlotHandle Handle(InventoryRef.Slots[i], GetOwningInventory());
-//		SlotHandles.Add(Handle);
-//	}
-//}
-//
-//void ULyraInventoryProcessor_Bag::InitInventorySlots()
-//{
-//	FLyraInventoryItemFilterHandle FilterHandle = FLyraInventoryItemFilterHandle(new FLyraInventoryItemSlotFilter(SlotFilter));
-//	for(int32 Index = 0; Index < BagSlotCount; ++Index)
-//	{
-//		FLyraInventoryItemSlot Slot;
-//		Slot.ItemInstance = nullptr;
-//		Slot.SlotTags = BagSlotTags;
-//		Slot.ItemSlotFilter = FilterHandle;
-//		//Slot.ItemCategory = ItemCategory;
-//		Slot.SlotId = IdCounter;
-//		Slot.Owner = GetOwningInventory();
-//		IdCounter++;
-//		
-//		Inventory.Slots.Add(Slot);
-//	}
-//	PostInventoryUpdate(Inventory, AllSlotHandles);
-//}

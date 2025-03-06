@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CommonTabListWidgetBase.h"
-
+#include "GameplayTagContainer.h"
 #include "LyraTabListWidgetBase.generated.h"
 
 class UCommonButtonBase;
@@ -28,6 +28,12 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FText TabText;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FGameplayTagQuery Query1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FGameplayTagQuery Query2;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FSlateBrush IconBrush;
@@ -91,6 +97,7 @@ public:
 
 	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "Tab List")
 	int32 GetVisibleTabCount();
+
 
 	/** Delegate broadcast when a new tab is created. Allows hook ups after creation. */
 	DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnTabContentCreated, FName, TabId, UCommonUserWidget*, TabWidget);

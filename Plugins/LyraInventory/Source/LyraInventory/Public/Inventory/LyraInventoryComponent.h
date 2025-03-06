@@ -9,25 +9,25 @@
 #include "Processors/LyraInventoryProcessor.h"
 #include "LyraInventoryComponent.generated.h"
 
-// USTRUCT(BlueprintType)
-// struct LYRAINVENTORY_API FProcessorArray
-// {
-// 	GENERATED_BODY()
-	
-// 	UPROPERTY(EditAnywhere, Instanced, Category = Inventory)
-// 	TArray<TObjectPtr<ULyraInventoryProcessor>> Processors;
-	
-// };
 
-// USTRUCT()
-// struct LYRAINVENTORY_API FInventoryItemSlotHandlesArray
-// {
-// 	GENERATED_BODY()
+USTRUCT(BlueprintType)
+struct LYRAINVENTORY_API FLyraInventoryPayload
+{
+	GENERATED_BODY()
+public:
+	FLyraInventoryPayload(){}
+	FLyraInventoryPayload(const FLyraInventoryPayload& Other) : SlotHandle(Other.SlotHandle), PreviousItem(Other.PreviousItem), CurrentItem(Other.CurrentItem){}
+	FLyraInventoryPayload(const FLyraInventoryItemSlotHandle& InSlotHandle, ULyraInventoryItemInstance* InPreviousItem, ULyraInventoryItemInstance* InCurrentItem)
+	 : SlotHandle(InSlotHandle), PreviousItem(InPreviousItem), CurrentItem(InCurrentItem){}
+	UPROPERTY(BlueprintReadOnly, Category = Payload)
+	FLyraInventoryItemSlotHandle SlotHandle;
 
-// 	UPROPERTY()
-// 	TArray<FLyraInventoryItemSlotHandle> AllSlotHandles;
-	
-// };
+	UPROPERTY(BlueprintReadOnly, Category = Payload)
+	TObjectPtr<ULyraInventoryItemInstance> PreviousItem;
+
+	UPROPERTY(BlueprintReadOnly, Category = Payload)
+	TObjectPtr<ULyraInventoryItemInstance> CurrentItem;
+};
 
 
 
@@ -63,8 +63,6 @@ public:
 	{
 		FObjectInitializer* CurrentInitializer = FUObjectThreadContext::Get().TopInitializer();
 		auto Processor = CurrentInitializer->CreateDefaultSubobject<TProcessor>(this, TProcessor::StaticClass()->GetFName());
-		// 1
-		//CategoryToProcessors[InItemCategory].Processors.Add(Processor);
 		Processors.Add(Processor);
 		return Processor;
 	}
@@ -98,30 +96,17 @@ public:
 		}));
 	}
 
-	// template<typename T>
-	// T* FindFirstProcessorMatchingTags(FGameplayTagContainer InSlotTags) const
-	// {
-	// 	return Cast<T>(FindFirstProcessor([&InSlotTags](ULyraInventoryProcessor* Processor)
-	// 	{
-	// 		// TODO: ??SlotTags HasAll?
-	// 		return Processor->IsA(T::StaticClass());
-	// 	})
-	// 	);
-	// }
 
-	// UFUNCTION(meta = (DeterminesOutputType = ProcessorClass))
-	// ULyraInventoryProcessor* FindFirstProcessorMatchingTags(TSubclassOf<ULyraInventoryProcessor> ProcessorClass, FGameplayTagContainer InSlotTags);
-
-	UFUNCTION(BlueprintCallable, Category = "Arc|Inventory", DisplayName = "Find First Processor", meta = (DeterminesOutputType = ProcessorClass))
+	UFUNCTION(BlueprintCallable, Category = "Inventory | Processor", DisplayName = "Find First Processor", meta = (DeterminesOutputType = ProcessorClass))
 	ULyraInventoryProcessor* K2_FindFirstProcessor(TSubclassOf<ULyraInventoryProcessor> ProcessorClass);
 
-	UFUNCTION(BlueprintCallable, Category = "Arc|Inventory", DisplayName = "Find First Processor By Tag Query", meta = (DeterminesOutputType = ProcessorClass))
+	UFUNCTION(BlueprintCallable, Category = "Inventory | Processor", DisplayName = "Find First Processor By Tag Query", meta = (DeterminesOutputType = ProcessorClass))
 	ULyraInventoryProcessor* K2_FindFirstProcessorMatchingTags(TSubclassOf<ULyraInventoryProcessor> ProcessorClass, FGameplayTagQuery Query);
 
-	UFUNCTION(BlueprintCallable, Category = "Arc|Inventory", DisplayName = "Find All Processors", meta = (DeterminesOutputType = ProcessorClass))
+	UFUNCTION(BlueprintCallable, Category = "Inventory | Processor", DisplayName = "Find All Processors", meta = (DeterminesOutputType = ProcessorClass))
 	TArray<ULyraInventoryProcessor*> K2_FindAllProcessors(TSubclassOf<ULyraInventoryProcessor> ProcessorClass);
 
-	UFUNCTION(BlueprintCallable, Category = "Arc|Inventory", DisplayName = "Find All Processors By Tag Query", meta = (DeterminesOutputType = ProcessorClass))
+	UFUNCTION(BlueprintCallable, Category = "Inventory | Processor", DisplayName = "Find All Processors By Tag Query", meta = (DeterminesOutputType = ProcessorClass))
 	TArray<ULyraInventoryProcessor*> K2_FindAllProcessorsMatchingTags(TSubclassOf<ULyraInventoryProcessor> ProcessorClass, FGameplayTagQuery Query);
 	// ~~~~~processor
 
@@ -135,10 +120,10 @@ public:
 	UFUNCTION(BlueprintCallable, Category = Inventory)
 	virtual bool RemoveAllItemsFromInventory(TArray<ULyraInventoryItemInstance*>& OutItemsRemoved);
 	
+	// TODO: 删除后需要排序吗?
 	UFUNCTION(BlueprintCallable, Category = Inventory)
 	virtual bool RemoveItemFromInventory(const FLyraInventoryItemSlotHandle& ItemHandle, bool bNeedSort = false);
 
-	// stay
 	UFUNCTION(BlueprintCallable, Category = Inventory)
 	virtual ULyraInventoryItemInstance* GetItemInstanceBySlot(const FLyraInventoryItemSlotHandle& ItemHandle);
 	
@@ -149,40 +134,50 @@ public:
 	virtual bool AcceptsItem(ULyraInventoryItemInstance* Item, const FLyraInventoryItemSlotHandle& ItemHandle);
 	virtual bool AcceptsItem_AssumeEmptySlot(ULyraInventoryItemInstance* Item, const FLyraInventoryItemSlotHandle& ItemHandle);
 
-	//??
+	// TODO: 几乎用不到 <==> 弃用
+	UFUNCTION(BlueprintCallable, Category = Inventory)
 	virtual void RemoveInventorySlot(const FLyraInventoryItemSlotHandle& Handle);
+
+	UFUNCTION(BlueprintCallable, Category = Inventory)
 	virtual void BulkCreateInventorySlots(const FGameplayTagContainer& SlotTags, const FLyraInventoryItemFilterHandle& Filter, int32 Count, TArray<FLyraInventoryItemSlotHandle>& OutSlotHandles);
+
 
 	virtual void PostInventoryUpdate(FLyraInventoryItemArray& InventoryRef, TArray<FLyraInventoryItemSlotHandle>& SlotHandles);
 	virtual void PopulateSlotReferenceArray(FLyraInventoryItemArray& InventoryRef, TArray<FLyraInventoryItemSlotHandle>& SlotHandles);
+
+public:
+	UFUNCTION(BlueprintCallable, Category = "Inventory | Query")
+	bool Query_GetAllSlotHandles(const FLyraInventoryQuery& Query, TArray<FLyraInventoryItemSlotHandle>& OutSlotHandles);
+
+	UFUNCTION(BlueprintCallable, Category = "Inventory | Query")
+	bool Query_GetAllSlots(const FLyraInventoryQuery& Query, TArray<FLyraInventoryItemSlot>& OutSlots);
+
+	UFUNCTION(BlueprintCallable, Category = "Inventory | Query")
+	bool Query_GetAllItems(const FLyraInventoryQuery& Query, TArray<ULyraInventoryItemInstance*>& OutItems);
+
+	// TODO: Manually sort by id?
+
 protected:
 	UFUNCTION()
-	void OnItemSlotUpdate(ULyraInventoryComponent* InventoryComponent, const FLyraInventoryItemSlotHandle& SlotHandle, 
-	ULyraInventoryItemInstance* CurrentItem, ULyraInventoryItemInstance* PreviousItem);
-
+	void OnItemSlotUpdate(ULyraInventoryComponent* InventoryComponent, const FLyraInventoryPayload& Payload);
 
 
 public:
 	DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnInventoryUpdateDelegate, ULyraInventoryComponent*, InventoryComponent);
 	DECLARE_MULTICAST_DELEGATE_OneParam(FOnInventoryUpdateDelegateNative, ULyraInventoryComponent*);
 	
-	DECLARE_DYNAMIC_MULTICAST_DELEGATE_FourParams(FOnItemSlotUpdateDelegate,
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnItemSlotUpdateDelegate,
 		ULyraInventoryComponent*, InventoryComponent,
-		const FLyraInventoryItemSlotHandle&, SlotHandle,
-		ULyraInventoryItemInstance*, CurrentItem,
-		ULyraInventoryItemInstance*, PreviousItem);
-	DECLARE_MULTICAST_DELEGATE_FourParams(FOnItemSlotUpdateDelegateNative,
+		const FLyraInventoryPayload&, Payload);
+	DECLARE_MULTICAST_DELEGATE_TwoParams(FOnItemSlotUpdateDelegateNative,
 		ULyraInventoryComponent*, /* InventoryComponent */
-		const FLyraInventoryItemSlotHandle&, /* SlotHandle */
-		ULyraInventoryItemInstance*, /* CurrentItem */
-		ULyraInventoryItemInstance* /* PreviousItem */);
+		const FLyraInventoryPayload& /* Payload */);
 	
 public:
 	FOnInventoryUpdateDelegateNative& OnInventoryUpdateDelegate(){ return OnInventoryUpdateDelegateNative; }
 	FOnItemSlotUpdateDelegateNative& OnItemSlotUpdateDelegate(){ return OnItemSlotUpdateDelegateNative; }
-	
-private:
 
+private:
 	UPROPERTY(BlueprintAssignable, meta = (DisplayName = "OnInventoryUpdate" ), Category = Inventory)
 	FOnInventoryUpdateDelegate BP_OnInventoryUpdate;
 	
@@ -193,25 +188,6 @@ private:
 	mutable FOnInventoryUpdateDelegateNative OnInventoryUpdateDelegateNative;
 	mutable FOnItemSlotUpdateDelegateNative OnItemSlotUpdateDelegateNative;
 
-public:
-	UFUNCTION(BlueprintCallable, Category = "Inventory | Item Query")
-	bool Query_GetAllSlotHandles(const FLyraInventoryQuery& Query, TArray<FLyraInventoryItemSlotHandle>& OutSlotHandles);
-	// TODO: query get all items
-
-	UFUNCTION(BlueprintCallable, Category = "Inventory | Item Query")
-	bool Query_GetAllSlots(const FLyraInventoryQuery& Query, TArray<FLyraInventoryItemSlot>& OutSlots);
-
-	UFUNCTION(BlueprintCallable, Category = "Inventory | Item Query")
-	bool Query_GetAllItems(const FLyraInventoryQuery& Query, TArray<ULyraInventoryItemInstance*>& OutItems);
-
-	// TODO: Manually sort by id?
-protected:
-	//Deprecated
-	// ULyraInventoryProcessor_Bag* GetProcessorBag(FGameplayTagContainer SlotTags);
-	
-	// UPROPERTY(EditAnywhere, Category = Inventory)
-	// TMap<ELyraItemCategory, FProcessorArray> CategoryToProcessors;
-
 private:
 	friend class ULyraInventoryProcessor_Bag;
 
@@ -221,15 +197,12 @@ private:
 	UPROPERTY()
 	TObjectPtr<UAbilitySystemComponent> AbilitySystemComponent;
 
-	int32 IdCounter = 0;
-
-protected:
-	FLyraInventoryItemSlot GuardSlot;
+	int32 IdCounter;
 
 private:
 	UPROPERTY()
 	FLyraInventoryItemArray Inventory;
-	// TODO: current inventory
+
 	TArray<FLyraInventoryItemSlotHandle> AllSlotHandles;
 
 };

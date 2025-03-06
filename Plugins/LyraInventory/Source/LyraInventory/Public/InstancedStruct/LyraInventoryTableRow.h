@@ -4,6 +4,7 @@
 #include "CoreMinimal.h"
 #include "StructUtils/InstancedStruct.h"
 #include "Equipment/LyraEquipmentTypes.h"
+#include "Styling/SlateBrush.h"
 #include "Inventory/LyraItemEnum.h"
 #include "LyraInventoryTableRow.generated.h"
 
@@ -41,7 +42,7 @@ public:
 	FText Description;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Inventory")
-	TObjectPtr<UTexture2D> Icon;
+	FSlateBrush Brush;
 };
 
 USTRUCT(meta = (DisplayName = "Fragment_World", ScriptName = "Fragment_World"))

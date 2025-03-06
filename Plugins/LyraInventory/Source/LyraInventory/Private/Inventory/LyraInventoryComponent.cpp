@@ -14,6 +14,7 @@ ULyraInventoryComponent::ULyraInventoryComponent(const FObjectInitializer &Objec
     : Super(ObjectInitializer)
 {
 	bWantsInitializeComponent = true;
+	IdCounter = 0;
 }
 
 UAbilitySystemComponent *ULyraInventoryComponent::GetOwnerAbilitySystemComponent()
@@ -96,10 +97,6 @@ ULyraInventoryProcessor *ULyraInventoryComponent::AddProcessor(TSubclassOf<ULyra
 
 	ULyraInventoryProcessor *NewProcessor = NewObject<ULyraInventoryProcessor>(this, ProcessorClass);
 	NewProcessor->FragmentTags = ProcessorTags;
-	// NewProcessor->ItemCategory = InItemCategory;
-	//  1
-
-	// CategoryToProcessors[InItemCategory].Processors.Add(NewProcessor);
 
 	Processors.Add(NewProcessor);
 
@@ -119,7 +116,6 @@ ULyraInventoryProcessor *ULyraInventoryComponent::AddProcessor(TSubclassOf<ULyra
 
 ULyraInventoryProcessor *ULyraInventoryComponent::FindFirstProcessor(ProcessorQueryPredicate Predicate) const
 {
-	// 1
 	for (const auto &Processor : Processors)
 	{
 		if (IsValid(Processor))
@@ -133,7 +129,6 @@ ULyraInventoryProcessor *ULyraInventoryComponent::FindFirstProcessor(ProcessorQu
 
 void ULyraInventoryComponent::FindAllProcessors(TArray<ULyraInventoryProcessor *> &OutProcessors, ProcessorQueryPredicate Predicate) const
 {
-	// 1
 	for (const auto &Processor : Processors)
 	{
 		if (IsValid(Processor))
@@ -141,38 +136,6 @@ void ULyraInventoryComponent::FindAllProcessors(TArray<ULyraInventoryProcessor *
 			OutProcessors.Add(Processor);
 		}
 	}
-}
-
-// ULyraInventoryProcessor *ULyraInventoryComponent::FindFirstProcessorMatchingTags(TSubclassOf<ULyraInventoryProcessor> ProcessorClass, FGameplayTagContainer InSlotTags)
-// {
-// 	return FindFirstProcessor([&ProcessorClass, &InSlotTags](const ULyraInventoryProcessor *Processor, FGameplayTagContainer SlotTags) -> bool
-// 				  {
-// 		// TODO: need to check HasAll?
-// 		return Processor->IsA(ProcessorClass) && InSlotTags.HasAll(SlotTags); });
-// }
-
-bool ULyraInventoryComponent::LootItem(ULyraInventoryItemInstance *Item, FGameplayTag EventTag)
-{
-	FLyraInventoryTableRowFragment_UI Fragment_UI;
-	if (ULyraInventoryLibrary::FindFragment_UI(Item, Fragment_UI))
-	{
-		FGameplayTagContainer TagContainer;
-		Item->GetOwnedGameplayTags(TagContainer);
-		// TODO: check,shrink scope
-
-		for (auto &Slot : Inventory.Slots)
-		{
-			FLyraInventoryItemSlotHandle Handle = FLyraInventoryItemSlotHandle(Slot, this);
-			if (AcceptsItem(Item, Handle))
-			{
-				if (PlaceItemIntoSlot(Item, Handle))
-				{
-					return true;
-				}
-			}
-		}
-	}
-	return false;
 }
 
 ULyraInventoryProcessor *ULyraInventoryComponent::K2_FindFirstProcessor(TSubclassOf<ULyraInventoryProcessor> ProcessorClass)
@@ -216,6 +179,29 @@ TArray<ULyraInventoryProcessor *> ULyraInventoryComponent::K2_FindAllProcessorsM
 	return OutProcessors;
 }
 
+bool ULyraInventoryComponent::LootItem(ULyraInventoryItemInstance *Item, FGameplayTag EventTag)
+{
+	FLyraInventoryTableRowFragment_UI Fragment_UI;
+	if (ULyraInventoryLibrary::FindFragment_UI(Item, Fragment_UI))
+	{
+		FGameplayTagContainer TagContainer;
+		Item->GetOwnedGameplayTags(TagContainer);
+		// TODO: 缩小查询范围
+		for (auto &Slot : Inventory.Slots)
+		{
+			FLyraInventoryItemSlotHandle Handle = FLyraInventoryItemSlotHandle(Slot, this);
+			if (AcceptsItem(Item, Handle))
+			{
+				if (PlaceItemIntoSlot(Item, Handle))
+				{
+					return true;
+				}
+			}
+		}
+	}
+	return false;
+}
+
 bool ULyraInventoryComponent::PlaceItemIntoSlot(ULyraInventoryItemInstance *Item, const FLyraInventoryItemSlotHandle &ItemHandle)
 {
 	if (!IsValidItemSlot(ItemHandle))
@@ -237,10 +223,9 @@ bool ULyraInventoryComponent::PlaceItemIntoSlot(ULyraInventoryItemInstance *Item
 	Slot.ItemInstance = Item;
 
 	OnInventoryUpdateDelegate().Broadcast(this);
+	OnItemSlotUpdateDelegate().Broadcast(this, FLyraInventoryPayload(ItemHandle, Item, PreviousItem));
 	BP_OnInventoryUpdate.Broadcast(this);
-
-	// OnItemSlotUpdateDelegate().Broadcast(this, ItemHandle, Item, PreviousItem);
-	// BP_OnItemSlotUpdate.Broadcast(this, ItemHandle, Item, PreviousItem);
+	BP_OnItemSlotUpdate.Broadcast(this, FLyraInventoryPayload(ItemHandle, Item, PreviousItem));
 
 	return true;
 }
@@ -255,7 +240,6 @@ bool ULyraInventoryComponent::RemoveItemFromInventory(const FLyraInventoryItemSl
 	if (!IsValidItemSlot(ItemHandle))
 		return false;
 
-	// preserve one more slot
 	FLyraInventoryItemSlot &ItemSlot = GetItemSlot(ItemHandle);
 	ULyraInventoryItemInstance *PreviousItem = ItemSlot.ItemInstance;
 
@@ -265,19 +249,19 @@ bool ULyraInventoryComponent::RemoveItemFromInventory(const FLyraInventoryItemSl
 	ItemSlot.ItemInstance = nullptr;
 
 	// TODO : sort after removing item?
-	if (bNeedSort)
-	{
-		int32 Index = Inventory.Slots.Find(ItemSlot);
-		if (Index != INDEX_NONE)
-		{
-		}
-	}
+	// if (bNeedSort)
+	// {
+	// 	int32 Index = Inventory.Slots.Find(ItemSlot);
+	// 	if (Index != INDEX_NONE)
+	// 	{
+	// 	}
+	// }
 
 	OnInventoryUpdateDelegate().Broadcast(this);
 	BP_OnInventoryUpdate.Broadcast(this);
 
-	OnItemSlotUpdateDelegate().Broadcast(this, ItemHandle, ItemSlot.ItemInstance, PreviousItem);
-	BP_OnItemSlotUpdate.Broadcast(this, ItemHandle, ItemSlot.ItemInstance, PreviousItem);
+	OnItemSlotUpdateDelegate().Broadcast(this, FLyraInventoryPayload(ItemHandle, ItemSlot.ItemInstance, PreviousItem));
+	BP_OnItemSlotUpdate.Broadcast(this, FLyraInventoryPayload(ItemHandle, ItemSlot.ItemInstance, PreviousItem));
 
 	return true;
 }
@@ -294,7 +278,6 @@ ULyraInventoryItemInstance *ULyraInventoryComponent::GetItemInstanceBySlot(const
 FLyraInventoryItemSlot &ULyraInventoryComponent::GetItemSlot(const FLyraInventoryItemSlotHandle &Handle)
 {
 	check(IsValidItemSlot(Handle));
-	//
 
 	for (auto &Slot : Inventory.Slots)
 	{
@@ -304,13 +287,11 @@ FLyraInventoryItemSlot &ULyraInventoryComponent::GetItemSlot(const FLyraInventor
 		}
 	}
 
-	return GuardSlot;
+	return Inventory.Slots[0];
 }
 
 bool ULyraInventoryComponent::IsValidItemSlot(const FLyraInventoryItemSlotHandle &Handle)
 {
-	//
-
 	for (const auto &SlotHandle : AllSlotHandles)
 	{
 		if (Handle == SlotHandle)
@@ -369,7 +350,6 @@ void ULyraInventoryComponent::RemoveInventorySlot(const FLyraInventoryItemSlotHa
 void ULyraInventoryComponent::BulkCreateInventorySlots(const FGameplayTagContainer &SlotTags,
 						       const FLyraInventoryItemFilterHandle &Filter, int32 Count, TArray<FLyraInventoryItemSlotHandle> &OutSlotHandles)
 {
-	// TODO:
 	for (int i = 0; i < Count; i++)
 	{
 		FLyraInventoryItemSlot Slot;
@@ -377,10 +357,7 @@ void ULyraInventoryComponent::BulkCreateInventorySlots(const FGameplayTagContain
 		Slot.SlotTags = SlotTags;
 		Slot.ItemSlotFilter = Filter;
 		Slot.Owner = this;
-
 		Inventory.Slots.Add(Slot);
-		// Inventory.MarkItemDirty(Slot);
-
 		IdCounter++;
 
 		OutSlotHandles.Add(FLyraInventoryItemSlotHandle(Slot, this));
@@ -404,64 +381,69 @@ void ULyraInventoryComponent::PopulateSlotReferenceArray(FLyraInventoryItemArray
 	}
 }
 
-void ULyraInventoryComponent::OnItemSlotUpdate(ULyraInventoryComponent *InventoryComponent, const FLyraInventoryItemSlotHandle &SlotHandle, ULyraInventoryItemInstance *CurrentItem, ULyraInventoryItemInstance *PreviousItem)
-{
-	ForEachProcessor([InventoryComponent, SlotHandle, CurrentItem, PreviousItem](ULyraInventoryProcessor *Processor)
-			 { Processor->OnItemSlotChange(SlotHandle, CurrentItem, PreviousItem); });
-}
-
 bool ULyraInventoryComponent::Query_GetAllSlotHandles(const FLyraInventoryQuery &Query, TArray<FLyraInventoryItemSlotHandle> &OutSlotHandles)
 {
-	ForEachProcessor([&Query, &OutSlotHandles, this](ULyraInventoryProcessor *Processor)
-			 {
 
-			for(auto& ItemSlot : Inventory.Slots)
-			if(Query.MatchesSlot(ItemSlot))
-			{
-				OutSlotHandles.Add(FLyraInventoryItemSlotHandle(ItemSlot, this));
-			} });
+	for (auto &ItemSlot : Inventory.Slots)
+	{
+		if (Query.MatchesSlot(ItemSlot))
+		{
+			OutSlotHandles.Add(FLyraInventoryItemSlotHandle(ItemSlot, this));
+		}
+	}
+
 	return OutSlotHandles.Num() > 0;
-
-	// if(ULyraInventoryProcessor_Bag* Processor_Bag = GetProcessorBag(Query.))
-	// {
-	// 	for(auto& ItemSlot : Processor_Bag->Inventory.Slots)
-	// 	{
-	// 		if(Query.MatchesSlot(ItemSlot))
-	// 		{
-	// 			OutSlotHandles.Add(FLyraInventoryItemSlotHandle(ItemSlot, this));
-	// 		}
-	// 	}
-	// }
-	// return OutSlotHandles.Num() > 0;
 }
 
 bool ULyraInventoryComponent::Query_GetAllSlots(const FLyraInventoryQuery &Query, TArray<FLyraInventoryItemSlot> &OutSlots)
 {
-	ForEachProcessor([&Query, &OutSlots, this](ULyraInventoryProcessor *Processor)
-			 {
+	TArray<int32> Indices;
+	TArray<int32> Instances;
 
-			for (auto& ItemSlot : Inventory.Slots)
-				if (Query.MatchesSlot(ItemSlot))
-				{
-					OutSlots.Add(ItemSlot);
-				} });
+	for (int i = 0; i < Inventory.Slots.Num(); ++i)
+	{
+		if (Query.MatchesSlot(Inventory.Slots[i]))
+		{
+			if (IsValid(Inventory.Slots[i].ItemInstance))
+				Instances.Add(i);
+			Indices.Add(i);
+		}
+	}
+	int i = 0, j = 0;
+	while (i < Indices.Num() && j < Instances.Num())
+	{
+		if (IsValid(Inventory.Slots[Indices[i]].ItemInstance))
+		{
+			i++;
+		}
+		else
+		{
+			// TODO: check SlotFiler
+			Inventory.Slots[Indices[i]].ItemInstance = Inventory.Slots[Instances[j]].ItemInstance;
+			Inventory.Slots[Instances[j]].ItemInstance = nullptr;
+		}
+		OutSlots.Add(Inventory.Slots[Indices[i]]);
+		j++;
+	}
+
 	return OutSlots.Num() > 0;
 }
 
 bool ULyraInventoryComponent::Query_GetAllItems(const FLyraInventoryQuery &Query, TArray<ULyraInventoryItemInstance *> &OutItems)
 {
-	ForEachProcessor([&Query, &OutItems, this](ULyraInventoryProcessor *Processor)
-			 {
+	for (auto &ItemSlot : Inventory.Slots)
+	{
+		if (Query.MatchesSlot(ItemSlot))
+		{
+			OutItems.Add(ItemSlot.ItemInstance);
+		}
+	}
 
-			for (auto& ItemSlot : Inventory.Slots)
-				if (Query.MatchesSlot(ItemSlot))
-				{
-					OutItems.Add(ItemSlot.ItemInstance);
-				} });
 	return OutItems.Num() > 0;
 }
 
-// ULyraInventoryProcessor_Bag *ULyraInventoryComponent::GetProcessorBag(FGameplayTagContainer SlotTags)
-// {
-// 	return FindFirstProcessorMatchingTags<ULyraInventoryProcessor_Bag>(SlotTags);
-// }
+void ULyraInventoryComponent::OnItemSlotUpdate(ULyraInventoryComponent *InventoryComponent, const FLyraInventoryPayload &Payload)
+{
+	ForEachProcessor([InventoryComponent, Payload](ULyraInventoryProcessor *Processor)
+			 { Processor->OnItemSlotChange(Payload.SlotHandle, Payload.CurrentItem, Payload.PreviousItem); });
+}

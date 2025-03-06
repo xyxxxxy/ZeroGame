@@ -11,13 +11,11 @@ bool FLyraInventoryItemSlotFilter::AcceptsItem(ULyraInventoryItemInstance* ItemI
 		return false;
 	}
 
-	// TODO : Stack = 1
-
-	FGameplayTagContainer StackTags;
-	ItemInstance->GetOwnedGameplayTags(StackTags);
+	FGameplayTagContainer ItemTags;
+	ItemInstance->GetOwnedGameplayTags(ItemTags);
 	if(!FilterQuery.IsEmpty())
 	{
-		if(!FilterQuery.Matches(StackTags))
+		if(!FilterQuery.Matches(ItemTags))
 		{
 			return false;
 		}
@@ -28,7 +26,6 @@ bool FLyraInventoryItemSlotFilter::AcceptsItem(ULyraInventoryItemInstance* ItemI
 bool FLyraInventoryItemSlotFilter::NetSerialize(FArchive& Ar, class UPackageMap* Map, bool& bOutSuccess)
 {
 	FGameplayTagQuery::StaticStruct()->GetCppStructOps()->NetSerialize(Ar, Map, bOutSuccess, &FilterQuery);
-	Ar << bForceSingleStack;
 
 	bOutSuccess = true;
 	return true;	
@@ -66,6 +63,7 @@ bool FLyraInventoryItemFilterHandle::NetSerialize(FArchive& Ar, class UPackageMa
 }
 
 ////////////////////////////////////////
+// TODO: Need to check Instance is valid?
 bool FLyraInventoryQuery::MatchesSlot(const FLyraInventoryItemSlot& ItemSlot) const
 {
 	bool bMatches = true;

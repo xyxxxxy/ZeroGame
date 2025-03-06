@@ -29,18 +29,14 @@ struct LYRAINVENTORY_API FLyraInventoryItemSlotFilter
 public:
 	FLyraInventoryItemSlotFilter()
 	{
-		bForceSingleStack = false;
 	}
 	FLyraInventoryItemSlotFilter(const FLyraInventoryItemSlotFilter& Other)
-	: FilterQuery(Other.FilterQuery), bForceSingleStack(Other.bForceSingleStack)
+	: FilterQuery(Other.FilterQuery)
 	{
 	}
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Filter")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Filter)
 	FGameplayTagQuery FilterQuery;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Filter")
-	bool bForceSingleStack;
 
 	bool AcceptsItem(ULyraInventoryItemInstance* ItemInstance) const;
 	bool NetSerialize(FArchive& Ar, class UPackageMap* Map, bool& bOutSuccess);
@@ -188,7 +184,7 @@ public:
 	}
 	
 
-	bool GetIsValid() const {return SlotId > 0;}
+	bool IsValid() const {return SlotId > 0;}
 	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = Inventory)
 	int32 SlotId;
@@ -205,7 +201,6 @@ public:
 		const bool bIdMatch = SlotId == Other.SlotId;
 		const bool bInventoryMatch = ParentInventory == Other.ParentInventory;
 		const bool bTagsMatch = SlotTags.HasAllExact(Other.SlotTags);
-		//const bool bIsCategoryMatch = ItemCategory == Other.ItemCategory;
 		return bIdMatch && bInventoryMatch && bTagsMatch;
 	}
 
@@ -218,7 +213,6 @@ public:
 	{
 		const bool bIdMatch = SlotId == Other.SlotId;
 		const bool bTagsMatch = SlotTags.HasAllExact(Other.SlotTags);
-		//const bool bIsCategoryMatch = ItemCategory == Other.ItemCategory;
 		return bIdMatch && bTagsMatch;
 	}
 
@@ -263,5 +257,5 @@ LYRAINVENTORY_API inline bool IsValid(const FLyraInventoryItemFilterHandle& Filt
 
 LYRAINVENTORY_API inline bool IsValid(const FLyraInventoryItemSlotHandle& SlotHandle)
 {
-	return SlotHandle.GetIsValid();
+	return SlotHandle.IsValid();
 }
