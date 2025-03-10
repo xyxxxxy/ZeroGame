@@ -2,6 +2,7 @@
 /.vs
 /.vscode
 /Content
+/Data
 /DerivedDataCache
 /Intermediate
 /Saved
@@ -12,6 +13,7 @@
 /Plugins/DialogueTree/Content
 /Plugins/DialogueTree/Intermediate
 /Plugins/GameplayMessageRouter/Intermediate
+/Plugins/GenericMessage/Intermediate
 /Plugins/LyraInventory/Content
 /Plugins/LyraInventory/Intermediate
 /Plugins/ModularGameplayActors/Intermediate

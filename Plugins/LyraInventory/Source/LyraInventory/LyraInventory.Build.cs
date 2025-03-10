@@ -29,11 +29,12 @@ public class LyraInventory : ModuleRules
 			{
 				"Core", 
 				"GameplayAbilities",
+				"CommonUI",
 				"GameplayTags",
 				"GameplayTasks",
 				"DeveloperSettings",
 				"NetCore",
-                "CoreUObject"
+                		"CoreUObject"
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
@@ -46,6 +47,9 @@ public class LyraInventory : ModuleRules
 				"Engine",
 				"Slate",
 				"SlateCore",
+				"CommonUI",
+				"CommonInput",
+				"UMG"
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);
