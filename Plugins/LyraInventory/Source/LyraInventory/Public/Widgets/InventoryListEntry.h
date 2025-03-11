@@ -7,9 +7,10 @@
 
 struct FGeometry;
 struct FFocusEvent;
+class USlotHandleObject;
 
 UCLASS(Abstract, NotBlueprintable, meta = (Category = "Inventory", DisableNativeTick))
-class LYRAINVENTORY_API UGameSettingListEntryBase : public UCommonUserWidget, public IUserObjectListEntry
+class LYRAINVENTORY_API UInventorySlotEntryBase : public UCommonUserWidget, public IUserObjectListEntry
 {
 	GENERATED_BODY()
 
@@ -20,8 +21,10 @@ class LYRAINVENTORY_API UGameSettingListEntryBase : public UCommonUserWidget, pu
 // 	virtual void HandleEditConditionChanged(UGameSetting* InSetting);
 // 	virtual void RefreshEditableState(const FGameSettingEditableState& InEditableState);
 
-// protected:
-// 	virtual void NativeOnEntryReleased() override;
+public:
+	virtual void SetSlotHandleObjects(USlotHandleObject* InObject);
+protected:
+	virtual void NativeOnEntryReleased() override;
 
 	
 protected:
@@ -34,10 +37,24 @@ protected:
 protected:
 	bool bSuspendChangeUpdates = false;
 
+	UPROPERTY(Transient)
+	TObjectPtr<USlotHandleObject> SlotHandleObject;
 
 	FText DisplayNameOverride = FText::GetEmpty();
 
-// private:
+private:
 // 	void HandleSettingChanged(UGameSetting* InSetting, EGameSettingChangeReason Reason);
+	UPROPERTY(BlueprintReadOnly, meta = (BindWidgetOptional, BlueprintProtected = true, AllowPrivateAccess = true))
+	TObjectPtr<UUserWidget> Background;
+};
+
+
+UCLASS(Abstract, Blueprintable, meta = (Category = "Inventory", DisableNativeTick))
+class LYRAINVENTORY_API UInventorySlotEntry : public UInventorySlotEntryBase
+{
+	GENERATED_BODY()
+public:
+	virtual void SetSlotHandleObjects(USlotHandleObject* InObject) override;
 
 };
+

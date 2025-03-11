@@ -49,7 +49,8 @@ public class LyraInventory : ModuleRules
 				"SlateCore",
 				"CommonUI",
 				"CommonInput",
-				"UMG"
+				"UMG",
+				"InputCore"
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);

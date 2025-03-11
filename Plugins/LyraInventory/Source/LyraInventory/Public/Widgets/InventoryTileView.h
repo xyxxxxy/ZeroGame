@@ -8,7 +8,7 @@ class STableViewBase;
 /**
  * TileView specialized to navigate on focus for consoles & enable scrolling when not focused for touch
  */
-UCLASS(meta = (DisableNativeTick))
+UCLASS(meta = (DisableNativeTick, EntryClass = GameSettingListEntryBase))
 class LYRAINVENTORY_API UInventoryTileView : public UCommonTileView
 {
 	GENERATED_BODY()
@@ -18,4 +18,7 @@ public:
 
 protected:
 	virtual UUserWidget& OnGenerateEntryWidgetInternal(UObject* Item, TSubclassOf<UUserWidget> DesiredEntryClass, const TSharedRef<STableViewBase>& OwnerTable) override;
+
+private:
+	
 };
