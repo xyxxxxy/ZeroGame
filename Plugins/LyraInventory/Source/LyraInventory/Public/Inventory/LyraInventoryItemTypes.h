@@ -169,6 +169,7 @@ public:
 	{
 	}
 	
+	// main construct methods
 	FLyraInventoryItemSlotHandle(const FLyraInventoryItemSlot& FromSlot, ULyraInventoryComponent* InParentInventory)
 	: SlotId(FromSlot.SlotId), SlotTags(FromSlot.SlotTags), ParentInventory(InParentInventory)
 	{

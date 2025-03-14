@@ -16,11 +16,12 @@ UUserWidget &UInventoryTileView::OnGenerateEntryWidgetInternal(UObject *Item, TS
         // 生成EntryWidget
         UInventorySlotEntryBase &EntryWidget = GenerateTypedEntry<UInventorySlotEntryBase>(SettingEntryClass, OwnerTable);
 
+        // Returns if the widget is currently being displayed in the designer, it may want to display different data
+        // 在编辑器中不执行
         if (!IsDesignTime())
         {
                 // OnGenerateEntryWidgetInternal  设置SlotHandleObjectItem
                 EntryWidget.SetSlotHandleObjects(SlotHandleObjectItem);
         }
-
         return EntryWidget;
 }
