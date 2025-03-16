@@ -22,6 +22,7 @@ UUserWidget &UInventoryTileView::OnGenerateEntryWidgetInternal(UObject *Item, TS
         {
                 // OnGenerateEntryWidgetInternal  设置SlotHandleObjectItem
                 EntryWidget.SetSlotHandleObjects(SlotHandleObjectItem);
+                
         }
         return EntryWidget;
 }

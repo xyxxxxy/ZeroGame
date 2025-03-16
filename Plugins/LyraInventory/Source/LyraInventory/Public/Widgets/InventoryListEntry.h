@@ -78,5 +78,4 @@ private: // Bound Widgets
 
 	UPROPERTY(BlueprintReadOnly, meta = (BindWidget, BlueprintProtected = true, AllowPrivateAccess = true))
 	TObjectPtr<UImage> Image_Item;
-
 };

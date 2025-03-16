@@ -10,21 +10,12 @@
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(CommonTabListWidgetBase)
 
-UCommonTabListWidgetBase::UCommonTabListWidgetBase(const FObjectInitializer& ObjectInitializer)
-	: Super(ObjectInitializer)
-	, bAutoListenForInput(false)
-	, bDeferRebuildingTabList(false)
-	, TabButtonGroup(nullptr)
-	, bIsListeningForInput(false)
-	, RegisteredTabsByID()
-	, TabButtonWidgetPool(*this)
-	, ActiveTabID(NAME_None)
-	, bIsRebuildingList(false)
-	, bPendingRebuild(false)
+UCommonTabListWidgetBase::UCommonTabListWidgetBase(const FObjectInitializer &ObjectInitializer)
+    : Super(ObjectInitializer), bAutoListenForInput(false), bDeferRebuildingTabList(false), TabButtonGroup(nullptr), bIsListeningForInput(false), RegisteredTabsByID(), TabButtonWidgetPool(*this), ActiveTabID(NAME_None), bIsRebuildingList(false), bPendingRebuild(false)
 {
 }
- 
-void UCommonTabListWidgetBase::SetLinkedSwitcher(UCommonAnimatedSwitcher* CommonSwitcher)
+
+void UCommonTabListWidgetBase::SetLinkedSwitcher(UCommonAnimatedSwitcher *CommonSwitcher)
 {
 	if (LinkedSwitcher.Get() != CommonSwitcher)
 	{
@@ -34,12 +25,12 @@ void UCommonTabListWidgetBase::SetLinkedSwitcher(UCommonAnimatedSwitcher* Common
 	}
 }
 
-UCommonAnimatedSwitcher* UCommonTabListWidgetBase::GetLinkedSwitcher() const
+UCommonAnimatedSwitcher *UCommonTabListWidgetBase::GetLinkedSwitcher() const
 {
 	return LinkedSwitcher.Get();
 }
 
-bool UCommonTabListWidgetBase::RegisterTab(FName TabNameID, TSubclassOf<UCommonButtonBase> ButtonWidgetType, UWidget* ContentWidget, const int32 TabIndex /*= INDEX_NONE*/)
+bool UCommonTabListWidgetBase::RegisterTab(FName TabNameID, TSubclassOf<UCommonButtonBase> ButtonWidgetType, UWidget *ContentWidget, const int32 TabIndex /*= INDEX_NONE*/)
 {
 	bool bAreParametersValid = true;
 
@@ -54,7 +45,7 @@ bool UCommonTabListWidgetBase::RegisterTab(FName TabNameID, TSubclassOf<UCommonB
 	{
 		bAreParametersValid = false;
 	}
-	
+
 	// NOTE: Adding the button to the group may change it's selection, which raises an event we listen to,
 	// which can only properly be handled if we already know that this button is associated with a registered tab.
 	if (!ensure(TabButtonGroup))
@@ -68,7 +59,7 @@ bool UCommonTabListWidgetBase::RegisterTab(FName TabNameID, TSubclassOf<UCommonB
 	}
 
 	// There is no PlayerController in Designer
-	UCommonButtonBase* const NewTabButton = TabButtonWidgetPool.GetOrCreateInstance<UCommonButtonBase>(ButtonWidgetType);
+	UCommonButtonBase *const NewTabButton = TabButtonWidgetPool.GetOrCreateInstance<UCommonButtonBase>(ButtonWidgetType);
 	if (!ensureMsgf(NewTabButton, TEXT("Failed to create tab button. Aborting tab registration.")))
 	{
 		return false;
@@ -82,7 +73,7 @@ bool UCommonTabListWidgetBase::RegisterTab(FName TabNameID, TSubclassOf<UCommonB
 
 	if (bRequiresRebuild)
 	{
-		for (TPair<FName, FCommonRegisteredTabInfo>& Pair : RegisteredTabsByID)
+		for (TPair<FName, FCommonRegisteredTabInfo> &Pair : RegisteredTabsByID)
 		{
 			if (NewTabIndex <= Pair.Value.TabIndex)
 			{
@@ -105,9 +96,9 @@ bool UCommonTabListWidgetBase::RegisterTab(FName TabNameID, TSubclassOf<UCommonB
 
 	TabButtonGroup->AddWidget(NewTabButton);
 	HandleTabCreation(TabNameID, NewTabInfo.TabButton);
-	
+
 	OnTabButtonCreation.Broadcast(TabNameID, NewTabInfo.TabButton);
-	
+
 	if (bRequiresRebuild)
 	{
 		if (bDeferRebuildingTabList)
@@ -130,7 +121,7 @@ bool UCommonTabListWidgetBase::RegisterTab(FName TabNameID, TSubclassOf<UCommonB
 
 bool UCommonTabListWidgetBase::RemoveTab(FName TabNameID)
 {
-	const FCommonRegisteredTabInfo* TabInfo = RegisteredTabsByID.Find(TabNameID);
+	const FCommonRegisteredTabInfo *TabInfo = RegisteredTabsByID.Find(TabNameID);
 
 	if (!TabInfo)
 	{
@@ -139,7 +130,7 @@ bool UCommonTabListWidgetBase::RemoveTab(FName TabNameID)
 
 	if (TabInfo->TabIndex >= 0)
 	{
-		for (TPair<FName, FCommonRegisteredTabInfo>& RegisteredTabByID : RegisteredTabsByID)
+		for (TPair<FName, FCommonRegisteredTabInfo> &RegisteredTabByID : RegisteredTabsByID)
 		{
 			if (RegisteredTabByID.Value.TabIndex > TabInfo->TabIndex)
 			{
@@ -162,17 +153,17 @@ void UCommonTabListWidgetBase::RemoveAllTabs()
 	{
 		TabButtonGroup->RemoveAll();
 	}
-	
+
 	for (TMap<FName, FCommonRegisteredTabInfo>::TIterator Iter(RegisteredTabsByID); Iter; ++Iter)
 	{
-		if (UCommonButtonBase* const TabButton =  Iter->Value.TabButton)
+		if (UCommonButtonBase *const TabButton = Iter->Value.TabButton)
 		{
 			TabButton->RemoveFromParent();
-			
+
 			const FName Key = Iter->Key;
 
 			RegisteredTabsByID.Remove(Key);
-			
+
 			HandleTabRemoval(Key, TabButton);
 			OnTabButtonRemoval.Broadcast(Key, TabButton);
 		}
@@ -245,7 +236,7 @@ bool UCommonTabListWidgetBase::IsRebuildingList() const
 
 bool UCommonTabListWidgetBase::SelectTabByID(FName TabNameID, bool bSuppressClickFeedback)
 {
-	for (auto& TabPair : RegisteredTabsByID)
+	for (auto &TabPair : RegisteredTabsByID)
 	{
 		if (TabPair.Key == TabNameID && ensure(TabPair.Value.TabButton))
 		{
@@ -261,7 +252,7 @@ FName UCommonTabListWidgetBase::GetSelectedTabId() const
 {
 	FName FoundId = NAME_None;
 
-	for (auto& TabPair : RegisteredTabsByID)
+	for (auto &TabPair : RegisteredTabsByID)
 	{
 		if (TabPair.Value.TabButton != nullptr && TabPair.Value.TabButton->GetSelected())
 		{
@@ -279,7 +270,7 @@ FName UCommonTabListWidgetBase::GetTabIdAtIndex(int32 Index) const
 
 	if (ensure(Index < RegisteredTabsByID.Num()))
 	{
-		for (auto& TabPair : RegisteredTabsByID)
+		for (auto &TabPair : RegisteredTabsByID)
 		{
 			if (TabPair.Value.TabIndex == Index)
 			{
@@ -294,12 +285,12 @@ FName UCommonTabListWidgetBase::GetTabIdAtIndex(int32 Index) const
 
 void UCommonTabListWidgetBase::SetTabVisibility(FName TabNameID, ESlateVisibility NewVisibility)
 {
-	for (auto& TabPair : RegisteredTabsByID)
+	for (auto &TabPair : RegisteredTabsByID)
 	{
 		if (TabPair.Key == TabNameID && ensure(TabPair.Value.TabButton))
 		{
 			TabPair.Value.TabButton->SetVisibility(NewVisibility);
-			
+
 			if (NewVisibility == ESlateVisibility::Collapsed || NewVisibility == ESlateVisibility::Hidden)
 			{
 				TabPair.Value.TabButton->SetIsInteractionEnabled(false);
@@ -308,7 +299,7 @@ void UCommonTabListWidgetBase::SetTabVisibility(FName TabNameID, ESlateVisibilit
 			{
 				TabPair.Value.TabButton->SetIsInteractionEnabled(true);
 			}
-			
+
 			break;
 		}
 	}
@@ -316,7 +307,7 @@ void UCommonTabListWidgetBase::SetTabVisibility(FName TabNameID, ESlateVisibilit
 
 void UCommonTabListWidgetBase::SetTabEnabled(FName TabNameID, bool bEnable)
 {
-	for (auto& TabPair : RegisteredTabsByID)
+	for (auto &TabPair : RegisteredTabsByID)
 	{
 		if (TabPair.Key == TabNameID && ensure(TabPair.Value.TabButton))
 		{
@@ -336,7 +327,7 @@ void UCommonTabListWidgetBase::SetTabEnabled(FName TabNameID, bool bEnable)
 
 void UCommonTabListWidgetBase::SetTabInteractionEnabled(FName TabNameID, bool bEnable)
 {
-	for (auto& TabPair : RegisteredTabsByID)
+	for (auto &TabPair : RegisteredTabsByID)
 	{
 		if (TabPair.Key == TabNameID && ensure(TabPair.Value.TabButton))
 		{
@@ -354,9 +345,9 @@ void UCommonTabListWidgetBase::SetTabInteractionEnabled(FName TabNameID, bool bE
 	}
 }
 
-void UCommonTabListWidgetBase::DisableTabWithReason(FName TabNameID, const FText& Reason)
+void UCommonTabListWidgetBase::DisableTabWithReason(FName TabNameID, const FText &Reason)
 {
-	for (auto& TabPair : RegisteredTabsByID)
+	for (auto &TabPair : RegisteredTabsByID)
 	{
 		if (TabPair.Key == TabNameID && ensure(TabPair.Value.TabButton))
 		{
@@ -366,9 +357,9 @@ void UCommonTabListWidgetBase::DisableTabWithReason(FName TabNameID, const FText
 	}
 }
 
-UCommonButtonBase* UCommonTabListWidgetBase::GetTabButtonBaseByID(FName TabNameID) const
+UCommonButtonBase *UCommonTabListWidgetBase::GetTabButtonBaseByID(FName TabNameID) const
 {
-	if (const FCommonRegisteredTabInfo* TabInfo = RegisteredTabsByID.Find(TabNameID))
+	if (const FCommonRegisteredTabInfo *TabInfo = RegisteredTabsByID.Find(TabNameID))
 	{
 		return TabInfo->TabButton;
 	}
@@ -389,7 +380,7 @@ void UCommonTabListWidgetBase::NativeOnInitialized()
 void UCommonTabListWidgetBase::NativeConstruct()
 {
 	Super::NativeConstruct();
-	
+
 	if (bAutoListenForInput)
 	{
 		SetListeningForInput(true);
@@ -427,25 +418,25 @@ void UCommonTabListWidgetBase::HandlePostLinkedSwitcherChanged()
 	HandlePostLinkedSwitcherChanged_BP();
 }
 
-void UCommonTabListWidgetBase::HandleTabCreation_Implementation(FName TabNameID, UCommonButtonBase* TabButton)
+void UCommonTabListWidgetBase::HandleTabCreation_Implementation(FName TabNameID, UCommonButtonBase *TabButton)
 {
 }
 
-void UCommonTabListWidgetBase::HandleTabRemoval_Implementation(FName TabNameID, UCommonButtonBase* TabButton)
+void UCommonTabListWidgetBase::HandleTabRemoval_Implementation(FName TabNameID, UCommonButtonBase *TabButton)
 {
 }
 
-const TMap<FName, FCommonRegisteredTabInfo>& UCommonTabListWidgetBase::GetRegisteredTabsByID() const
+const TMap<FName, FCommonRegisteredTabInfo> &UCommonTabListWidgetBase::GetRegisteredTabsByID() const
 {
 	return RegisteredTabsByID;
 }
 
-void UCommonTabListWidgetBase::HandleTabButtonSelected(UCommonButtonBase* SelectedTabButton, int32 ButtonIndex)
+void UCommonTabListWidgetBase::HandleTabButtonSelected(UCommonButtonBase *SelectedTabButton, int32 ButtonIndex)
 {
-	for (auto& TabPair : RegisteredTabsByID)
+	for (auto &TabPair : RegisteredTabsByID)
 	{
-		FCommonRegisteredTabInfo& TabInfo = TabPair.Value;
-			
+		FCommonRegisteredTabInfo &TabInfo = TabPair.Value;
+
 		if (TabInfo.TabButton == SelectedTabButton)
 		{
 			ActiveTabID = TabPair.Key;
@@ -453,7 +444,7 @@ void UCommonTabListWidgetBase::HandleTabButtonSelected(UCommonButtonBase* Select
 			if (TabInfo.ContentInstance || LinkedSwitcher.IsValid())
 			{
 				if (ensureMsgf(TabInfo.ContentInstance, TEXT("A CommonTabListWidget tab button lacks a tab content widget to set its linked switcher to.")) &&
-					ensureMsgf(LinkedSwitcher.IsValid(), TEXT("A CommonTabListWidgetBase.has a registered tab with a content widget to switch to, but has no linked activatable widget switcher. Did you forget to call SetLinkedSwitcher to establish the association?")))
+				    ensureMsgf(LinkedSwitcher.IsValid(), TEXT("A CommonTabListWidgetBase.has a registered tab with a content widget to switch to, but has no linked activatable widget switcher. Did you forget to call SetLinkedSwitcher to establish the association?")))
 				{
 					// There's already an instance of the widget to display, so go for it
 					LinkedSwitcher->SetActiveWidget(TabInfo.ContentInstance);
@@ -465,26 +456,29 @@ void UCommonTabListWidgetBase::HandleTabButtonSelected(UCommonButtonBase* Select
 	}
 }
 
-void UCommonTabListWidgetBase::HandleNextTabInputAction(bool& bPassThrough)
+void UCommonTabListWidgetBase::HandleNextTabInputAction(bool &bPassThrough)
 {
 	HandleNextTabAction();
 }
 
 void UCommonTabListWidgetBase::HandleNextTabAction()
 {
+	OnTabSelectNextButtonPost.Broadcast();
 	if (ensure(TabButtonGroup))
 	{
 		TabButtonGroup->SelectNextButton();
 	}
 }
 
-void UCommonTabListWidgetBase::HandlePreviousTabInputAction(bool& bPassThrough)
+void UCommonTabListWidgetBase::HandlePreviousTabInputAction(bool &bPassThrough)
 {
+
 	HandlePreviousTabAction();
 }
 
 void UCommonTabListWidgetBase::HandlePreviousTabAction()
 {
+	OnTabSelectPreviousButtonPost.Broadcast();
 	if (ensure(TabButtonGroup))
 	{
 		TabButtonGroup->SelectPreviousButton();
@@ -504,10 +498,8 @@ void UCommonTabListWidgetBase::RebuildTabList()
 
 	// Copy the registered tabs (as we are about to clear them) and sort by TabIndex.
 	TMap<FName, FCommonRegisteredTabInfo> SortedRegisteredTabsByID = RegisteredTabsByID;
-	SortedRegisteredTabsByID.ValueSort([](const FCommonRegisteredTabInfo& TabInfoA, const FCommonRegisteredTabInfo& TabInfoB)
-		{
-			return (TabInfoA.TabIndex < TabInfoB.TabIndex);
-		});
+	SortedRegisteredTabsByID.ValueSort([](const FCommonRegisteredTabInfo &TabInfoA, const FCommonRegisteredTabInfo &TabInfoB)
+					   { return (TabInfoA.TabIndex < TabInfoB.TabIndex); });
 
 	// Keep track of the current ActiveTabID so we can restore it after the list is rebuilt.
 	const FName CurrentActiveTabID = ActiveTabID;
@@ -519,7 +511,7 @@ void UCommonTabListWidgetBase::RebuildTabList()
 
 	RegisteredTabsByID = SortedRegisteredTabsByID;
 
-	for (TPair<FName, FCommonRegisteredTabInfo>& Pair : RegisteredTabsByID)
+	for (TPair<FName, FCommonRegisteredTabInfo> &Pair : RegisteredTabsByID)
 	{
 		TabButtonGroup->AddWidget(Pair.Value.TabButton);
 		HandleTabCreation(Pair.Key, Pair.Value.TabButton);
@@ -534,9 +526,9 @@ void UCommonTabListWidgetBase::RebuildTabList()
 	OnTabListRebuilt.Broadcast();
 }
 
-void UCommonTabListWidgetBase::RemoveTab_Internal(const FName TabNameID, const FCommonRegisteredTabInfo& TabInfo)
+void UCommonTabListWidgetBase::RemoveTab_Internal(const FName TabNameID, const FCommonRegisteredTabInfo &TabInfo)
 {
-	UCommonButtonBase* const TabButton = TabInfo.TabButton;
+	UCommonButtonBase *const TabButton = TabInfo.TabButton;
 
 	if (TabButton)
 	{

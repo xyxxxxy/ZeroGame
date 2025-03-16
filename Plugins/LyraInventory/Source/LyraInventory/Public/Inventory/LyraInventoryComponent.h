@@ -185,6 +185,7 @@ private:
 	FOnItemSlotUpdateDelegate BP_OnItemSlotUpdate;
 	
 private:
+	//mutable 只能用来修饰类的数据成员；而被 mutable 修饰的数据成员，可以在 const 成员函数中修改。
 	mutable FOnInventoryUpdateDelegateNative OnInventoryUpdateDelegateNative;
 	mutable FOnItemSlotUpdateDelegateNative OnItemSlotUpdateDelegateNative;
 

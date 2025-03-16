@@ -75,7 +75,7 @@ void UInventorySlotEntry::Refresh()
 	Text_ItemStack->SetText(FText::FromString(""));
 	Image_Item->SetBrush(defaultBrush);
 
-	if (ensure(SlotHandleObject))
+	if (SlotHandleObject)
 	{
 		FLyraInventoryItemSlotHandle SlotHandle = SlotHandleObject->GetPayload().SlotHandle;
 		// SlotHandle.

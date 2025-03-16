@@ -10,6 +10,7 @@ struct FFocusEvent;
 struct FGeometry;
 class USlotHandleObject;
 class UInventoryTileView;
+class UInventorySlotDetailView;
 class ULyraInventoryComponent;
 
 UCLASS(Abstract)
@@ -22,34 +23,56 @@ public:
 
         virtual void NativeOnInitialized() override;
         virtual void NativeConstruct() override;
-
         virtual FReply NativeOnFocusReceived(const FGeometry &InGeometry, const FFocusEvent &InFocusEvent) override;
 
-        void SetFilterQuery(const FLyraInventoryQuery& InQuery);
+        void SetFilterQuery(const FLyraInventoryQuery &InQuery);
+        void RefreshList();
+        USlotHandleObject *GetSelectedObject() const;
+        void RemoveNavigation();
+
+        // UInventoryTileView *GetInventoryTileView() const {return TileView_Inventory;}
+        // UInventorySlotDetailView *GetInventorySlotDetailView() const{return DetailView_Item;}
+
+public:
+        DECLARE_MULTICAST_DELEGATE_OneParam(FOnFocusedSlotHandleObjectChanged, USlotHandleObject *);
+        DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnFocusedSlotHandleObjectChanged_BP, USlotHandleObject *, SlotHandleObject);
+
+        FOnFocusedSlotHandleObjectChanged &OnFocusedSlotHandleObjectChanged() { return OnFocusedSlotHandleObjectChangedNative; }
 
 protected:
         void InitialInventory();
-        void RefreshList();
-        
-        USlotHandleObject* GetSelectedObject() const; 
-        void SelectItems();
-private:
+        void FillItemDetails(USlotHandleObject *SlotHandleObject);
         void HandleSettingItemHoveredChanged(UObject *Item, bool bHovered);
         void HandleSettingItemSelectionChanged(UObject *Item);
+
+        // void SelectItems();
+
+private:
+        mutable FOnFocusedSlotHandleObjectChanged OnFocusedSlotHandleObjectChangedNative;
+
+        UPROPERTY(BlueprintAssignable, meta = (DisplayName = "On Focused SlotHandle Object Changed"), Category = Inventory)
+        FOnFocusedSlotHandleObjectChanged_BP OnFocusedSlotHandleObjectChanged_BP;
 
 private:
         UPROPERTY(Transient)
         TArray<TObjectPtr<USlotHandleObject>> SlotHandleObjects;
 
         UPROPERTY(Transient)
+        TObjectPtr<USlotHandleObject> LastHoveredOrSelectedObject;
+
+        UPROPERTY(Transient)
         TObjectPtr<ULyraInventoryComponent> Inventory;
 
+        UPROPERTY(Transient)
         FLyraInventoryQuery FilterQuery;
 
 private:
         UPROPERTY(BlueprintReadOnly, meta = (BindWidget, BlueprintProtected = true, AllowPrivateAccess = true))
         TObjectPtr<UInventoryTileView> TileView_Inventory;
 
-        private:
-	FTSTicker::FDelegateHandle RefreshHandle;
+        UPROPERTY(BlueprintReadOnly, meta = (BindWidget, BlueprintProtected = true, AllowPrivateAccess = true))
+        TObjectPtr<UInventorySlotDetailView> DetailView_Item;
+
+private:
+        FTSTicker::FDelegateHandle RefreshHandle;
 };

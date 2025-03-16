@@ -24,7 +24,7 @@ public:
 	/** The index of the tab in the list */
 	UPROPERTY()
 	int32 TabIndex;
-	
+
 	/** The actual button widget that represents this tab on-screen */
 	UPROPERTY()
 	TObjectPtr<UCommonButtonBase> TabButton;
@@ -34,10 +34,9 @@ public:
 	TObjectPtr<UWidget> ContentInstance;
 
 	FCommonRegisteredTabInfo()
-		: TabIndex(INDEX_NONE)
-		, TabButton(nullptr)
-		, ContentInstance(nullptr)
-	{}
+	    : TabIndex(INDEX_NONE), TabButton(nullptr), ContentInstance(nullptr)
+	{
+	}
 };
 
 /** Base class for a list of selectable tabs that correspondingly activate and display an arbitrary widget in a linked switcher */
@@ -55,25 +54,36 @@ public:
 	FOnTabSelected OnTabSelected;
 
 	/** Delegate broadcast when a new tab is created. Allows hook ups after creation. */
-	DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnTabButtonCreation, FName, TabId, UCommonButtonBase*, TabButton);
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnTabButtonCreation, FName, TabId, UCommonButtonBase *, TabButton);
 
 	/** Broadcasts when a new tab is created. */
 	UPROPERTY(BlueprintAssignable, Category = TabList)
 	FOnTabButtonCreation OnTabButtonCreation;
 
 	/** Delegate broadcast when a tab is being removed. Allows clean ups after destruction. */
-	DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnTabButtonRemoval, FName, TabId, UCommonButtonBase*, TabButton);
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnTabButtonRemoval, FName, TabId, UCommonButtonBase *, TabButton);
 
 	/** Broadcasts when a new tab is created. */
 	UPROPERTY(BlueprintAssignable, Category = TabList)
 	FOnTabButtonRemoval OnTabButtonRemoval;
-	
+
 	/** Delegate broadcast when the tab list has been rebuilt (after a new tab has been inserted rather than added to the end). */
 	DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnTabListRebuilt);
-	
+
 	/** Broadcasts when the tab list has been rebuilt (after a new tab has been inserted rather than added to the end). */
 	UPROPERTY(BlueprintAssignable, Category = TabList)
 	FOnTabListRebuilt OnTabListRebuilt;
+
+	//*********************** new add ********************************************// 
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnTabSelectNextButtonPost);
+
+	UPROPERTY(BlueprintAssignable, Category = TabList)
+	FOnTabSelectNextButtonPost OnTabSelectNextButtonPost;
+
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnTabSelectPreviousButtonPost);
+
+	UPROPERTY(BlueprintAssignable, Category = TabList)
+	FOnTabSelectPreviousButtonPost OnTabSelectPreviousButtonPost;
 
 	/** @return The currently active (selected) tab */
 	UFUNCTION(BlueprintCallable, Category = TabList)
@@ -84,11 +94,11 @@ public:
 	 * @param CommonSwitcher The switcher that this tab list should be associated with and manipulate
 	 */
 	UFUNCTION(BlueprintCallable, Category = TabList)
-	virtual void SetLinkedSwitcher(UCommonAnimatedSwitcher* CommonSwitcher);
+	virtual void SetLinkedSwitcher(UCommonAnimatedSwitcher *CommonSwitcher);
 
 	/** @return The switcher that this tab list is associated with and manipulates */
 	UFUNCTION(BlueprintCallable, BlueprintPure, Category = TabList)
-	UCommonAnimatedSwitcher* GetLinkedSwitcher() const;
+	UCommonAnimatedSwitcher *GetLinkedSwitcher() const;
 
 	/**
 	 * Registers and adds a new tab to the list that corresponds to a given widget instance. If not present in the linked switcher, it will be added.
@@ -99,7 +109,7 @@ public:
 	 * @return True if the new tab registered successfully and there were no name ID conflicts
 	 */
 	UFUNCTION(BlueprintCallable, Category = TabList)
-	bool RegisterTab(FName TabNameID, TSubclassOf<UCommonButtonBase> ButtonWidgetType, UWidget* ContentWidget, const int32 TabIndex = -1 /*INDEX_NONE*/);
+	bool RegisterTab(FName TabNameID, TSubclassOf<UCommonButtonBase> ButtonWidgetType, UWidget *ContentWidget, const int32 TabIndex = -1 /*INDEX_NONE*/);
 
 	UFUNCTION(BlueprintCallable, Category = TabList)
 	bool RemoveTab(FName TabNameID);
@@ -110,12 +120,12 @@ public:
 	UFUNCTION(BlueprintCallable, Category = TabList)
 	int32 GetTabCount() const;
 
-	/** 
+	/**
 	 * Selects the tab registered under the provided name ID
 	 * @param TabNameID The name ID for the tab given when registered
 	 */
 	UFUNCTION(BlueprintCallable, Category = TabList)
-	bool SelectTabByID(FName TabNameID, bool bSuppressClickFeedback = false );
+	bool SelectTabByID(FName TabNameID, bool bSuppressClickFeedback = false);
 
 	UFUNCTION(BlueprintCallable, Category = TabList)
 	FName GetSelectedTabId() const;
@@ -137,14 +147,14 @@ public:
 
 	/** Disables the tab associated with the given ID with a reason */
 	UFUNCTION(BlueprintCallable, Category = TabList)
-	void DisableTabWithReason(FName TabNameID, const FText& Reason);
+	void DisableTabWithReason(FName TabNameID, const FText &Reason);
 
 	UFUNCTION(BlueprintCallable, Category = TabList)
 	virtual void SetListeningForInput(bool bShouldListen);
 
 	/** Returns the tab button matching the ID, if found */
 	UFUNCTION(BlueprintCallable, Category = TabList)
-	UCommonButtonBase* GetTabButtonBaseByID(FName TabNameID) const;
+	UCommonButtonBase *GetTabButtonBaseByID(FName TabNameID) const;
 
 protected:
 	// UUserWidget interface
@@ -169,10 +179,10 @@ protected:
 	virtual void HandlePostLinkedSwitcherChanged();
 
 	UFUNCTION(BlueprintNativeEvent, Category = TabList, meta = (BlueprintProtected = "true"))
-	void HandleTabCreation(FName TabNameID, UCommonButtonBase* TabButton);
+	void HandleTabCreation(FName TabNameID, UCommonButtonBase *TabButton);
 
 	UFUNCTION(BlueprintNativeEvent, Category = TabList, meta = (BlueprintProtected = "true"))
-	void HandleTabRemoval(FName TabNameID, UCommonButtonBase* TabButton);
+	void HandleTabRemoval(FName TabNameID, UCommonButtonBase *TabButton);
 
 	/** The input action to listen for causing the next tab to be selected */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = TabList, meta = (RowType = "/Script/CommonUI.CommonInputActionDataBase"))
@@ -195,28 +205,28 @@ protected:
 	bool bAutoListenForInput;
 
 	/**
-	* Whether to defer until next tick rebuilding tab list when inserting new tab (rather than adding to the end).
-	* Useful if inserting multiple tabs in the same tick as the tab list will only be rebuilt once.
-	*/
+	 * Whether to defer until next tick rebuilding tab list when inserting new tab (rather than adding to the end).
+	 * Useful if inserting multiple tabs in the same tick as the tab list will only be rebuilt once.
+	 */
 	UPROPERTY(EditAnywhere, Category = TabList)
 	bool bDeferRebuildingTabList;
 
 protected:
-	const TMap<FName, FCommonRegisteredTabInfo>& GetRegisteredTabsByID() const;
+	const TMap<FName, FCommonRegisteredTabInfo> &GetRegisteredTabsByID() const;
 
 	UFUNCTION()
-	void HandleTabButtonSelected(UCommonButtonBase* SelectedTabButton, int32 ButtonIndex);
+	void HandleTabButtonSelected(UCommonButtonBase *SelectedTabButton, int32 ButtonIndex);
 
 	UFUNCTION()
-	void HandlePreviousTabInputAction(bool& bPassthrough);
-	
+	void HandlePreviousTabInputAction(bool &bPassthrough);
+
 	UFUNCTION()
-	void HandleNextTabInputAction(bool& bPassthrough);
+	void HandleNextTabInputAction(bool &bPassthrough);
 
 	/** The activatable widget switcher that this tab list is associated with and manipulates */
 	UPROPERTY(Transient)
 	TWeakObjectPtr<UCommonAnimatedSwitcher> LinkedSwitcher;
-	
+
 	/** The button group that manages all the created tab buttons */
 	UPROPERTY(Transient)
 	TObjectPtr<UCommonButtonGroupBase> TabButtonGroup;
@@ -231,7 +241,7 @@ private:
 	bool DeferredRebuildTabList(float DeltaTime);
 	void RebuildTabList();
 
-	void RemoveTab_Internal(const FName TabNameID, const FCommonRegisteredTabInfo& TabInfo);
+	void RemoveTab_Internal(const FName TabNameID, const FCommonRegisteredTabInfo &TabInfo);
 
 	/** Info about each of the currently registered tabs organized by a given registration name ID */
 	UPROPERTY(Transient)

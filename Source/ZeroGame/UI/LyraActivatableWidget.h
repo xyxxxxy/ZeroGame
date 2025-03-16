@@ -23,7 +23,7 @@ enum class ELyraWidgetInputMode : uint8
  *
  * An activatable widget that optionally overrides the input mode when activated
  */
-UCLASS(Abstract, Blueprintable, meta=(Category=Lyra))
+UCLASS(Abstract, Blueprintable, meta = (Category = Lyra))
 class ULyraActivatableWidget : public UCommonActivatableWidget
 {
 	GENERATED_BODY()
@@ -32,12 +32,16 @@ public:
 	ULyraActivatableWidget(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get());
 
 	//~UCommonActivatableWidget interface
+	/**
+	 * Gets the desired input configuration to establish when this widget activates and can receive input (i.e. all parents are also active).
+	 * This configuration will override the existing one established by any previous activatable widget and restore it (if valid) upon deactivation.
+	 */
 	virtual TOptional<FUIInputConfig> GetDesiredInputConfig() const override;
 	//~End of UCommonActivatableWidget interface
 
 protected:
 	/** The desired input mode to use while this UI is activated, for example do you want key presses to still reach the game/player controller? */
-	UPROPERTY(EditDefaultsOnly, Category=Input)
+	UPROPERTY(EditDefaultsOnly, Category = Input)
 	ELyraWidgetInputMode InputMode = ELyraWidgetInputMode::Default;
 
 };
