@@ -3,6 +3,7 @@
 #include "Widgets/InventoryPanel.h"
 #include "Input/CommonUIInputTypes.h"
 #include "Engine.h"
+#include "Blueprint/SlateBlueprintLibrary.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(InventoryScreen)
 
@@ -60,7 +61,23 @@ USlotHandleObject *UInventoryScreen::GetSlotHandleObject()
 void UInventoryScreen::HandleConfirmAction()
 {
         GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Green, TEXT("HandleConfirmAction"));
-        CreateSubWidget();
+        if(UUserWidget* Widget = InventoryPanel->GetSelectedEntryWidget())
+        {
+                //FVector2D WidgetPosition;
+                FGeometry WidgetGeometry = Widget->GetCachedGeometry();
+                //GetLocalSize() In eidtor
+                //GetAbsoluteSize() In viewport
+
+
+                FVector2D PixelPosition, ViewportPosition;
+
+                USlateBlueprintLibrary::LocalToViewport(GetWorld(), WidgetGeometry, FVector2D(0.0f, 0.0f), PixelPosition, ViewportPosition);
+                // ViewportPosition * DPI(UWidgetLayoutLibrary::GetViewportScale(this)) = PixelPosition
+                // in order to set the transform of the widget, we select ViewportPosition, not PixelPosition
+                ViewportPosition.X += WidgetGeometry.GetLocalSize().X;
+                CreateSubWidget(ViewportPosition);
+        }
+        
 }
 
 void UInventoryScreen::HandleBackAction()

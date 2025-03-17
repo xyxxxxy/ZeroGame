@@ -12,6 +12,8 @@
 struct FFocusEvent;
 struct FGeometry;
 
+#include UE_INLINE_GENERATED_CPP_BY_NAME(InventoryPanel)
+
 UInventoryPanel::UInventoryPanel()
 {
         SetIsFocusable(true);
@@ -108,12 +110,20 @@ USlotHandleObject *UInventoryPanel::GetSelectedObject() const
         return Cast<USlotHandleObject>(TileView_Inventory->GetSelectedItem());
 }
 
+UUserWidget *UInventoryPanel::GetSelectedEntryWidget()
+{
+        if (TileView_Inventory)
+        {
+                return TileView_Inventory->GetEntryWidgetFromItem<UUserWidget>(LastHoveredOrSelectedObject);
+        }
+        return nullptr;
+}
 void UInventoryPanel::RemoveNavigation()
 {
-        for (UUserWidget *Widget : TileView_Inventory->GetDisplayedEntryWidgets())
-        {
-                Widget->SetIsFocusable(false);
-        }
+        // for (UUserWidget *Widget : TileView_Inventory->GetDisplayedEntryWidgets())
+        // {
+        //         Widget->SetIsFocusable(false);
+        // }
         // TileView_Inventory->NavigateToIndex(0);
         // TileView_Inventory->SetSelectedIndex(0);
 }

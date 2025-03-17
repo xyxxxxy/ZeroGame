@@ -9,6 +9,8 @@
 #include "Styling/SlateBrush.h"
 #include "CommonTextBlock.h"
 
+#include UE_INLINE_GENERATED_CPP_BY_NAME(InventorySlotDetailView)
+
 UInventorySlotDetailView::UInventorySlotDetailView(const FObjectInitializer &ObjectInitializer) : Super(ObjectInitializer)
 {
 

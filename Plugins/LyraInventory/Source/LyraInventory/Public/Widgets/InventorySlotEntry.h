@@ -2,7 +2,7 @@
 
 #include "Blueprint/IUserObjectListEntry.h"
 #include "CommonUserWidget.h"
-#include "InventoryListEntry.generated.h"
+#include "InventorySlotEntry.generated.h"
 
 struct FGeometry;
 struct FFocusEvent;

@@ -30,6 +30,8 @@ public:
         USlotHandleObject *GetSelectedObject() const;
         void RemoveNavigation();
 
+        UUserWidget* GetSelectedEntryWidget();
+
         // UInventoryTileView *GetInventoryTileView() const {return TileView_Inventory;}
         // UInventorySlotDetailView *GetInventorySlotDetailView() const{return DetailView_Item;}
 

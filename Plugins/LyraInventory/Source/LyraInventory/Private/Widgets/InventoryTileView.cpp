@@ -1,7 +1,9 @@
 
 #include "Widgets/InventoryTileView.h"
-#include "Widgets/InventoryListEntry.h"
+#include "Widgets/InventorySlotEntry.h"
 #include "Inventory/SlotHandleObject.h"
+
+#include UE_INLINE_GENERATED_CPP_BY_NAME(InventoryTileView)
 
 UInventoryTileView::UInventoryTileView(const FObjectInitializer &ObjectInitializer) : Super(ObjectInitializer)
 {

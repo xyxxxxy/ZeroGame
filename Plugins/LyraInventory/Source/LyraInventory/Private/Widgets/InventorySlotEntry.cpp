@@ -1,5 +1,5 @@
 
-#include "Widgets/InventoryListEntry.h"
+#include "Widgets/InventorySlotEntry.h"
 #include "CommonInputSubsystem.h"
 #include "Inventory/SlotHandleObject.h"
 #include "LyraInventoryLibrary.h"
@@ -10,6 +10,8 @@
 #include "Styling/SlateBrush.h"
 
 struct FGeometry;
+
+#include UE_INLINE_GENERATED_CPP_BY_NAME(InventorySlotEntry)
 
 void UInventorySlotEntryBase::SetSlotHandleObjects(USlotHandleObject *InObject)
 {
