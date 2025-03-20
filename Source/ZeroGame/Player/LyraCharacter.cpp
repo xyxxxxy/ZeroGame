@@ -114,6 +114,7 @@ void ALyraCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 		// Start/Stop Time only on completed input actions, not on pending actions
 		BindInputValueAction(EnhancedInput, LyraTag::InputTag_OpenMenu, ETriggerEvent::Completed, this, &ThisClass::PushHUDWidget, bLogNotFound);
 		BindInputValueAction(EnhancedInput, LyraTag::InputTag_Inventory, ETriggerEvent::Completed, this, &ThisClass::Input_Inventory, bLogNotFound);
+		BindInputValueAction(EnhancedInput, LyraTag::InputTag_Map, ETriggerEvent::Completed, this, &ThisClass::Input_Map, bLogNotFound);
 	}
 }
 
@@ -198,6 +199,12 @@ void ALyraCharacter::Input_Inventory(const FInputActionValue& InputActionValue)
 {
 	K2_PushInventoryWidget();
 }
+
+void ALyraCharacter::Input_Map(const FInputActionValue& InputActionValue)
+{
+	K2_PushMapWidget();
+}
+
 
 void ALyraCharacter::PushHUDWidget(const FInputActionValue& InputActionValue)
 {

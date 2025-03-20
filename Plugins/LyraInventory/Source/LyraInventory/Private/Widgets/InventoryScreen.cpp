@@ -12,7 +12,8 @@ void UInventoryScreen::NativeOnInitialized()
         Super::NativeOnInitialized();
 
         ConfirmHandle = RegisterUIActionBinding(FBindUIActionArgs(ConfirmInputActionData, true, FSimpleDelegate::CreateUObject(this, &ThisClass::HandleConfirmAction)));
-        BackHandle = RegisterUIActionBinding(FBindUIActionArgs(BackInputActionData, true, FSimpleDelegate::CreateUObject(this, &ThisClass::HandleBackAction)));
+        // BackHandle = RegisterUIActionBinding(FBindUIActionArgs(BackInputActionData, true, FSimpleDelegate::CreateUObject(this, &ThisClass::HandleBackAction)));
+        BackHandle = RegisterUIActionBinding(FBindUIActionArgs(BackEnhancedInputAction, true, FSimpleDelegate::CreateUObject(this, &ThisClass::HandleEnhancedBackAction)));
 }
 
 UWidget *UInventoryScreen::NativeGetDesiredFocusTarget() const
@@ -61,13 +62,12 @@ USlotHandleObject *UInventoryScreen::GetSlotHandleObject()
 void UInventoryScreen::HandleConfirmAction()
 {
         GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Green, TEXT("HandleConfirmAction"));
-        if(UUserWidget* Widget = InventoryPanel->GetSelectedEntryWidget())
+        if (UUserWidget *Widget = InventoryPanel->GetSelectedEntryWidget())
         {
-                //FVector2D WidgetPosition;
+                // FVector2D WidgetPosition;
                 FGeometry WidgetGeometry = Widget->GetCachedGeometry();
-                //GetLocalSize() In eidtor
-                //GetAbsoluteSize() In viewport
-
+                // GetLocalSize() In eidtor
+                // GetAbsoluteSize() In viewport
 
                 FVector2D PixelPosition, ViewportPosition;
 
@@ -77,10 +77,14 @@ void UInventoryScreen::HandleConfirmAction()
                 ViewportPosition.X += WidgetGeometry.GetLocalSize().X;
                 CreateSubWidget(ViewportPosition);
         }
-        
 }
 
 void UInventoryScreen::HandleBackAction()
 {
-        DeactivateWidget();
+        // DeactivateWidget();
+}
+
+void UInventoryScreen::HandleEnhancedBackAction()
+{
+        GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Green, TEXT("HandleEnhancedBackAction"));
 }

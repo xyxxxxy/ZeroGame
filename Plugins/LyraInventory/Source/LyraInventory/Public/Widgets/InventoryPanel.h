@@ -8,6 +8,7 @@
 
 struct FFocusEvent;
 struct FGeometry;
+struct FTimerHandle;
 class USlotHandleObject;
 class UInventoryTileView;
 class UInventorySlotDetailView;
@@ -48,7 +49,8 @@ protected:
         void HandleSettingItemSelectionChanged(UObject *Item);
 
         // void SelectItems();
-
+private:
+        void RefreshNavigation();
 private:
         mutable FOnFocusedSlotHandleObjectChanged OnFocusedSlotHandleObjectChangedNative;
 
@@ -63,10 +65,15 @@ private:
         TObjectPtr<USlotHandleObject> LastHoveredOrSelectedObject;
 
         UPROPERTY(Transient)
+        int32 LastHoveredOrSelectedObjectIndex = 0;
+
+        UPROPERTY(Transient)
         TObjectPtr<ULyraInventoryComponent> Inventory;
 
         UPROPERTY(Transient)
         FLyraInventoryQuery FilterQuery;
+
+        FTimerHandle NavigationHandle;
 
 private:
         UPROPERTY(BlueprintReadOnly, meta = (BindWidget, BlueprintProtected = true, AllowPrivateAccess = true))

@@ -16,5 +16,6 @@ namespace LyraTag
 	UE_DEFINE_GAMEPLAY_TAG_COMMENT(InputTag_Zoom,          "InputTag.Zoom", "Zoom Camera");
 	UE_DEFINE_GAMEPLAY_TAG_COMMENT(InputTag_OpenMenu,          "InputTag.OpenMenu", "Open Menu");
 	UE_DEFINE_GAMEPLAY_TAG_COMMENT(InputTag_Inventory,          "InputTag.Inventory", "Open Inventory");
+	UE_DEFINE_GAMEPLAY_TAG_COMMENT(InputTag_Map,          "InputTag.Map", "Open Map");
 
 }

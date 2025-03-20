@@ -16,6 +16,9 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Inventory)
 	FLyraInventoryItemSlotHandle SlotHandle;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Inventory)
+	int32 w = 1;
 };
 
 UCLASS()

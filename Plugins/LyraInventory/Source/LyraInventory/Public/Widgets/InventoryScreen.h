@@ -8,6 +8,8 @@
 
 class USlotHandleObject;
 class UInventoryPanel;
+class UInputAction;
+
 UCLASS(Blueprintable, meta = (Category = Inventory))
 class UInventoryScreen : public UCommonActivatableWidget
 {
@@ -17,7 +19,7 @@ public:
 
 protected:
         virtual void NativeOnInitialized() override;
-        virtual UWidget* NativeGetDesiredFocusTarget() const override;
+        virtual UWidget *NativeGetDesiredFocusTarget() const override;
 
         UFUNCTION(BlueprintCallable)
         void FilterSlots(FName Id);
@@ -36,10 +38,11 @@ protected:
         void HandleBackAction();
         // void HandleApplyAction();
         // void HandleCancelChangesAction();
+        void HandleEnhancedBackAction();
 
-        //RowWidgetT* GetEntryWidgetFromItem(const UObject* Item) const
+        // RowWidgetT* GetEntryWidgetFromItem(const UObject* Item) const
         UFUNCTION(BlueprintImplementableEvent)
-        void CreateSubWidget(const FVector2D& EntryWidgetPosition);
+        void CreateSubWidget(const FVector2D &EntryWidgetPosition);
 
 protected:
         // UPROPERTY(BlueprintReadOnly, Category = Input, meta = (BindWidget, OptionalWidget = true, AllowPrivateAccess = true))
@@ -51,10 +54,11 @@ protected:
         UPROPERTY(EditDefaultsOnly)
         FDataTableRowHandle BackInputActionData;
 
-
         FUIActionBindingHandle ConfirmHandle;
         FUIActionBindingHandle BackHandle;
-
+        
+        UPROPERTY(EditDefaultsOnly)
+        UInputAction *BackEnhancedInputAction;
 
 private:
         UPROPERTY(BlueprintReadOnly, meta = (BindWidget, BlueprintProtected = true, AllowPrivateAccess = true))

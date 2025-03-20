@@ -45,8 +45,13 @@ protected:
 
 	void Input_Inventory(const FInputActionValue& InputActionValue);
 
+	void Input_Map(const FInputActionValue& InputActionValue);
+
 	UFUNCTION(BlueprintImplementableEvent, meta = (DisplayName = "PushInventoryWidget"))
 	void K2_PushInventoryWidget();
+
+		UFUNCTION(BlueprintImplementableEvent, meta = (DisplayName = "PushMapWidget"))
+	void K2_PushMapWidget();
 
 	void PushHUDWidget(const FInputActionValue& InputActionValue);
 

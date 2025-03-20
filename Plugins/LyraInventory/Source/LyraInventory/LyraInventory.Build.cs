@@ -50,7 +50,8 @@ public class LyraInventory : ModuleRules
 				"CommonUI",
 				"CommonInput",
 				"UMG",
-				"InputCore"
+				"InputCore",
+				"EnhancedInput"
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);

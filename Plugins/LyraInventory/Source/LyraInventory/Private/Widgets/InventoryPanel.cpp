@@ -8,7 +8,8 @@
 #include "Inventory/LyraInventoryComponent.h"
 #include "GameFramework/Pawn.h"
 #include "Engine.h"
-
+#include "Engine/TimerHandle.h"
+#include "Blueprint/WidgetBlueprintLibrary.h"
 struct FFocusEvent;
 struct FGeometry;
 
@@ -75,12 +76,23 @@ void UInventoryPanel::RefreshList()
         // InitialInventory();
 
         // SetIsFocusable(false);
+
+        if (LastHoveredOrSelectedObject)
+        {
+                LastHoveredOrSelectedObjectIndex = TileView_Inventory->GetIndexForItem(LastHoveredOrSelectedObject);
+        }
+        else
+        {
+                LastHoveredOrSelectedObjectIndex = 0;
+        }
+
         SlotHandleObjects.Empty();
         TArray<FLyraInventoryItemSlotHandle> OutSlotHandles;
         Inventory->Query_GetAllSlotHandles(FilterQuery, OutSlotHandles);
 
         for (const FLyraInventoryItemSlotHandle &SlotHandle : OutSlotHandles)
         {
+                // outer?
                 USlotHandleObject *Object = NewObject<USlotHandleObject>(this);
                 Object->Setpayload(FSlotHandleObjectPayload(SlotHandle));
                 SlotHandleObjects.Add(Object);
@@ -88,17 +100,44 @@ void UInventoryPanel::RefreshList()
 
         TileView_Inventory->SetListItems(SlotHandleObjects);
 
-        // If the list directly has the focus, instead of a child widget, then it's likely the panel and items
-        // were not yet available when we received focus, so lets go ahead and focus the first item now.
-        // if (HasUserFocus(GetOwningPlayer()))
-        // SetIsFocusable(true);
-        for (UUserWidget *Widget : TileView_Inventory->GetDisplayedEntryWidgets())
+        // UWidgetBlueprintLibrary::SetFocusToGameViewport();
+        // TileView_Inventory->ClearSelection();
+
+        int32 SlotNum = TileView_Inventory->GetNumItems();
+        if (SlotNum > 0)
         {
-                Widget->SetIsFocusable(true);
+                if (LastHoveredOrSelectedObjectIndex > SlotNum - 1)
+                {
+                        LastHoveredOrSelectedObjectIndex = SlotNum - 1;
+                }
+                // If the list directly has the focus, instead of a child widget, then it's likely the panel and items
+                // were not yet available when we received focus, so lets go ahead and focus the first item now.
+                // if (HasUserFocus(GetOwningPlayer()))
+                GetWorld()->GetTimerManager().SetTimer(NavigationHandle, this, &UInventoryPanel::RefreshNavigation, 1.0f, false);
+                // TileView_Inventory->NavigateToIndex(LastHoveredOrSelectedObjectIndex);
+                // TileView_Inventory->SetSelectedIndex(LastHoveredOrSelectedObjectIndex);
         }
-        TileView_Inventory->NavigateToIndex(0);
-        TileView_Inventory->SetSelectedIndex(0);
+        else
+        {
+                TileView_Inventory->NavigateToIndex(-1);
+                TileView_Inventory->SetSelectedIndex(-1);
+        }
+
+        // if(TileView_Inventory->IsRefreshPending())
+        // {
+        //         GetWorld()->GetTimerManager().SetTimer(NavigationHandle, this, &UInventoryPanel::RefreshNavigation, 0.2f, false);
+
+        // }
 }
+
+void UInventoryPanel::RefreshNavigation()
+{
+        // TileView_Inventory->ClearSelection();
+        //TileView_Inventory->SetFocus();
+        TileView_Inventory->NavigateToIndex(LastHoveredOrSelectedObjectIndex);
+        TileView_Inventory->SetSelectedIndex(LastHoveredOrSelectedObjectIndex);
+}
+
 void UInventoryPanel::SetFilterQuery(const FLyraInventoryQuery &InQuery)
 {
         FilterQuery = InQuery;
@@ -124,8 +163,8 @@ void UInventoryPanel::RemoveNavigation()
         // {
         //         Widget->SetIsFocusable(false);
         // }
-        // TileView_Inventory->NavigateToIndex(0);
-        // TileView_Inventory->SetSelectedIndex(0);
+        // TileView_Inventory->NavigateToIndex(-1);
+        // TileView_Inventory->SetSelectedIndex(-1);
 }
 
 void UInventoryPanel::HandleSettingItemHoveredChanged(UObject *Item, bool bHovered)
@@ -155,6 +194,7 @@ void UInventoryPanel::HandleSettingItemSelectionChanged(UObject *Item)
 
 void UInventoryPanel::FillItemDetails(USlotHandleObject *SlotHandleObject)
 {
+        // GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Green, FString::Printf(TEXT("Current Slot Index :%d"), TileView_Inventory->GetIndexForItem(LastHoveredOrSelectedObject)));
         if (DetailView_Item)
         {
                 DetailView_Item->FillItemDetails(SlotHandleObject);
