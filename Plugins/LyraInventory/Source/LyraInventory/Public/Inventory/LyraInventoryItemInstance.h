@@ -7,6 +7,7 @@
 #include "LyraInventoryItemInstance.generated.h"
 
 class ULyraInventoryItemFragment;
+struct FLyraAbilitySet_GrantedHandles;
 
 UCLASS(Blueprintable, BlueprintType)
 class LYRAINVENTORY_API ULyraInventoryItemInstance : public UObject, public IGameplayTagAssetInterface
@@ -17,16 +18,17 @@ public:
 	
 	virtual void GetOwnedGameplayTags(FGameplayTagContainer& TagContainer) const override;
 
-	virtual FLyraInventoryTableRowFragmentsHandle GetItemStructHandle() const;
-	virtual void SetItemStructsHandle(const FLyraInventoryTableRowFragmentsHandle& InHandle);
-	
 public:
+	FLyraInventoryTableRowFragmentsHandle GetItemStructHandle() const;
+	void SetItemStructsHandle(const FLyraInventoryTableRowFragmentsHandle& InHandle);
+	
 	UFUNCTION(BlueprintCallable, Category = Inventory)
 	bool CanStackWith(ULyraInventoryItemInstance* Other);
 
 	UFUNCTION(BlueprintCallable, Category = Inventory)
 	bool MergeItemStacks(ULyraInventoryItemInstance* Other);
 
+public:
 	// Item def, regardless of stacks
 	bool operator==(const ULyraInventoryItemInstance& Other) const
 	{
@@ -41,8 +43,12 @@ public:
 	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = "Inventory")
 	int32 StackSize = 1;
 
+	FLyraAbilitySet_GrantedHandles GrantedHandles;
+
 protected:
 	FLyraInventoryTableRowFragmentsHandle ItemStructsHandle;
+
+	
 
 	UPROPERTY()
 	TArray<TObjectPtr<ULyraInventoryItemFragment>> DynamicFragments;

@@ -5656,7 +5656,7 @@
 		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Private\\Widgets\\InventoryListEntry.cpp",
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Private\\Processors\\LyraInventoryProcessor_Equipment.cpp",
 		"arguments": [
 			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
 			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
@@ -5681,6 +5681,14 @@
 	},
 	{
 		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Private\\Widgets\\InventorySlotDetailView.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Private\\Widgets\\InventorySlotEntry.cpp",
 		"arguments": [
 			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
 			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
@@ -5912,7 +5920,7 @@
 		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
 	},
 	{
-		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Public\\Widgets\\InventoryListEntry.h",
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Public\\Processors\\LyraInventoryProcessor_Equipment.h",
 		"arguments": [
 			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
 			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
@@ -5937,6 +5945,14 @@
 	},
 	{
 		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Public\\Widgets\\InventorySlotDetailView.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\LyraInventory\\Source\\LyraInventory\\Public\\Widgets\\InventorySlotEntry.h",
 		"arguments": [
 			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
 			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\LyraInventory.30.rsp"
@@ -6465,6 +6481,22 @@
 	},
 	{
 		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Source\\ZeroGame\\UI\\LyraHUD.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\ZeroGame.1.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Source\\ZeroGame\\UI\\LyraNavigationConfig.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\ZeroGame.1.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Source\\ZeroGame\\UI\\LyraNavigationConfig.h",
 		"arguments": [
 			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
 			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_Default\\ZeroGame.1.rsp"

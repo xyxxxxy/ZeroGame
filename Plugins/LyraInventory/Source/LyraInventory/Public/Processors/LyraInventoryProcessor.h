@@ -60,13 +60,6 @@ public:
 	void OnItemSlotChange(const FLyraInventoryItemSlotHandle& SlotHandle, ULyraInventoryItemInstance* Item, ULyraInventoryItemInstance* PreviousItem);
 	virtual void OnItemSlotChange_Implementation(const FLyraInventoryItemSlotHandle& SlotHandle, ULyraInventoryItemInstance* Item, ULyraInventoryItemInstance* PreviousItem) {}
 	
-
-	// check
-	// UFUNCTION(BlueprintCallable, Category = "Inventory")
-	// void RemoveInventorySlot(const FLyraInventoryItemSlotHandle& SlotHandle){};
-
-	//virtual bool RemoveItemFromInventory(const FLyraInventoryItemSlotHandle &ItemHandle);
-
 	UFUNCTION(BlueprintNativeEvent)
 	void OnInventorySlotUpdate();
 	virtual void OnInventorySlotUpdate_Implementation() {}
@@ -78,10 +71,6 @@ public:
 public:
 	virtual void BulkCreateInventorySlots( const FGameplayTagContainer& SlotTags, const FLyraInventoryItemFilterHandle& Filter, int32 Count, TArray<FLyraInventoryItemSlotHandle>& OutSlotHandles);
 	virtual void BulkRemoveInventorySlots(const TArray<FLyraInventoryItemSlotHandle>& SlotHandles){};
-
-protected:
-	// virtual void PostInventoryUpdate(FAuraInventoryItemArray& InventoryRef, TArray<FLyraInventoryItemSlotHandle>& SlotHandles){};
-	// virtual void PopulateSlotReferenceArray(FAuraInventoryItemArray& InventoryRef, TArray<FLyraInventoryItemSlotHandle>& SlotHandles){};
 
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Inventory)

@@ -43,6 +43,7 @@ bool ULyraInventoryLibrary::ASCAddInstancedAttributeSet(UAbilitySystemComponent*
 bool ULyraInventoryLibrary::FindFragment_UI(ULyraInventoryItemInstance* ItemInstance, FLyraInventoryTableRowFragment_UI& FragmentStruct)
 {
 	if(!IsValid(ItemInstance))return false;
+	check(ItemInstance);
 
 	FLyraInventoryTableRowFragmentsHandle FragmentsHandle = ItemInstance->GetItemStructHandle();
 	

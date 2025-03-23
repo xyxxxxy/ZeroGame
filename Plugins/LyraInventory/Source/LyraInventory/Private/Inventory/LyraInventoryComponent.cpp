@@ -33,6 +33,7 @@ void ULyraInventoryComponent::InitializeComponent()
 {
 	Super::InitializeComponent();
 
+	// TODO : check delegate?
 	OnItemSlotUpdateDelegate().RemoveAll(this);
 	OnItemSlotUpdateDelegate().AddUObject(this, &ULyraInventoryComponent::OnItemSlotUpdate);
 
@@ -110,7 +111,6 @@ ULyraInventoryProcessor *ULyraInventoryComponent::AddProcessor(TSubclassOf<ULyra
 	{
 		NewProcessor->OnInventoryBeginPlay();
 	}
-
 	return NewProcessor;
 }
 
@@ -123,7 +123,6 @@ ULyraInventoryProcessor *ULyraInventoryComponent::FindFirstProcessor(ProcessorQu
 			return Processor;
 		}
 	}
-
 	return nullptr;
 }
 

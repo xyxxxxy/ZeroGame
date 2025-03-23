@@ -9,7 +9,7 @@ void ULyraInventoryProcessor_Bag::OnInventoryBeginPlay_Implementation()
 {
 	Super::OnInventoryBeginPlay_Implementation();
 
-	UE_LOG(LogLyraInventorySystem, Warning, TEXT("%s : OnInventoryBeginPlay"), *GetNameSafe(this));
+	UE_LOG(LogLyraInventorySystem, Warning, TEXT("OnInventoryBeginPlay: %s-CreateInventorySlots"), *GetNameSafe(this));
 	//InitInventorySlots();
 	//TArray<FLyraInventoryItemSlotHandle>& OutSlotHandles;
 	BulkCreateInventorySlots(SlotTags, FLyraInventoryItemFilterHandle(new FLyraInventoryItemSlotFilter(SlotFilter)), BagSlotCount, GetOwningInventory()->AllSlotHandles);

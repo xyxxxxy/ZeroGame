@@ -23,21 +23,8 @@ public:
 
 	virtual void OnInventoryBeginPlay_Implementation() override;
 	
-//protected:
-//	//
-//	virtual void PostInventoryUpdate(FAuraInventoryItemArray& InventoryRef, TArray<FLyraInventoryItemSlotHandle>& SlotHandles) override;
-//	virtual void PopulateSlotReferenceArray(FAuraInventoryItemArray& InventoryRef, TArray<FLyraInventoryItemSlotHandle>& SlotHandles) override;
-//	
-//private:
-//	void InitInventorySlots();
-
 protected:
 	friend class ULyraInventoryComponent;
-	//int32 IdCounter = 0;
-	//
-	//UPROPERTY()
-	//FAuraInventoryItemArray Inventory;
-
 
 	// TODO:???
 	TArray<FLyraInventoryItemSlotHandle> BagSlotHandles;

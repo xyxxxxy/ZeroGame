@@ -13,7 +13,7 @@ class LYRAINVENTORY_API ULyraInventoryFragment_Equipment : public ULyraInventory
 {
 	GENERATED_BODY()
 public:
-	virtual bool GiveToAbilitySystem(UAbilitySystemComponent* ASC,FLyraAbilitySet_GrantHandles* OutHandleStorage,ULyraInventoryItemInstance* SourceObject) const;
+	virtual bool GiveToAbilitySystem(UAbilitySystemComponent* ASC,FLyraAbilitySet_GrantedHandles* OutHandleStorage,ULyraInventoryItemInstance* SourceObject) const;
 
 protected:
 	UPROPERTY(EditDefaultsOnly,BlueprintReadOnly,Category = "Inventory")

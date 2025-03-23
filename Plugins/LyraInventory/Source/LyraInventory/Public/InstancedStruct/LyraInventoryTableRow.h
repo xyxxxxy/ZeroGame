@@ -29,19 +29,16 @@ struct LYRAINVENTORY_API FLyraInventoryTableRowFragment_UI : public FLyraInvento
 public:
 	FLyraInventoryTableRowFragment_UI(){}
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Inventory")
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Inventory")
 	FName ItemName;
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Inventory")
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Inventory")
 	int32 MaxStackSize = 1;
 
-	// UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Inventory")
-	// ELyraItemCategory ItemCategory = ELyraItemCategory::Prop;
-
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (MultiLine = true), Category = "Inventory")
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (MultiLine = true), Category = "Inventory")
 	FText Description;
 	
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Inventory")
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Inventory")
 	FSlateBrush Brush;
 };
 
@@ -52,7 +49,7 @@ struct LYRAINVENTORY_API FLyraInventoryTableRowFragment_World : public FLyraInve
 public:
 	FLyraInventoryTableRowFragment_World(){}
 	
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Inventory")
+	UPROPERTY(EditDefaultsOnly, Category = "Inventory")
 	TObjectPtr<UStaticMesh> Mesh;
 };
 
@@ -63,10 +60,10 @@ struct LYRAINVENTORY_API FLyraInventoryTableRowFragment_AbilitySet : public FLyr
 public:
 	FLyraInventoryTableRowFragment_AbilitySet(){}
 	
-	bool GiveToAbilitySystem(UAbilitySystemComponent* ASC, FLyraAbilitySet_GrantHandles* OutHandleStorage, ULyraInventoryItemInstance* SourceObject) const;
+	//bool GiveToAbilitySystem(UAbilitySystemComponent* ASC, FLyraAbilitySet_GrantedHandles* OutHandleStorage, ULyraInventoryItemInstance* SourceObject) const;
 	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Inventory")
-	FLyraItemDefinition_AbilitySet EquipmentAbilitySet;
+	TObjectPtr<ULyraAbilitySet> AbilitySet;
 
 };
 
@@ -86,10 +83,10 @@ public:
 	}
 
 	// GameplayTags
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Inventory")
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Inventory")
 	FGameplayTagContainer ItemTags;
 	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite,
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly,
 		meta = (BaseStruct = "/Script/LyraInventory.LyraInventoryTableRowFragment", ExcludeBaseStruct), Category = "Inventory")
 	TArray<FInstancedStruct> ItemStructs;
 	
@@ -121,10 +118,10 @@ struct  LYRAINVENTORY_API FLyraItemInfoRowDefine : public FTableRowBase
 {
 	GENERATED_BODY()
 public:
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Inventory")
 	FName ItemName = FName();
 	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Inventory")
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Inventory")
 	FLyraInventoryTableRowFragmentsArray CustomItemInfo;
 	
 };

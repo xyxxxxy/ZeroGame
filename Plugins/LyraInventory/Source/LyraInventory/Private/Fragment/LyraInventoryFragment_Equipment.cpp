@@ -5,7 +5,7 @@
 #include "LyraInventory/LyraLogChannels.h"
 
 bool ULyraInventoryFragment_Equipment::GiveToAbilitySystem(UAbilitySystemComponent* ASC,
-                                                           FLyraAbilitySet_GrantHandles* OutHandleStorage, ULyraInventoryItemInstance* SourceObject) const
+                                                           FLyraAbilitySet_GrantedHandles* OutHandleStorage, ULyraInventoryItemInstance* SourceObject) const
 {
 	if(ASC == nullptr)return false;
 	
@@ -36,13 +36,13 @@ bool ULyraInventoryFragment_Equipment::GiveToAbilitySystem(UAbilitySystemCompone
 
 	for (const auto& EffectToGrant : EquipmentAbilitySet.GrantEffects)
 	{
-		if(!IsValid(EffectToGrant.GameplayEffect))
+		if(!IsValid(EffectToGrant.PassiveGameplayEffect))
 		{
 			UE_LOG(LogLyraInventorySystem,Error,TEXT("Granted GE on equipment fragment [%s] is not valid."),*GetNameSafe(this));
 			continue;
 		}
 
-		const UGameplayEffect* GameplayEffect = EffectToGrant.GameplayEffect.GetDefaultObject();
+		const UGameplayEffect* GameplayEffect = EffectToGrant.PassiveGameplayEffect.GetDefaultObject();
 		
 		// FGameplayEffectContextHandle EffectContextHandle = ASC->MakeEffectContext();
 		// EffectContextHandle.AddSourceObject(SourceObject);
@@ -54,7 +54,7 @@ bool ULyraInventoryFragment_Equipment::GiveToAbilitySystem(UAbilitySystemCompone
 			,EffectToGrant.EffectLevel
 			,ASC->MakeEffectContext()
 			);
-		OutHandleStorage->AddEffectSpecHandle(GameplayEffectHandle);
+		OutHandleStorage->AddGameplayEffectHandle(GameplayEffectHandle);
 	}
 	return true;
 }

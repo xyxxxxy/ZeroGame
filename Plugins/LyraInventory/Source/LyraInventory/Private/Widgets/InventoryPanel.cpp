@@ -92,7 +92,7 @@ void UInventoryPanel::RefreshList()
 
         for (const FLyraInventoryItemSlotHandle &SlotHandle : OutSlotHandles)
         {
-                // outer?
+                // TODO : outer?
                 USlotHandleObject *Object = NewObject<USlotHandleObject>(this);
                 Object->Setpayload(FSlotHandleObjectPayload(SlotHandle));
                 SlotHandleObjects.Add(Object);
@@ -113,14 +113,14 @@ void UInventoryPanel::RefreshList()
                 // If the list directly has the focus, instead of a child widget, then it's likely the panel and items
                 // were not yet available when we received focus, so lets go ahead and focus the first item now.
                 // if (HasUserFocus(GetOwningPlayer()))
-                GetWorld()->GetTimerManager().SetTimer(NavigationHandle, this, &UInventoryPanel::RefreshNavigation, 1.0f, false);
-                // TileView_Inventory->NavigateToIndex(LastHoveredOrSelectedObjectIndex);
-                // TileView_Inventory->SetSelectedIndex(LastHoveredOrSelectedObjectIndex);
+                //GetWorld()->GetTimerManager().SetTimer(NavigationHandle, this, &UInventoryPanel::RefreshNavigation, 1.0f, false);
+                TileView_Inventory->NavigateToIndex(LastHoveredOrSelectedObjectIndex);
+                TileView_Inventory->SetSelectedIndex(LastHoveredOrSelectedObjectIndex);
         }
         else
         {
-                TileView_Inventory->NavigateToIndex(-1);
-                TileView_Inventory->SetSelectedIndex(-1);
+                TileView_Inventory->NavigateToIndex(0);
+                TileView_Inventory->SetSelectedIndex(0);
         }
 
         // if(TileView_Inventory->IsRefreshPending())
@@ -134,8 +134,8 @@ void UInventoryPanel::RefreshNavigation()
 {
         // TileView_Inventory->ClearSelection();
         //TileView_Inventory->SetFocus();
-        TileView_Inventory->NavigateToIndex(LastHoveredOrSelectedObjectIndex);
-        TileView_Inventory->SetSelectedIndex(LastHoveredOrSelectedObjectIndex);
+        // TileView_Inventory->NavigateToIndex(LastHoveredOrSelectedObjectIndex);
+        // TileView_Inventory->SetSelectedIndex(LastHoveredOrSelectedObjectIndex);
 }
 
 void UInventoryPanel::SetFilterQuery(const FLyraInventoryQuery &InQuery)

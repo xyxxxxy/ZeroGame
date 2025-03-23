@@ -6,55 +6,55 @@
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraInventoryTableRow)
 
-bool FLyraInventoryTableRowFragment_AbilitySet::GiveToAbilitySystem(UAbilitySystemComponent* ASC,
-                                                                      FLyraAbilitySet_GrantHandles* OutHandleStorage, ULyraInventoryItemInstance* SourceObject) const
-{
-	if(ASC == nullptr)return false;
+// bool FLyraInventoryTableRowFragment_AbilitySet::GiveToAbilitySystem(UAbilitySystemComponent* ASC,
+//                                                                       FLyraAbilitySet_GrantedHandles* OutHandleStorage, ULyraInventoryItemInstance* SourceObject) const
+// {
+// 	if(ASC == nullptr)return false;
 	
-	if(OutHandleStorage == nullptr)
-	{
-		UE_LOG(LogLyraInventorySystem, Error, TEXT("Out Grant Handle is not valid!"));
-		return false;
-	}
+// 	if(OutHandleStorage == nullptr)
+// 	{
+// 		UE_LOG(LogLyraInventorySystem, Error, TEXT("Out Grant Handle is not valid!"));
+// 		return false;
+// 	}
 
-	for (const auto& AbilityToGrant : EquipmentAbilitySet.GrantAbilities)
-	{
-		if(!IsValid(AbilityToGrant.Ability))
-		{
-			UE_LOG(LogLyraInventorySystem, Warning, TEXT("Granted GA on equipment Struct FLyraInventoryTableRowFragment_AbilitySet is not valid."));
-			continue;
-		}
+// 	for (const auto& AbilityToGrant : EquipmentAbilitySet.GrantAbilities)
+// 	{
+// 		if(!IsValid(AbilityToGrant.Ability))
+// 		{
+// 			UE_LOG(LogLyraInventorySystem, Warning, TEXT("Granted GA on equipment Struct FLyraInventoryTableRowFragment_AbilitySet is not valid."));
+// 			continue;
+// 		}
 
-		UGameplayAbility* AbilityCDO = AbilityToGrant.Ability->GetDefaultObject<UGameplayAbility>();
-		FGameplayAbilitySpec AbilitySpec(AbilityCDO, AbilityToGrant.AbilityLevel);
-		AbilitySpec.SourceObject = SourceObject;
+// 		UGameplayAbility* AbilityCDO = AbilityToGrant.Ability->GetDefaultObject<UGameplayAbility>();
+// 		FGameplayAbilitySpec AbilitySpec(AbilityCDO, AbilityToGrant.AbilityLevel);
+// 		AbilitySpec.SourceObject = SourceObject;
 
-		FGameplayAbilitySpecHandle AbilitySpecHandle;
-		// TODO: passive or active GA
-		AbilitySpecHandle = ASC->GiveAbility(AbilitySpec);
+// 		FGameplayAbilitySpecHandle AbilitySpecHandle;
+// 		// TODO: passive or active GA
+// 		AbilitySpecHandle = ASC->GiveAbility(AbilitySpec);
 
-		OutHandleStorage->AddAbilitySpecHandle(AbilitySpecHandle);
-	}
+// 		OutHandleStorage->AddAbilitySpecHandle(AbilitySpecHandle);
+// 	}
 
-	for (const auto& EffectToGrant : EquipmentAbilitySet.GrantEffects)
-	{
-		if(!IsValid(EffectToGrant.GameplayEffect))
-		{
-			UE_LOG(LogLyraInventorySystem, Warning, TEXT("Granted GE on equipment Struct FLyraInventoryTableRowFragment_AbilitySet is not valid."));
-			continue;
-		}
+// 	for (const auto& EffectToGrant : EquipmentAbilitySet.GrantEffects)
+// 	{
+// 		if(!IsValid(EffectToGrant.GameplayEffect))
+// 		{
+// 			UE_LOG(LogLyraInventorySystem, Warning, TEXT("Granted GE on equipment Struct FLyraInventoryTableRowFragment_AbilitySet is not valid."));
+// 			continue;
+// 		}
 
-		const UGameplayEffect* GameplayEffect = EffectToGrant.GameplayEffect.GetDefaultObject();
+// 		const UGameplayEffect* GameplayEffect = EffectToGrant.GameplayEffect.GetDefaultObject();
 		
-		const FActiveGameplayEffectHandle GameplayEffectHandle = ASC->ApplyGameplayEffectToSelf(
-			GameplayEffect
-			,EffectToGrant.EffectLevel
-			,ASC->MakeEffectContext()
-			);
-		OutHandleStorage->AddEffectSpecHandle(GameplayEffectHandle);
-	}
-	return true;
-}
+// 		const FActiveGameplayEffectHandle GameplayEffectHandle = ASC->ApplyGameplayEffectToSelf(
+// 			GameplayEffect
+// 			,EffectToGrant.EffectLevel
+// 			,ASC->MakeEffectContext()
+// 			);
+// 		OutHandleStorage->AddGameplayEffectHandle(GameplayEffectHandle);
+// 	}
+// 	return true;
+// }
 
 
 
