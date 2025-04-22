@@ -15,54 +15,53 @@
 
 int32 UDialogueEdGraphSchema::CurrentCacheRefreshID = 0;
 
-FConnectionDrawingPolicy* UDialogueEdGraphSchema::CreateConnectionDrawingPolicy(int32 InBackLayerID,
-	int32 InFrontLayerID, float InZoomFactor, const FSlateRect& InClippingRect, FSlateWindowElementList& InDrawElements,
-	UEdGraph* InGraphObj) const
+FConnectionDrawingPolicy *UDialogueEdGraphSchema::CreateConnectionDrawingPolicy(int32 InBackLayerID,
+																				int32 InFrontLayerID, float InZoomFactor, const FSlateRect &InClippingRect, FSlateWindowElementList &InDrawElements,
+																				UEdGraph *InGraphObj) const
 {
 	return new FDialogueTreeConnectionDrawingPolicy(InBackLayerID, InFrontLayerID, InZoomFactor, InClippingRect, InDrawElements);
 }
 
-void UDialogueEdGraphSchema::OnPinConnectionDoubleCicked(UEdGraphPin* PinA, UEdGraphPin* PinB,
-	const FVector2D& GraphPosition) const
+void UDialogueEdGraphSchema::OnPinConnectionDoubleCicked(UEdGraphPin *PinA, UEdGraphPin *PinB,
+														 const FVector2D &GraphPosition) const
 {
 	Super::OnPinConnectionDoubleCicked(PinA, PinB, GraphPosition);
 }
 
-void UDialogueEdGraphSchema::GetPinContextMenu(UToolMenu* Menu, UEdGraphPin* Pin, FText PinText) const
+void UDialogueEdGraphSchema::GetPinContextMenu(UToolMenu *Menu, UEdGraphPin *Pin, FText PinText) const
 {
-
 }
 
-void UDialogueEdGraphSchema::GetGraphContextActions(FGraphContextMenuBuilder& ContextMenuBuilder) const
+void UDialogueEdGraphSchema::GetGraphContextActions(FGraphContextMenuBuilder &ContextMenuBuilder) const
 {
 	GetSpeechNodeMenuActions(ContextMenuBuilder);
 }
 
-void UDialogueEdGraphSchema::GetContextMenuActions(UToolMenu* Menu, UGraphNodeContextMenuContext* Context) const
+void UDialogueEdGraphSchema::GetContextMenuActions(UToolMenu *Menu, UGraphNodeContextMenuContext *Context) const
 {
-	if(Context->Node)
+	if (Context->Node)
 	{
 		GetNodeContextMenu(Menu);
 	}
-	
+
 	Super::GetContextMenuActions(Menu, Context);
 }
 
-const FPinConnectionResponse UDialogueEdGraphSchema::CanCreateConnection(const UEdGraphPin* A,
-	const UEdGraphPin* B) const
+const FPinConnectionResponse UDialogueEdGraphSchema::CanCreateConnection(const UEdGraphPin *A,
+																		 const UEdGraphPin *B) const
 {
 
-	//Connection values to work with 
+	// Connection values to work with
 	FConnectionArgs ConnectionArgs;
 	ConnectionArgs.PinA = A;
 	ConnectionArgs.PinB = B;
 	ConnectionArgs.NodeA = Cast<UGraphNodeDialogueBase>(A->GetOwningNode());
 	ConnectionArgs.NodeB = Cast<UGraphNodeDialogueBase>(B->GetOwningNode());
 
-	//Response to return 
+	// Response to return
 	FPinConnectionResponse Response;
 
-	//Check for disallowed connections
+	// Check for disallowed connections
 	CheckForDisallowedConnection(ConnectionArgs, Response);
 
 	if (Response.Response == CONNECT_RESPONSE_DISALLOW)
@@ -70,31 +69,31 @@ const FPinConnectionResponse UDialogueEdGraphSchema::CanCreateConnection(const U
 		return Response;
 	}
 
-	//Connection is allowed - either limited or unlimited
+	// Connection is allowed - either limited or unlimited
 	if (!ConnectionHasConnectionLimit(ConnectionArgs, Response))
 	{
-		//No connection limit 
+		// No connection limit
 		Response.Response = CONNECT_RESPONSE_MAKE;
 		Response.Message = LOCTEXT("AllowConnection", "Connect nodes");
 	}
 	return Response;
 }
 
-void UDialogueEdGraphSchema::CreateDefaultNodesForGraph(UEdGraph& Graph) const
+void UDialogueEdGraphSchema::CreateDefaultNodesForGraph(UEdGraph &Graph) const
 {
 	FGraphNodeCreator<UGraphNodeDialogueEntry> NodeCreator(Graph);
-	UGraphNodeDialogueEntry* TargetNode = NodeCreator.CreateNode();
+	UGraphNodeDialogueEntry *TargetNode = NodeCreator.CreateNode();
 	NodeCreator.Finalize();
-	SetNodeMetaData(TargetNode,FNodeMetadata::DefaultGraphNode);
-	
-	UDialogueEdGraph* DialogueGraph = Cast<UDialogueEdGraph>(&Graph);
+	SetNodeMetaData(TargetNode, FNodeMetadata::DefaultGraphNode);
+
+	UDialogueEdGraph *DialogueGraph = Cast<UDialogueEdGraph>(&Graph);
 	TargetNode->InitNodeInDialogueGraph(DialogueGraph);
 	DialogueGraph->SetGraphRoot(TargetNode);
 }
 
-FLinearColor UDialogueEdGraphSchema::GetPinTypeColor(const FEdGraphPinType& PinType) const
+FLinearColor UDialogueEdGraphSchema::GetPinTypeColor(const FEdGraphPinType &PinType) const
 {
-	return FLinearColor(.5f,.5f,.5f,1.f);
+	return FLinearColor(.5f, .5f, .5f, 1.f);
 }
 
 bool UDialogueEdGraphSchema::IsCacheVisualizationOutOfDate(int32 InVisualizationCacheID) const
@@ -112,9 +111,9 @@ void UDialogueEdGraphSchema::ForceVisualizationCacheClear() const
 	Super::ForceVisualizationCacheClear();
 }
 
-void UDialogueEdGraphSchema::GetNodeContextMenu(UToolMenu* Menu) const
+void UDialogueEdGraphSchema::GetNodeContextMenu(UToolMenu *Menu) const
 {
-	FToolMenuSection& NodeMenuSection = Menu->AddSection(FName(TEXT("DialogueTreeNodeAcitons")), LOCTEXT("NodeActionCategory", "Node Actions"));
+	FToolMenuSection &NodeMenuSection = Menu->AddSection(FName(TEXT("DialogueTreeNodeAcitons")), LOCTEXT("NodeActionCategory", "Node Actions"));
 	NodeMenuSection.AddMenuEntry(FGenericCommands::Get().Delete);
 	NodeMenuSection.AddMenuEntry(FGenericCommands::Get().Cut);
 	NodeMenuSection.AddMenuEntry(FGenericCommands::Get().Copy);
@@ -122,33 +121,32 @@ void UDialogueEdGraphSchema::GetNodeContextMenu(UToolMenu* Menu) const
 	NodeMenuSection.AddMenuEntry(FGraphEditorCommands::Get().BreakNodeLinks);
 }
 
-void UDialogueEdGraphSchema::GetNodeMenuActions(FGraphContextMenuBuilder& ContextMenuBuilder) const
+void UDialogueEdGraphSchema::GetNodeMenuActions(FGraphContextMenuBuilder &ContextMenuBuilder) const
 {
 }
 
-void UDialogueEdGraphSchema::GetSpeechNodeMenuActions(FGraphContextMenuBuilder& ContextMenuBuilder) const
+void UDialogueEdGraphSchema::GetSpeechNodeMenuActions(FGraphContextMenuBuilder &ContextMenuBuilder) const
 {
-	//Fetch the current graph 
-	const UDialogueEdGraph* TargetGraph = Cast<UDialogueEdGraph>(ContextMenuBuilder.CurrentGraph);
+	// Fetch the current graph
+	const UDialogueEdGraph *TargetGraph = Cast<UDialogueEdGraph>(ContextMenuBuilder.CurrentGraph);
 
 	if (!TargetGraph)
 	{
 		return;
 	}
 
-	//Loop through the list of speakers 
-	for (UDialogueSpeakerSocket* SpeakerSocket : TargetGraph->GetAllSpeakers())
+	// Loop through the list of speakers
+	for (UDialogueSpeakerSocket *SpeakerSocket : TargetGraph->GetAllSpeakers())
 	{
 		if (SpeakerSocket->GetSpeakerName().IsNone())
 		{
 			continue;
 		}
 
-		//Add one create node action for each transition type 
+		// Add one create node action for each transition type
 		for (TObjectIterator<UClass> TypeIterator; TypeIterator; ++TypeIterator)
 		{
-			if (TypeIterator->IsChildOf(UDialogueTransition::StaticClass())
-				&& !TypeIterator->HasAnyClassFlags(CLASS_Abstract))
+			if (TypeIterator->IsChildOf(UDialogueTransition::StaticClass()) && !TypeIterator->HasAnyClassFlags(CLASS_Abstract))
 			{
 				TSubclassOf<UDialogueTransition> CurrentType = *TypeIterator;
 
@@ -156,99 +154,92 @@ void UDialogueEdGraphSchema::GetSpeechNodeMenuActions(FGraphContextMenuBuilder& 
 					MakeCreateSpeechNodeAction(
 						SpeakerSocket,
 						CurrentType,
-						ContextMenuBuilder.OwnerOfTemporaries
-					);
-				
-				//Create action and add to menu 
+						ContextMenuBuilder.OwnerOfTemporaries);
+
+				// Create action and add to menu
 				ContextMenuBuilder.AddAction(NewNodeAction);
 			}
 		}
 	}
 
+	// TODO: branch and jump
 }
 
 TSharedPtr<FDialogueSchemaAction_NewNode> UDialogueEdGraphSchema::MakeCreateSpeechNodeAction(
-	UDialogueSpeakerSocket* SpeakerSocket, TSubclassOf<UDialogueTransition> TransitionType, UObject* Outer) const
+	UDialogueSpeakerSocket *SpeakerSocket, TSubclassOf<UDialogueTransition> TransitionType, UObject *Outer) const
 {
 	check(SpeakerSocket && TransitionType && Outer);
 
-	//Get context menu text
-	UDialogueTransition* DefaultTransitionObj = TransitionType->GetDefaultObject<UDialogueTransition>();
+	// Get context menu text
+	UDialogueTransition *DefaultTransitionObj = TransitionType->GetDefaultObject<UDialogueTransition>();
 
 	FText MenuCategory = LOCTEXT("SpeechNodeMenuCategory", "SpeechNodes");
 	FText MenuText = FText::Format(
 		LOCTEXT("SpeechNodeCreationText", "{0}, {1}"),
 		FText::FromName(SpeakerSocket->GetSpeakerName()),
-		DefaultTransitionObj->GetDisplayName()
-	);
+		DefaultTransitionObj->GetDisplayName());
 	FText MenuTooltip = DefaultTransitionObj->GetNodeCreationTooltip();
 
-	//Get template node
-	UGraphNodeDialogueSpeech* TemplateObject = UGraphNodeDialogueSpeech::MakeTemplate(Outer, SpeakerSocket, TransitionType);
+	// Get template node
+	UGraphNodeDialogueSpeech *TemplateObject = UGraphNodeDialogueSpeech::MakeTemplate(Outer, SpeakerSocket, TransitionType);
 	check(TemplateObject);
 
-	//Assemble action 
+	// Assemble action
 	TSharedPtr<FDialogueSchemaAction_NewNode> NewAction(
 		new FDialogueSchemaAction_NewNode(
 			MenuCategory,
 			MenuText,
 			MenuTooltip,
-			TemplateObject
-		)
-	);
+			TemplateObject));
 
 	return NewAction;
 }
 
-void UDialogueEdGraphSchema::CheckForDisallowedConnection(const FConnectionArgs& InArgs, FPinConnectionResponse& OutResponse) const
+void UDialogueEdGraphSchema::CheckForDisallowedConnection(const FConnectionArgs &InArgs, FPinConnectionResponse &OutResponse) const
 {
 	check(InArgs.PinA && InArgs.PinB);
 
-	//Same pin direction
+	// Same pin direction
 	if (InArgs.PinA->Direction == InArgs.PinB->Direction)
 	{
 		OutResponse.Response = CONNECT_RESPONSE_DISALLOW;
 		OutResponse.Message = LOCTEXT(
 			"SamePinDirConnectionError",
-			"Cannot connect two input or two output pins"
-		);
+			"Cannot connect two input or two output pins");
 	}
-	//Invalid or missing nodes
+	// Invalid or missing nodes
 	else if (!InArgs.NodeA || !InArgs.NodeB)
 	{
 		OutResponse.Response = CONNECT_RESPONSE_DISALLOW;
 		OutResponse.Message = LOCTEXT(
 			"WrongNodeTypeConnectionError",
-			"No connectable nodes found extending UGraphNodeDialogueBase"
-		);
+			"No connectable nodes found extending UGraphNodeDialogueBase");
 	}
-	//Attempting to connect to self 
+	// Attempting to connect to self
 	else if (InArgs.NodeA == InArgs.NodeB)
 	{
 		OutResponse.Response = CONNECT_RESPONSE_DISALLOW;
 		OutResponse.Message = LOCTEXT(
 			"SelfConnectConnectionError",
-			"Unable to connect node to itself"
-		);
+			"Unable to connect node to itself");
 	}
-	//Attempting to connect to direct parent 
+	// Attempting to connect to direct parent
 	else if (NodeIsDirectParent(InArgs.NodeA, InArgs.NodeB))
 	{
 		OutResponse.Response = CONNECT_RESPONSE_DISALLOW;
 		OutResponse.Message = LOCTEXT(
 			"DirectParentConnectionError",
-			"Unable to connect node to its direct parent"
-		);
+			"Unable to connect node to its direct parent");
 	}
 }
 
-bool UDialogueEdGraphSchema::NodeIsDirectParent(const UGraphNodeDialogueBase* NodeA, const UGraphNodeDialogueBase* NodeB) const
+bool UDialogueEdGraphSchema::NodeIsDirectParent(const UGraphNodeDialogueBase *NodeA, const UGraphNodeDialogueBase *NodeB) const
 {
 	check(NodeA && NodeB);
 
-	//If either node is a direct parent of the other
-	const TArray<UGraphNodeDialogueBase*> ParentNodesA = NodeA->GetDirectParents();
-	const TArray<UGraphNodeDialogueBase*> ParentNodesB = NodeB->GetDirectParents();
+	// If either node is a direct parent of the other
+	const TArray<UGraphNodeDialogueBase *> ParentNodesA = NodeA->GetDirectParents();
+	const TArray<UGraphNodeDialogueBase *> ParentNodesB = NodeB->GetDirectParents();
 
 	if (ParentNodesB.Contains(NodeA) || ParentNodesA.Contains(NodeB))
 	{
@@ -257,37 +248,37 @@ bool UDialogueEdGraphSchema::NodeIsDirectParent(const UGraphNodeDialogueBase* No
 	return false;
 }
 
-bool UDialogueEdGraphSchema::ConnectionHasConnectionLimit(const FConnectionArgs& InArgs, FPinConnectionResponse& OutResponse) const
+bool UDialogueEdGraphSchema::ConnectionHasConnectionLimit(const FConnectionArgs &InArgs, FPinConnectionResponse &OutResponse) const
 {
 	check(InArgs.NodeA && InArgs.NodeB);
 
-	//If either node has a connection limit, respect it 
+	// If either node has a connection limit, respect it
 	bool bASinglyConnectable = InArgs.NodeA->GetOutputConnectionLimit() == EDialogueConnectionLimit::Single;
 	bool bBSinglyConnectable = InArgs.NodeB->GetInputConnectionLimit() == EDialogueConnectionLimit::Single;
 
 	if (bASinglyConnectable && bBSinglyConnectable)
 	{
+		// CONNECT_RESPONSE_BREAK_OTHERS_AB
+		// Break all existing connections on A and B, and make the new connection (it's exclusive);
+		// display the message string as a warning/notice.
 		OutResponse.Response = CONNECT_RESPONSE_BREAK_OTHERS_AB;
 		OutResponse.Message = LOCTEXT(
 			"AllowConnectionABExclusive",
-			"Connect nodes"
-		);
+			"Connect nodes");
 	}
 	else if (bASinglyConnectable)
 	{
 		OutResponse.Response = CONNECT_RESPONSE_BREAK_OTHERS_A;
 		OutResponse.Message = LOCTEXT(
 			"AllowConnectionAExclusive",
-			"Connect nodes"
-		);
+			"Connect nodes");
 	}
 	else if (bBSinglyConnectable)
 	{
 		OutResponse.Response = CONNECT_RESPONSE_BREAK_OTHERS_B;
 		OutResponse.Message = LOCTEXT(
 			"AllowConnectionBExclusive",
-			"Connect nodes"
-		);
+			"Connect nodes");
 	}
 
 	return bASinglyConnectable || bBSinglyConnectable;

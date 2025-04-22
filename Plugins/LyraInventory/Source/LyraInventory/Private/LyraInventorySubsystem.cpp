@@ -2,7 +2,7 @@
 #include "LyraInventorySubsystem.h"
 #include "LyraInventorySettings.h"
 #include "Inventory/LyraInventoryItemInstance.h"
-#include "LyraInventory/LyraLogChannels.h"
+#include "InventoryLogChannels.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraInventorySubsystem)
 

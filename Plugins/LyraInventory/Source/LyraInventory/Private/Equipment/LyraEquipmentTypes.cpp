@@ -1,6 +1,7 @@
 ﻿
 #include "Equipment/LyraEquipmentTypes.h"
 #include "AbilitySystemComponent.h"
+#include "InventoryLogChannels.h"
 
 void FLyraAbilitySet_GrantedHandles::AddAbilitySpecHandle(const FGameplayAbilitySpecHandle &Handle)
 {
@@ -80,7 +81,7 @@ void ULyraAbilitySet::GiveToAbilitySystem(UAbilitySystemComponent *ASC, FLyraAbi
 
 		if (!IsValid(SetToGrant.AttributeSet))
 		{
-			// UE_LOG(LogLyraAbilitySystem, Error, TEXT("GrantedAttributes[%d] on ability set [%s] is not valid"), SetIndex, *GetNameSafe(this));
+			UE_LOG(LogLyraInventorySystem, Error, TEXT("GrantedAttributes[%d] on ability set [%s] is not valid"), SetIndex, *GetNameSafe(this));
 			continue;
 		}
 
@@ -100,12 +101,12 @@ void ULyraAbilitySet::GiveToAbilitySystem(UAbilitySystemComponent *ASC, FLyraAbi
 
 		if (!IsValid(AbilityToGrant.Ability))
 		{
-			// UE_LOG(LogLyraAbilitySystem, Error, TEXT("GrantedGameplayAbilities[%d] on ability set [%s] is not valid."), AbilityIndex, *GetNameSafe(this));
+			UE_LOG(LogLyraInventorySystem, Error, TEXT("GrantedGameplayAbilities[%d] on ability set [%s] is not valid."), AbilityIndex, *GetNameSafe(this));
 			continue;
 		}
 
-		//每个 UCLASS 都保留一个称作 类默认对象(Class Default Object)的对象，简称CDO。
-		//CDO 本质上是一个默认"模板"对象，由类构建函数生成，之后就不再修改.
+		// 每个 UCLASS 都保留一个称作 类默认对象(Class Default Object)的对象，简称CDO。
+		// CDO 本质上是一个默认"模板"对象，由类构建函数生成，之后就不再修改.
 		UGameplayAbility *AbilityCDO = AbilityToGrant.Ability->GetDefaultObject<UGameplayAbility>();
 
 		FGameplayAbilitySpec AbilitySpec(AbilityCDO, AbilityToGrant.AbilityLevel);
@@ -127,7 +128,7 @@ void ULyraAbilitySet::GiveToAbilitySystem(UAbilitySystemComponent *ASC, FLyraAbi
 
 		if (!IsValid(EffectToGrant.PassiveGameplayEffect))
 		{
-			//UE_LOG(LogLyraAbilitySystem, Error, TEXT("GrantedPassiveGameplayEffects[%d] on ability set [%s] is not valid"), EffectIndex, *GetNameSafe(this));
+			UE_LOG(LogLyraInventorySystem, Error, TEXT("Granted[Passive]GameplayEffects[%d] on ability set [%s] is not valid"), EffectIndex, *GetNameSafe(this));
 			continue;
 		}
 
@@ -138,5 +139,28 @@ void ULyraAbilitySet::GiveToAbilitySystem(UAbilitySystemComponent *ASC, FLyraAbi
 		{
 			OutGrantedHandles->AddGameplayEffectHandle(GameplayEffectHandle);
 		}
+	}
+}
+
+void ULyraAbilitySet::ApplyActiveGameplayEffects(UAbilitySystemComponent *ASC, TArray<FActiveGameplayEffectHandle>& SpecHandles)
+{
+	// Grant the gameplay effects.
+	for (int32 EffectIndex = 0; EffectIndex < GrantedActiveGameplayEffects.Num(); ++EffectIndex)
+	{
+		const FLyraAbilitySet_ActiveGameplayEffect &EffectToGrant = GrantedActiveGameplayEffects[EffectIndex];
+
+		if (!IsValid(EffectToGrant.ActiveGameplayEffect))
+		{
+			UE_LOG(LogLyraInventorySystem, Error, TEXT("Granted[Active]GameplayEffects[%d] on ability set [%s] is not valid"), EffectIndex, *GetNameSafe(this));
+			continue;
+		}
+
+		const UGameplayEffect *GameplayEffect = EffectToGrant.ActiveGameplayEffect->GetDefaultObject<UGameplayEffect>();
+		SpecHandles.Add(ASC->ApplyGameplayEffectToSelf(GameplayEffect, EffectToGrant.EffectLevel, ASC->MakeEffectContext()));
+
+		// if (OutGrantedHandles)
+		// {
+		// 	OutGrantedHandles->AddGameplayEffectHandle(GameplayEffectHandle);
+		// }
 	}
 }

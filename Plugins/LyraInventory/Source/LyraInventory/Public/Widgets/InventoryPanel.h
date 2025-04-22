@@ -28,6 +28,7 @@ public:
 
         void SetFilterQuery(const FLyraInventoryQuery &InQuery);
         void RefreshList();
+        void RefreshItem(USlotHandleObject* SlotHandleObject);
         USlotHandleObject *GetSelectedObject() const;
         void RemoveNavigation();
 

@@ -39,21 +39,21 @@ bool FLyraInventoryItemFilterHandle::NetSerialize(FArchive& Ar, class UPackageMa
 
 	bOutSuccess = true;
 
-	if (Ar.IsSaving())
+	if (Ar.IsSaving())//发送端 序列化
 	{
 		if (Data.IsValid())
 		{
-			RepBits |= 1 << 0;
+			RepBits |= 1 << 0;// 标记第0位为1，表示Data有效
 		}
 	}
 
-	Ar.SerializeBits(&RepBits, 1);
+	Ar.SerializeBits(&RepBits, 1);// 序列化1位到存档
 
 	if (RepBits & (1 << 0))
 	{
-		if (Ar.IsLoading())
+		if (Ar.IsLoading())//接收端 反序列化
 		{
-			Data = MakeShareable(new FLyraInventoryItemSlotFilter());
+			Data = MakeShareable(new FLyraInventoryItemSlotFilter());// 接收端创建新对象
 		}
 
 		FLyraInventoryItemSlotFilter::StaticStruct()->GetCppStructOps()->NetSerialize(Ar, Map, bOutSuccess, Data.Get());

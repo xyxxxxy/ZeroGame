@@ -75,7 +75,6 @@ void UInventoryPanel::RefreshList()
         // }
         // InitialInventory();
 
-        // SetIsFocusable(false);
 
         if (LastHoveredOrSelectedObject)
         {
@@ -86,10 +85,10 @@ void UInventoryPanel::RefreshList()
                 LastHoveredOrSelectedObjectIndex = 0;
         }
 
-        SlotHandleObjects.Empty();
+        
         TArray<FLyraInventoryItemSlotHandle> OutSlotHandles;
         Inventory->Query_GetAllSlotHandles(FilterQuery, OutSlotHandles);
-
+        SlotHandleObjects.Empty(OutSlotHandles.Num() + 1);
         for (const FLyraInventoryItemSlotHandle &SlotHandle : OutSlotHandles)
         {
                 // TODO : outer?
@@ -157,6 +156,12 @@ UUserWidget *UInventoryPanel::GetSelectedEntryWidget()
         }
         return nullptr;
 }
+
+void UInventoryPanel::RefreshItem(USlotHandleObject* SlotHandleObject)
+{
+        TileView_Inventory->SetSelectedItem(SlotHandleObject);
+}
+
 void UInventoryPanel::RemoveNavigation()
 {
         // for (UUserWidget *Widget : TileView_Inventory->GetDisplayedEntryWidgets())

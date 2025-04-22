@@ -26,9 +26,11 @@ public:
 	virtual FConnectionDrawingPolicy* CreateConnectionDrawingPolicy(int32 InBackLayerID, int32 InFrontLayerID, float InZoomFactor,
 		const FSlateRect& InClippingRect, FSlateWindowElementList& InDrawElements, UEdGraph* InGraphObj) const override;
 	virtual void OnPinConnectionDoubleCicked(UEdGraphPin* PinA, UEdGraphPin* PinB, const FVector2D& GraphPosition) const override;
-	// Graph right click
+	// [Graph] right click
+	// Create FDialogueSchemaAction_NewNode and ContextMenuBuilder.AddAction(NewNodeAction);
 	virtual void GetGraphContextActions(FGraphContextMenuBuilder& ContextMenuBuilder) const override;
-	// Node or Pin right click
+	// [Node] or [Pin] right click
+	// Section.AddMenuEntry(FGenericCommands::Get().Delete) etc...
 	virtual void GetContextMenuActions(UToolMenu* Menu, UGraphNodeContextMenuContext* Context) const override;
 	virtual const FPinConnectionResponse CanCreateConnection(const UEdGraphPin* A, const UEdGraphPin* B) const override;
 	virtual void CreateDefaultNodesForGraph(UEdGraph& Graph) const override;

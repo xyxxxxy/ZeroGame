@@ -16,7 +16,8 @@ public:
 	UDialogueEdGraph();
 	
 public:
-	virtual bool Modify(bool bAlwaysMarkDirty) override;
+	virtual bool Modify(bool bAlwaysMarkDirty = true) override;
+	//撤回之后的动作
 	virtual void PostEditUndo() override;
 	virtual void PostInitProperties() override;
 	

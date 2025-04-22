@@ -103,6 +103,7 @@ public:
 	// The returned handles can be used later to take away anything that was granted.
 	void GiveToAbilitySystem(UAbilitySystemComponent *ASC, FLyraAbilitySet_GrantedHandles *OutGrantedHandles, UObject *SourceObject = nullptr) const;
 
+	void ApplyActiveGameplayEffects(UAbilitySystemComponent *ASC, TArray<FActiveGameplayEffectHandle>& SpecHandles);
 protected:
 	// Gameplay abilities to grant when this ability set is granted.
 	UPROPERTY(EditDefaultsOnly, Category = "Gameplay Abilities", meta = (TitleProperty = Ability))

@@ -75,7 +75,7 @@ void UInventoryScreen::HandleConfirmAction()
                 // ViewportPosition * DPI(UWidgetLayoutLibrary::GetViewportScale(this)) = PixelPosition
                 // in order to set the transform of the widget, we select ViewportPosition, not PixelPosition
                 ViewportPosition.X += WidgetGeometry.GetLocalSize().X;
-                CreateSubWidget(ViewportPosition);
+                CreateSubWidget(InventoryPanel, ViewportPosition);
         }
 }
 

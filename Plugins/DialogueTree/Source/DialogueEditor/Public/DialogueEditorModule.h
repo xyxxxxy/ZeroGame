@@ -5,6 +5,7 @@
 #include "Modules/ModuleManager.h"
 
 class FDialogueNodeFactory;
+class FDialogueAssetAction;
 
 class FDialogueEditorModule : public IModuleInterface
 {
@@ -15,9 +16,11 @@ public:
 	virtual void ShutdownModule() override;
 	
 private:
+	// Register AssetCategory and AssetTypeActions
 	void RegisterAssets();
 	void UnRegisterAssets();
 
+	// Register NodeFactory
 	void RegisterNodeFactory();
 	void UnRegisterNodeFactory();
 
@@ -33,4 +36,5 @@ private:
 	TSet<FName> CustomClassLayouts;
 	TSet<FName> CustomStructLayouts;
 	TSharedPtr<FDialogueNodeFactory> NodeFactory;
+	TSharedPtr<FDialogueAssetAction> DialogueAssetAction;
 };

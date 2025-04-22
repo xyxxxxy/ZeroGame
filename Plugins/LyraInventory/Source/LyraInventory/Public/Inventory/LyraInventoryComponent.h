@@ -146,6 +146,10 @@ public:
 	virtual void PopulateSlotReferenceArray(FLyraInventoryItemArray& InventoryRef, TArray<FLyraInventoryItemSlotHandle>& SlotHandles);
 
 public:
+	// Operation for ItemInstance
+	virtual bool UseItem(const FLyraInventoryItemSlotHandle& ItemHandle);
+	virtual bool RemoveItems(const FLyraInventoryItemSlotHandle& ItemHandle, int32 Number);
+public:
 	UFUNCTION(BlueprintCallable, Category = "Inventory | Query")
 	bool Query_GetAllSlotHandles(const FLyraInventoryQuery& Query, TArray<FLyraInventoryItemSlotHandle>& OutSlotHandles);
 
@@ -178,10 +182,10 @@ public:
 	FOnItemSlotUpdateDelegateNative& OnItemSlotUpdateDelegate(){ return OnItemSlotUpdateDelegateNative; }
 
 private:
-	UPROPERTY(BlueprintAssignable, meta = (DisplayName = "OnInventoryUpdate" ), Category = Inventory)
+	UPROPERTY(BlueprintAssignable, meta = (DisplayName = "On Inventory Update" ), Category = Inventory)
 	FOnInventoryUpdateDelegate BP_OnInventoryUpdate;
 	
-	UPROPERTY(BlueprintAssignable, meta = (DisplayName = "OnItemSlotUpdate" ), Category = Inventory)
+	UPROPERTY(BlueprintAssignable, meta = (DisplayName = "On ItemSlot Update" ), Category = Inventory)
 	FOnItemSlotUpdateDelegate BP_OnItemSlotUpdate;
 	
 private:

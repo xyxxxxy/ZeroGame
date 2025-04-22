@@ -49,7 +49,7 @@ struct LYRAINVENTORY_API FLyraInventoryTableRowFragment_World : public FLyraInve
 public:
 	FLyraInventoryTableRowFragment_World(){}
 	
-	UPROPERTY(EditDefaultsOnly, Category = "Inventory")
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Inventory")
 	TObjectPtr<UStaticMesh> Mesh;
 };
 

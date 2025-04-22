@@ -2,10 +2,11 @@
 #pragma once
 
 #include "GraphEditor.h"
+#include "Graph/DialogueEdGraph.h"
 
 class FDialogueAssetEditor;
 class UDialogue;
-
+class UGraphNodeDialogue;
 class DIALOGUEEDITOR_API SDialogueGraphEditor : public SGraphEditor
 {
 public:
@@ -16,25 +17,46 @@ public:
 
 public:
 	void Construct(const FArguments& InArgs, const TSharedPtr<FDialogueAssetEditor> InEditor);
+	virtual void BindGraphCommands();
 
-public:
+protected:
 	void OnSelectedNodesChanged(const TSet<UObject*>& SelectedObjects);
 
 public:
-	virtual void BindGraphCommands();
+	FOnSelectionChanged OnSelectionChangedEvent;
 
+private:
 	static void UndoGraphAction();
+	static void RedoGraphAction();
+
+public:
+	virtual bool IsTabFocused() const;
 	static bool CanEdit();
+	static bool IsPIE();
+	static bool IsPlaySessionPaused();
+	
+protected:
+	virtual void DeleteSelectedNodes();
+	virtual void DeleteSelectedDuplicableNodes();
+	virtual bool CanDeleteNodes() const;
 
-	bool IsTabFocused() const;
+	virtual void CopySelectedNodes() const;
+	static void PrepareFlowGraphNodeForCopy(UGraphNodeDialogue& FlowGraphNode, const int32 ParentEdNodeIndex, FGraphPanelSelectionSet& NewSelectedNodes);
+	virtual bool CanCopyNodes() const;
 
-	void DeleteSelectedNodes();
-	bool CanDeleteNodes();
+	virtual void CutSelectedNodes();
+	virtual bool CanCutNodes() const;
 
+	virtual void PasteNodes();
+	virtual bool CanPasteNodes() const;
+
+	void PasteNodesHere(const FVector2D& Location);
+	static TSet<UEdGraphNode*> ImportNodesToPasteFromClipboard(UDialogueEdGraph& FlowGraph, FString& OutTextToImport);
+	TArray<UGraphNodeDialogue*> DerivePasteTargetNodesFromSelectedNodes() const;
 protected:
 	TWeakObjectPtr<UDialogue> Dialogue;
 	TWeakPtr<FDialogueAssetEditor> Editor;
-	TWeakPtr<IDetailsView> NodeDetailsView;
+	TSharedPtr<IDetailsView> NodeDetailsView;
 	
 	TSharedPtr<FUICommandList> CommandList;
 };

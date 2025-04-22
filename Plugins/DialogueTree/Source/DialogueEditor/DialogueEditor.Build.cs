@@ -37,7 +37,9 @@ public class DialogueEditor : ModuleRules
 				"PropertyEditor",
 				"Projects",
 				"ToolMenus",
-				"GraphEditor"
+				"GraphEditor",
+				"InputCore",
+				"ApplicationCore"
 			}
 			);
 		

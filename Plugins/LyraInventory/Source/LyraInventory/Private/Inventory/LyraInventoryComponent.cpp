@@ -380,6 +380,17 @@ void ULyraInventoryComponent::PopulateSlotReferenceArray(FLyraInventoryItemArray
 	}
 }
 
+bool ULyraInventoryComponent::UseItem(const FLyraInventoryItemSlotHandle &ItemHandle)
+{
+	RemoveItemFromInventory(ItemHandle);
+	return true;
+}
+
+bool ULyraInventoryComponent::RemoveItems(const FLyraInventoryItemSlotHandle &ItemHandle, int32 Number)
+{
+	return true;
+}
+
 bool ULyraInventoryComponent::Query_GetAllSlotHandles(const FLyraInventoryQuery &Query, TArray<FLyraInventoryItemSlotHandle> &OutSlotHandles)
 {
 

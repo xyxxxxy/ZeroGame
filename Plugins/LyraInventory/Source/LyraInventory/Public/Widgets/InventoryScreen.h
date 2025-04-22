@@ -33,6 +33,7 @@ protected:
         // UInventoryPanel* GetInventoryPanel() const{return InventoryPanel;}
 
         USlotHandleObject *GetSlotHandleObject();
+        
 
         void HandleConfirmAction();
         void HandleBackAction();
@@ -42,7 +43,7 @@ protected:
 
         // RowWidgetT* GetEntryWidgetFromItem(const UObject* Item) const
         UFUNCTION(BlueprintImplementableEvent)
-        void CreateSubWidget(const FVector2D &EntryWidgetPosition);
+        void CreateSubWidget(UInventoryPanel* PanelWidget, const FVector2D &EntryWidgetPosition);
 
 protected:
         // UPROPERTY(BlueprintReadOnly, Category = Input, meta = (BindWidget, OptionalWidget = true, AllowPrivateAccess = true))

@@ -1,7 +1,7 @@
 ﻿
 #include "Processors/LyraInventoryProcessor_Bag.h"
 #include "Inventory/LyraInventoryComponent.h"
-#include "LyraInventory/LyraLogChannels.h"
+#include "InventoryLogChannels.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(LyraInventoryProcessor_Bag)
 
@@ -9,7 +9,7 @@ void ULyraInventoryProcessor_Bag::OnInventoryBeginPlay_Implementation()
 {
 	Super::OnInventoryBeginPlay_Implementation();
 
-	UE_LOG(LogLyraInventorySystem, Warning, TEXT("OnInventoryBeginPlay: %s-CreateInventorySlots"), *GetNameSafe(this));
+	UE_LOG(LogLyraInventorySystem, Warning, TEXT("OnInventoryBeginPlay: %s-CreateInventorySlots---Num [%d], Tags [%s]"), *GetNameSafe(this), BagSlotCount, *SlotTags.ToString());
 	//InitInventorySlots();
 	//TArray<FLyraInventoryItemSlotHandle>& OutSlotHandles;
 	BulkCreateInventorySlots(SlotTags, FLyraInventoryItemFilterHandle(new FLyraInventoryItemSlotFilter(SlotFilter)), BagSlotCount, GetOwningInventory()->AllSlotHandles);

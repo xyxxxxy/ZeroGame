@@ -9,6 +9,7 @@
 
 UDialogueEdGraph::UDialogueEdGraph()
 {
+	// Add a listener for OnGraphChanged events, FOnGraphChanged args: const FEdGraphEditAction& EditAction
 	AddOnGraphChangedHandler(FOnGraphChanged::FDelegate::CreateUObject(this,&UDialogueEdGraph::OnDialogueGraphChanged));
 }
 

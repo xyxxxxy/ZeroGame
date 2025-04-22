@@ -1,4 +1,4 @@
 ﻿
-#include "LyraLogChannels.h"
+#include "InventoryLogChannels.h"
 
 DEFINE_LOG_CATEGORY(LogLyraInventorySystem)

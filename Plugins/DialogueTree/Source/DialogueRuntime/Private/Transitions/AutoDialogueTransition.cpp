@@ -22,6 +22,7 @@ void UAutoDialogueTransition::TransitionOut()
 	TArray<UDialogueNode*> Children = OwningNode->GetChildren();
 	if (!Children.IsEmpty() && Children[0])
 	{
+		// DialogueWidget------OnSwitchToNextStatement()
 		OwningNode->GetDialogue()->TraverseNode(Children[0]);
 	}
 	else

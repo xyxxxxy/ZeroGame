@@ -11,6 +11,7 @@
 class URichTextBlock;
 
 
+
 UCLASS()
 class UDialogueWidget : public UDialogueWidgetBase
 {
@@ -47,6 +48,7 @@ private:
 
 	void Forward();
 	void Back();
+	void SwitchAutoDialogue();
 
 protected:
 	FTimerHandle DisplayTextTimerHandle;
@@ -72,6 +74,11 @@ protected:
 	FDataTableRowHandle BackInputActionData;
 
 	FUIActionBindingHandle BackHandle;
+
+	UPROPERTY(EditDefaultsOnly)
+	FDataTableRowHandle SwitchAutoDialogueInputActionData;
+
+	FUIActionBindingHandle SwitchAutoDialogueHandle;
 	
 private:
 	int32 StrIndex = 0;
@@ -79,4 +86,6 @@ private:
 	FString OriginStr;
 	bool bHasEntered = false;
 	bool bEntireStatement = false;
+
+	bool bAutoDialogue = false;
 };

@@ -9,18 +9,18 @@ class ULyraInventoryComponent;
 class ULyraInventoryItemInstance;
 class ULyraInventoryProcessor_Bag;
 
-USTRUCT(BlueprintType)
-struct LYRAINVENTORY_API FLyraInventoryItemHandleEntry 
-{
-	GENERATED_BODY()
-public:
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Inventory)
-	int32 SlotId = -1;
+// USTRUCT(BlueprintType)
+// struct LYRAINVENTORY_API FLyraInventoryItemHandleEntry 
+// {
+// 	GENERATED_BODY()
+// public:
+// 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Inventory)
+// 	int32 SlotId = -1;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Inventory)
-	FGameplayTagContainer SlotTags;
+// 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Inventory)
+// 	FGameplayTagContainer SlotTags;
 
-};
+// };
 
 USTRUCT(BlueprintType)
 struct LYRAINVENTORY_API FLyraInventoryItemSlotFilter
@@ -38,6 +38,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Filter)
 	FGameplayTagQuery FilterQuery;
 
+	//FString GetDebugString() const{ FilterQuery.}
 	bool AcceptsItem(ULyraInventoryItemInstance* ItemInstance) const;
 	bool NetSerialize(FArchive& Ar, class UPackageMap* Map, bool& bOutSuccess);
 };
@@ -89,8 +90,8 @@ struct TStructOpsTypeTraits<FLyraInventoryItemFilterHandle> : public TStructOpsT
 {
 	enum
 	{
-		WithNetSerializer = true,
-		WithCopy = true,
+		WithNetSerializer = true,// 结构体是否具有一个 NetSerialize 函数，用于将状态序列化为用于网络复制的 FArchive。
+		WithCopy = true,// 结构体是否可以通过其复制赋值操作符进行复制。
 	};
 };
 

@@ -2,6 +2,7 @@
 #include "Graph/DialogueGraphSchema_Action.h"
 #include "Graph/Nodes/GraphNodeDialogue.h"
 #include "Settings/EditorStyleSettings.h"
+#include "DialogueEditorLogChannels.h"
 
 #include UE_INLINE_GENERATED_CPP_BY_NAME(DialogueGraphSchema_Action)
 
@@ -12,13 +13,15 @@ FDialogueSchemaAction_NewNode::FDialogueSchemaAction_NewNode()
 }
 
 FDialogueSchemaAction_NewNode::FDialogueSchemaAction_NewNode(FText InNodeCategory, FText InMenuDesc, FText InToolTip, UGraphNodeDialogue* InTemplateNode)
-: FEdGraphSchemaAction(MoveTemp(InNodeCategory),MoveTemp(InMenuDesc),MoveTemp(InToolTip),0),TemplateNode(InTemplateNode)
+: FEdGraphSchemaAction(MoveTemp(InNodeCategory), MoveTemp(InMenuDesc), MoveTemp(InToolTip), 0), TemplateNode(InTemplateNode)
 {
 	check(TemplateNode);
 }
 
 UEdGraphNode* FDialogueSchemaAction_NewNode::PerformAction(UEdGraph* ParentGraph, UEdGraphPin* FromPin, const FVector2D Location, bool bSelectNewNode)
 {
+	UE_LOG(LogDialogueEditor, Warning, TEXT("FDialogueSchemaAction_NewNode PerformAction"));
+	
 	if (TemplateNode != nullptr)
 	{
 		//Begin transaction 
