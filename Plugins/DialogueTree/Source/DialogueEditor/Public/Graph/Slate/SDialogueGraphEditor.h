@@ -53,6 +53,7 @@ protected:
 	void PasteNodesHere(const FVector2D& Location);
 	static TSet<UEdGraphNode*> ImportNodesToPasteFromClipboard(UDialogueEdGraph& FlowGraph, FString& OutTextToImport);
 	TArray<UGraphNodeDialogue*> DerivePasteTargetNodesFromSelectedNodes() const;
+	
 protected:
 	TWeakObjectPtr<UDialogue> Dialogue;
 	TWeakPtr<FDialogueAssetEditor> Editor;

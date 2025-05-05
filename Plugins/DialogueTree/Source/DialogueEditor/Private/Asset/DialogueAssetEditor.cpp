@@ -37,21 +37,19 @@ void FDialogueAssetEditor::InitEditor(const EToolkitMode::Type Mode, const TShar
 
 	BindToolbarCommands();
 	CreateToolbar();
-	
+
 	InitAssetEditor(
 		Mode,
 		InitToolkitHost,
 		TEXT("DialogueAssetEditor"),
 		FTabManager::FLayout::NullLayout,
-		true,	// bCreateDefaultStandaloneMenu,最上面的一栏菜单
-		true,	// bCreateDefaultToolbar,按钮
+		true, // bCreateDefaultStandaloneMenu,最上面的一栏菜单
+		true, // bCreateDefaultToolbar,按钮
 		ObjectsToEdit);
 
 	AddApplicationMode(TEXT("DialogueAssetAppMode"), MakeShareable(new FDialogueAssetAppMode(SharedThis(this))));
 
 	SetCurrentMode(TEXT("DialogueAssetAppMode"));
-
-
 
 	RegenerateMenusAndToolbars();
 }
@@ -91,12 +89,12 @@ UEdGraph *FDialogueAssetEditor::GetGraph() const
 
 void FDialogueAssetEditor::SetGraphEditor(TSharedPtr<SGraphEditor> InGraphEditor)
 {
-	GraphEditor = InGraphEditor;
+	GraphEditor = InGraphEditor.ToSharedRef();
 }
 
 TSharedPtr<SGraphEditor> FDialogueAssetEditor::GetGraphEditor() const
 {
-	return GraphEditor.Pin();
+	return GraphEditor;
 }
 
 FName FDialogueAssetEditor::GetToolkitFName() const
@@ -168,6 +166,26 @@ FString FDialogueAssetEditor::GetReferencerName() const
 	return TEXT("FDialogueTreeEditor");
 }
 
+void FDialogueAssetEditor::PostUndo(bool bSuccess)
+{
+	HandleUndoTransaction();
+}
+
+void FDialogueAssetEditor::PostRedo(bool bSuccess)
+{
+	HandleUndoTransaction();
+}
+
+void FDialogueAssetEditor::HandleUndoTransaction()
+{
+	SetUISelectionState(NAME_None);
+	GraphEditor->NotifyGraphChanged();
+}
+
+void FDialogueAssetEditor::NotifyPostChange(const FPropertyChangedEvent &PropertyChangedEvent, FProperty *PropertyThatChanged)
+{
+}
+
 void FDialogueAssetEditor::SetNodeDetailView(TSharedPtr<IDetailsView> InDetailView)
 {
 	InDetailView = InDetailView.ToSharedRef();
@@ -231,6 +249,21 @@ void FDialogueAssetEditor::OnCompile()
 
 void FDialogueAssetEditor::OnChangeSelection(const TSet<UObject *> &SelectedObjects)
 {
+}
+
+void FDialogueAssetEditor::SetUISelectionState(const FName SelectionOwner)
+{
+	// if (SelectionOwner == GraphTab)
+	// {
+	// 	GraphEditor->ClearSelectionSet();
+	// }
+	// else if (SelectionOwner == PaletteTab)
+	// {
+	// 	if (Palette.IsValid())
+	// 	{
+	// 		Palette->ClearGraphActionMenuSelection();
+	// 	}
+	// }
 }
 
 #undef LOCTEXT_NAMESPACE

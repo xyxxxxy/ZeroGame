@@ -8,7 +8,7 @@
 
 class UDialogue;
 class ADialogueController;
-
+class AActor;
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(
 	FOnBehaviorFlagsChanged,
 	FGameplayTagContainer,
@@ -113,4 +113,7 @@ public:
 	
 	UPROPERTY(BlueprintAssignable, Category = "Dialogue")
 	FOnBehaviorFlagsChanged OnBehaviorFlagsChanged;
+
+	UPROPERTY(EditAnywhere, Instanced, BlueprintReadOnly, Category = "Test")
+	TArray<class AActor*> Actors;
 };

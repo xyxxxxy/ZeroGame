@@ -11,6 +11,7 @@
 #include "EdGraphUtilities.h"
 #include "HAL/PlatformApplicationMisc.h"
 #include "Graph/DialogueEdGraph.h"
+#include "Algo/AnyOf.h"
 
 #define LOCTEXT_NAMESPACE "SDialogueGraphEditor"
 
@@ -303,6 +304,61 @@ void SDialogueGraphEditor::PasteNodes()
 
 bool SDialogueGraphEditor::CanPasteNodes() const
 {
+	// TODO
+	if (!CanEdit() || !IsTabFocused())
+	{
+		return false;
+	}
+
+	FString ClipboardContent;
+	FPlatformApplicationMisc::ClipboardPaste(ClipboardContent);
+
+	UDialogueEdGraph* DialogueGraph = CastChecked<UDialogueEdGraph>(Dialogue->GetGraph());
+	if (!ensure(IsValid(DialogueGraph)))
+	{
+		// We expect to have a legal FlowGraph pointer at this point
+		return false;
+	}
+
+	const bool bIsPastePossible = FEdGraphUtilities::CanImportNodesFromText(DialogueGraph, ClipboardContent);
+	if (!bIsPastePossible)
+	{
+		return false;
+	}
+
+	FString TextToImport;
+	const TSet<UEdGraphNode*> NodesToPaste = ImportNodesToPasteFromClipboard(*DialogueGraph, TextToImport);
+
+	if (NodesToPaste.IsEmpty())
+	{
+		// Must have at least one node to paste
+		return false;
+	}
+
+	// 跳出作用域时执行
+	ON_SCOPE_EXIT
+	{
+		// We need to clean up the nodes we built to test the paste operation
+		for (TSet<UEdGraphNode*>::TConstIterator It(NodesToPaste); It; ++It)
+		{
+			UGraphNodeDialogue* NodeToPaste = Cast<UGraphNodeDialogue>(*It);
+			if (IsValid(NodeToPaste))
+			{
+				NodeToPaste->ClearFlags(RF_Public);
+				NodeToPaste->SetFlags(RF_Transient);
+
+				const FString NewNameStr = MakeUniqueObjectName(NodeToPaste->GetOuter(), NodeToPaste->GetClass()).ToString();
+
+				// This will remove the node from its graph
+				NodeToPaste->DestroyNode();
+
+				// Rename and garbage the node so that it can't be found by name if the same clipboard is re-pasted
+				NodeToPaste->Rename(*NewNameStr, nullptr, REN_NonTransactional | REN_DontCreateRedirectors | REN_ForceNoResetLoaders);
+				NodeToPaste->MarkAsGarbage();
+			}
+		}
+	};
+	
 	return true;
 }
 
@@ -314,7 +370,89 @@ void SDialogueGraphEditor::PasteNodesHere(const FVector2D &Location)
 	DialogueGraph->Modify();
 	Dialogue->Modify();
 
-	// DialogueGraph->LockUpdates();
+	DialogueGraph->LockUpdates();
+	// TODO: SubNodes
+	const TArray<UGraphNodeDialogue*> PasteTargetNodes = DerivePasteTargetNodesFromSelectedNodes();
+	//  return Node && !Node->SubNodes.IsEmpty()
+	if (Algo::AnyOf(PasteTargetNodes, [](UGraphNodeDialogue* Node) { return Node; }))
+	{
+		checkf(PasteTargetNodes.Num() <= 1, TEXT("This should be enforced in CanPasteNodes()"));
+	}
+
+	UGraphNodeDialogue* PasteTargetNode = !PasteTargetNodes.IsEmpty() ? PasteTargetNodes.Top() : nullptr;
+
+	FString TextToImport;
+	const TSet<UEdGraphNode*> NodesToPaste = ImportNodesToPasteFromClipboard(*DialogueGraph, TextToImport);
+
+	// Clear the selection set (newly pasted stuff will be selected)
+	ClearSelectionSet();
+	Editor.Pin()->SetUISelectionState(NAME_None);
+
+	//Average position of nodes so we can move them while still maintaining relative distances to each other
+	FVector2D AvgNodePosition(0.0f, 0.0f);
+
+	// Number of nodes used to calculate AvgNodePosition
+	int32 AvgCount = 0;
+
+	for (TSet<UEdGraphNode*>::TConstIterator It(NodesToPaste); It; ++It)
+	{
+		UEdGraphNode* EdNode = *It;
+		UGraphNodeDialogue* FlowGraphNode = Cast<UGraphNodeDialogue>(EdNode);
+		if (EdNode && (FlowGraphNode == nullptr))
+		{
+			AvgNodePosition.X += EdNode->NodePosX;
+			AvgNodePosition.Y += EdNode->NodePosY;
+			++AvgCount;
+		}
+	}
+
+	if (AvgCount > 0)
+	{
+		float InvNumNodes = 1.0f / static_cast<float>(AvgCount);
+		AvgNodePosition.X *= InvNumNodes;
+		AvgNodePosition.Y *= InvNumNodes;
+	}
+
+	for (TSet<UEdGraphNode*>::TConstIterator It(NodesToPaste); It; ++It)
+	{
+		UEdGraphNode* PastedNode = *It;
+
+		UGraphNodeDialogue* PastedFlowGraphNode = Cast<UGraphNodeDialogue>(PastedNode);
+
+
+		if (PastedNode)
+		{
+			// Select the newly pasted stuff
+			constexpr bool bSelectNodes = true;
+			SetNodeSelection(PastedNode, bSelectNodes);
+
+			PastedNode->NodePosX = (PastedNode->NodePosX - AvgNodePosition.X) + Location.X;
+			PastedNode->NodePosY = (PastedNode->NodePosY - AvgNodePosition.Y) + Location.Y;
+
+			PastedNode->SnapToGrid(16);
+
+			// Give new node a different Guid from the old one
+			PastedNode->CreateNewGuid();
+		}
+
+	}
+
+
+	if (DialogueGraph)
+	{
+		DialogueGraph->UpdateClassData();
+		DialogueGraph->OnNodesPasted(TextToImport);
+		DialogueGraph->UnlockUpdates();
+	}
+
+	// Update UI
+	NotifyGraphChanged();
+
+	if (UObject* GraphOwner = DialogueGraph->GetOuter())
+	{
+		GraphOwner->PostEditChange();
+		GraphOwner->MarkPackageDirty();
+	}
 }
 
 TSet<UEdGraphNode *> SDialogueGraphEditor::ImportNodesToPasteFromClipboard(UDialogueEdGraph &FlowGraph, FString &OutTextToImport)

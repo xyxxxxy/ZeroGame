@@ -36,7 +36,7 @@ public:
 	virtual FString GetWorldCentricTabPrefix() const override;
 	// 设置嵌入式编辑器标签页的 颜色标识?
 	virtual FLinearColor GetWorldCentricTabColorScale() const override;
-	// 返回编辑器的 工具提示文本(鼠标悬停在标签页或窗口时的提示信息)
+	// 返回编辑器的工具提示文本(鼠标悬停在标签页或窗口时的提示信息)
 	virtual FText GetToolkitToolTipText() const override;
 	// 返回编辑器帮助文档的 URL 链接，用户按下 F1 时自动跳转
 	virtual FString GetDocumentationLink() const override;
@@ -51,6 +51,19 @@ public:
 	virtual void AddReferencedObjects(FReferenceCollector& Collector) override;
 	virtual FString GetReferencerName() const override;
 
+
+	// FEditorUndoClient
+	virtual void PostUndo(bool bSuccess) override;
+	virtual void PostRedo(bool bSuccess) override;
+	// --
+
+	virtual void HandleUndoTransaction();
+
+	// FNotifyHook
+	virtual void NotifyPostChange(const FPropertyChangedEvent& PropertyChangedEvent, FProperty* PropertyThatChanged) override;
+	// --
+
+	
 	void SetNodeDetailView(TSharedPtr<IDetailsView> InDetailView);
 	TSharedPtr<IDetailsView> GetNodeDetailView() const;
 
@@ -65,10 +78,10 @@ public:
 	
 	void OnCompile();
 	
-	
-
-	
 	void OnChangeSelection(const TSet<UObject*>& SelectedObjects);
+
+public:
+	void SetUISelectionState(const FName SelectionOwner);
 
 private:
 	TObjectPtr<UDialogue> Dialogue;
@@ -76,7 +89,7 @@ private:
 
 	TSharedPtr<IDetailsView> NodeDetailsView;
 
-	TWeakPtr<SGraphEditor> GraphEditor;
+	TSharedPtr<SGraphEditor> GraphEditor;
 
 	//TSharedPtr<FUICommandList> ToolKitCommands;
 	TSharedPtr<FDialogueEditorToolbar> AssetToolbar;

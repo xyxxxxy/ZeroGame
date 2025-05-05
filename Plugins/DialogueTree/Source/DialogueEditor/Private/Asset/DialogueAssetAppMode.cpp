@@ -28,7 +28,7 @@ FDialogueAssetAppMode::FDialogueAssetAppMode( TSharedPtr<FDialogueAssetEditor> I
 			(
 			FTabManager::NewStack()
 			->SetSizeCoefficient(0.75)
-			->AddTab(FDialogueEditorTabs::ViewportTabID,ETabState::OpenedTab)
+			->AddTab(FDialogueEditorTabs::ViewportTabID, ETabState::OpenedTab)
 			->SetHideTabWell(true)
 			)			
 			->Split
@@ -40,13 +40,13 @@ FDialogueAssetAppMode::FDialogueAssetAppMode( TSharedPtr<FDialogueAssetEditor> I
 				(
 				FTabManager::NewStack()
 				->SetSizeCoefficient(0.5)
-				->AddTab(FDialogueEditorTabs::GraphPropertiesTabID,ETabState::OpenedTab)
+				->AddTab(FDialogueEditorTabs::GraphPropertiesTabID, ETabState::OpenedTab)
 				)
 				->Split
 				(
 				FTabManager::NewStack()
 				->SetSizeCoefficient(0.5)
-				->AddTab(FDialogueEditorTabs::NodeDetailsTabID,ETabState::OpenedTab)	
+				->AddTab(FDialogueEditorTabs::NodeDetailsTabID, ETabState::OpenedTab)	
 				)			
 			)
 		)			

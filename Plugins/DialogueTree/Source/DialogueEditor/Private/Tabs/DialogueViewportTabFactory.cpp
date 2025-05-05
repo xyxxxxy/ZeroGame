@@ -8,12 +8,13 @@
 #define LOCTEXT_NAMESPACE "DialogueViewportTabFactory"
 
 FDialogueViewportTabFactory::FDialogueViewportTabFactory(TSharedPtr<FDialogueAssetEditor> InEditor)
-:FWorkflowTabFactory(FDialogueEditorTabs::ViewportTabID,InEditor)
+: FWorkflowTabFactory(FDialogueEditorTabs::ViewportTabID, InEditor)
 {
 	Editor = InEditor;
-	TabLabel = LOCTEXT("DialogueViewportTabLabel","Viewport");
-	ViewMenuDescription = LOCTEXT("DialogueViewportViewMenuDescription","Display a Viewport for whatever you want to do.");
-	ViewMenuTooltip = LOCTEXT("DialogueViewportViewMenuTooltip","Show the Viewport.");
+	TabLabel = LOCTEXT("DialogueViewportTabLabel", "Dialogue Graph");
+	// What for? FWorkflowTabFactory::CreateViewMenuEntry(FMenuBuilder& MenuBuilder, const FUIAction& Action)
+	ViewMenuDescription = LOCTEXT("DialogueViewportViewMenuDescription", "ViewportTabMenu");
+	ViewMenuTooltip = LOCTEXT("DialogueViewportViewMenuTooltip","Show the ViewportMenu.");
 }
 
 TSharedRef<SWidget> FDialogueViewportTabFactory::CreateTabBody(const FWorkflowTabSpawnInfo& Info) const
@@ -38,7 +39,7 @@ TSharedRef<SWidget> FDialogueViewportTabFactory::CreateTabBody(const FWorkflowTa
 
 FText FDialogueViewportTabFactory::GetTabToolTipText(const FWorkflowTabSpawnInfo& Info) const
 {
-	return LOCTEXT("DialogueViewportTabToolTipText","A Viewport for doing Viewport thing.");
+	return LOCTEXT("DialogueViewportTabToolTipText", "A Viewport for doing Viewport thing.");
 }
 
 #undef LOCTEXT_NAMESPACE

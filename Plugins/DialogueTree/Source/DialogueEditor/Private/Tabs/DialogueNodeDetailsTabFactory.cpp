@@ -1,18 +1,17 @@
 ﻿
 #include "Tabs/DialogueNodeDetailsTabFactory.h"
-
 #include "Tabs/DialogueEditorTabs.h"
 #include "Asset/DialogueAssetEditor.h"
 
 #define LOCTEXT_NAMESPACE "DialogueNodeDetailsTabFactory"
 
 FDialogueNodeDetailsTabFactory::FDialogueNodeDetailsTabFactory(TSharedPtr<FDialogueAssetEditor> InEditor)
-:FWorkflowTabFactory(FDialogueEditorTabs::NodeDetailsTabID, InEditor)
+: FWorkflowTabFactory(FDialogueEditorTabs::NodeDetailsTabID, InEditor)
 {
 	Editor = InEditor;
-	TabLabel = LOCTEXT("DialogueNodeDetailsTabLabel","Node Details");
-	ViewMenuDescription = LOCTEXT("DialogueNodeDetailsViewMenuDescription","Display the Node Details view for current dialogue asset.");
-	ViewMenuTooltip = LOCTEXT("DialogueNodeDetailsViewMenuTooltip","Show the Node Details.");
+	TabLabel = LOCTEXT("DialogueNodeDetailsTabLabel", "Node Details");
+	ViewMenuDescription = LOCTEXT("DialogueNodeDetailsViewMenuDescription", "NodeDetailsMenu");
+	ViewMenuTooltip = LOCTEXT("DialogueNodeDetailsViewMenuTooltip", "Show the Node Details Menu.");
 }
 
 TSharedRef<SWidget> FDialogueNodeDetailsTabFactory::CreateTabBody(const FWorkflowTabSpawnInfo& Info) const
@@ -22,10 +21,10 @@ TSharedRef<SWidget> FDialogueNodeDetailsTabFactory::CreateTabBody(const FWorkflo
 
 	FDetailsViewArgs DetailsViewArgs;
 	{
-		DetailsViewArgs.bHideSelectionTip = false;
+		DetailsViewArgs.bHideSelectionTip = true;	// 设为 true 可隐藏默认提示文本"Select an object to view details."
 		DetailsViewArgs.bShowCustomFilterOption = true;
 		DetailsViewArgs.bAllowSearch = true;
-		DetailsViewArgs.NotifyHook = EditorPtr.Get();
+		DetailsViewArgs.NotifyHook = EditorPtr.Get();	// FNotifyHook 提供接口用于捕获修改事件
 	}
 	EditorPtr->GetNodeDetailView() = PropertyEditorModule.CreateDetailView(DetailsViewArgs);
 	//check(EditorPtr->GetNodeDetailView());
@@ -42,7 +41,7 @@ TSharedRef<SWidget> FDialogueNodeDetailsTabFactory::CreateTabBody(const FWorkflo
 
 FText FDialogueNodeDetailsTabFactory::GetTabToolTipText(const FWorkflowTabSpawnInfo& Info) const
 {
-	return LOCTEXT("DialogueNodeDetailsTabToolTipText","The Node Details view for modifying Node Details.");
+	return LOCTEXT("DialogueNodeDetailsTabToolTipText", "The Node Details view for modifying Node Details.");
 }
 
 #undef LOCTEXT_NAMESPACE

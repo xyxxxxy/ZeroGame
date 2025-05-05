@@ -68,7 +68,7 @@ private:
 	uint32 ColorIndex = 0;
 };
 
-UCLASS(BlueprintType)
+UCLASS(BlueprintType, EditInlineNew, CollapseCategories)
 class DIALOGUERUNTIME_API UDialogue : public UObject
 {
 	GENERATED_BODY()

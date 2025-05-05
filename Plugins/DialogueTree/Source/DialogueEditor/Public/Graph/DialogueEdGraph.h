@@ -41,6 +41,12 @@ public:
 	
 	void UpdateAllNodeVisuals();
 
+public:
+	void UpdateClassData();
+
+public:
+	virtual void OnNodesPasted(const FString& ImportStr) {}
+
 private: 
 	void ClearAssetNodes();
 	void CreateAssetNodes(UDialogue* InAsset);
@@ -52,10 +58,16 @@ private:
 	UFUNCTION()
 	void OnSpeakerRolesChanged();
 
+public:
+	void LockUpdates();
+	void UnlockUpdates();
+
 private:
 	UPROPERTY()
 	TObjectPtr<UGraphNodeDialogue> Root;
 	
 	UPROPERTY()
 	TMap<FName, TObjectPtr<UGraphNodeDialogue>> NodeMap;
+
+	bool bLockUpdates = false;
 };
