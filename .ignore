@@ -12,6 +12,9 @@
 /Plugins/CommonUser/Intermediate
 /Plugins/DialogueTree/Content
 /Plugins/DialogueTree/Intermediate
+/Plugins/Foo/Content
+/Plugins/Foo/Intermediate
+/Plugins/Foo/Shaders
 /Plugins/GameplayMessageRouter/Intermediate
 /Plugins/GenericMessage/Intermediate
 /Plugins/LyraInventory/Content

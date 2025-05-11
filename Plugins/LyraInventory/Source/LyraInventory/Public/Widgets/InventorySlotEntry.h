@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Blueprint/IUserObjectListEntry.h"
-#include "CommonUserWidget.h"
+#include "CommonButtonBase.h"
 #include "InventorySlotEntry.generated.h"
 
 struct FGeometry;
@@ -12,7 +12,7 @@ class UImage;
 class UCommonTextBlock;
 
 UCLASS(Abstract, NotBlueprintable, meta = (Category = "Inventory", DisableNativeTick))
-class LYRAINVENTORY_API UInventorySlotEntryBase : public UCommonUserWidget, public IUserObjectListEntry
+class LYRAINVENTORY_API UInventorySlotEntryBase : public UCommonButtonBase, public IUserObjectListEntry
 {
 	GENERATED_BODY()
 

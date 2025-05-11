@@ -66,12 +66,14 @@ void UInventoryScreen::HandleConfirmAction()
         {
                 // FVector2D WidgetPosition;
                 FGeometry WidgetGeometry = Widget->GetCachedGeometry();
-                // GetLocalSize() In eidtor
-                // GetAbsoluteSize() In viewport
+                // --FGeometry--
+                // GetLocalSize() In UI eidtor
+                // GetAbsoluteSize() In Viewport
 
                 FVector2D PixelPosition, ViewportPosition;
 
                 USlateBlueprintLibrary::LocalToViewport(GetWorld(), WidgetGeometry, FVector2D(0.0f, 0.0f), PixelPosition, ViewportPosition);
+                // 注意!!
                 // ViewportPosition * DPI(UWidgetLayoutLibrary::GetViewportScale(this)) = PixelPosition
                 // in order to set the transform of the widget, we select ViewportPosition, not PixelPosition
                 ViewportPosition.X += WidgetGeometry.GetLocalSize().X;
