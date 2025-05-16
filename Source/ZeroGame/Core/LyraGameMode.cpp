@@ -32,7 +32,7 @@ void ALyraGameMode::BeginPlay()
 	Super::BeginPlay();
 
 	const auto navigation = MakeShared<FNavigationConfig>();
-	navigation->bKeyNavigation = false;
+	navigation->bKeyNavigation = true;
 	navigation->bTabNavigation = false;
 	navigation->bAnalogNavigation = false;
 	FSlateApplication::Get().SetNavigationConfig(navigation);

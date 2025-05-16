@@ -13,6 +13,7 @@ public:
 	SLATE_BEGIN_ARGS(SDialogueGraphEditor){}
 	SLATE_ARGUMENT(FGraphEditorEvents, GraphEvents)
 	SLATE_ARGUMENT(TSharedPtr<IDetailsView>, DetailsView)
+	//SLATE_EVENT( FSimpleDelegate, OnHovered )
 	SLATE_END_ARGS()
 
 public:
