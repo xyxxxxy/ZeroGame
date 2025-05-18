@@ -25,8 +25,6 @@ protected:
     //~ Begin UWidget Interface
     virtual TSharedRef<SWidget> RebuildWidget() override;
 
-public:
-    static int32 GetCurrentSectorIndex(int32 SectorCount, FVector2D MousePosition, float OuterRadius, float InnerRadius);
 
 #if WITH_EDITOR
     virtual const FText GetPaletteCategory() override
@@ -35,32 +33,44 @@ public:
     }
 #endif
 
-private:
-    FReply OnMouseMove(const FGeometry& Geometry,const FPointerEvent& PointerEvent);
+public:
+    UFUNCTION(BlueprintCallable)
+    void SetIndex(int32 InIndex);
+
+    UFUNCTION(BlueprintCallable)
+    int32 GetIndex() const;
+
+    UFUNCTION(BlueprintCallable)
+    void SetCount(int32 InCount);
+
+    UFUNCTION(BlueprintCallable)
+    int32 GetCount() const;
 
 public:
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "RadialWheelMenu")
-    int32 Count = 8;
+    UPROPERTY(EditAnyWhere, BlueprintReadOnly, Category = "RadialWheelMenu")
+    int32 Count = 6;
     
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "RadialWheelMenu")
-    int32 Index = 1;
+    UPROPERTY(EditAnyWhere, BlueprintReadOnly, Category = "RadialWheelMenu")
+    int32 Index = 0;
 
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "RadialWheelMenu")
+    UPROPERTY(EditAnyWhere, BlueprintReadOnly, Category = "RadialWheelMenu")
     float WidthOverride = 100.f;
 
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "RadialWheelMenu")
+    UPROPERTY(EditAnyWhere, BlueprintReadOnly, Category = "RadialWheelMenu")
     float HeightOverride = 100.f;
 
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "RadialWheelMenu")
+    UPROPERTY(EditAnyWhere, BlueprintReadOnly, Category = "RadialWheelMenu")
     TObjectPtr<UMaterialInterface> BackgroundMaterial;
 
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "RadialWheelMenu")
-    int32 InnerRadius;
+    UPROPERTY(EditAnyWhere, BlueprintReadOnly, Category = "RadialWheelMenu")
+    float InnerRadius = 0.25f;
+
+private:
+
     // 用于创建动态的Material，并且我们在之前写Material时留下了参数
     UPROPERTY()
     TObjectPtr<UMaterialInstanceDynamic> DynMaterial;
 
-private:
     // 用于存储创建Slate的对象
     TSharedPtr<SRadialWheelMenu> MyRadialWheelMenu;
     // 存储Image的画笔对象

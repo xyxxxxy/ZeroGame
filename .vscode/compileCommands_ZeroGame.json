@@ -2472,7 +2472,55 @@
 		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
 	},
 	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\Foo\\Source\\Foo\\Private\\RadialWheelMenu.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\Foo.61.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\Foo\\Source\\Foo\\Private\\RadialWheelMenuScreen.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\Foo.61.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\Foo\\Source\\Foo\\Private\\SRadialWheelMenu.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\Foo.61.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
 		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\Foo\\Source\\Foo\\Public\\Foo.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\Foo.61.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\Foo\\Source\\Foo\\Public\\RadialWheelMenu.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\Foo.61.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\Foo\\Source\\Foo\\Public\\RadialWheelMenuScreen.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\Foo.61.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\Foo\\Source\\Foo\\Public\\SRadialWheelMenu.h",
 		"arguments": [
 			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
 			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\Foo.61.rsp"
@@ -5484,6 +5532,198 @@
 		"arguments": [
 			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
 			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\GMP.55.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\HLSLMaterial\\Source\\HLSLMaterialEditor\\HLSLMaterialEditor.Build.cs",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\HLSLMaterialEditor.85.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\HLSLMaterial\\Source\\HLSLMaterialEditor\\Private\\HLSLMaterialEditorModule.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\HLSLMaterialEditor.85.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\HLSLMaterial\\Source\\HLSLMaterialEditor\\Private\\HLSLMaterialErrorHook.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\HLSLMaterialEditor.85.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\HLSLMaterial\\Source\\HLSLMaterialEditor\\Private\\HLSLMaterialErrorHook.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\HLSLMaterialEditor.85.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\HLSLMaterial\\Source\\HLSLMaterialEditor\\Private\\HLSLMaterialFileWatcher.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\HLSLMaterialEditor.85.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\HLSLMaterial\\Source\\HLSLMaterialEditor\\Private\\HLSLMaterialFileWatcher.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\HLSLMaterialEditor.85.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\HLSLMaterial\\Source\\HLSLMaterialEditor\\Private\\HLSLMaterialFunction.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\HLSLMaterialEditor.85.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\HLSLMaterial\\Source\\HLSLMaterialEditor\\Private\\HLSLMaterialFunction.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\HLSLMaterialEditor.85.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\HLSLMaterial\\Source\\HLSLMaterialEditor\\Private\\HLSLMaterialFunctionGenerator.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\HLSLMaterialEditor.85.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\HLSLMaterial\\Source\\HLSLMaterialEditor\\Private\\HLSLMaterialFunctionGenerator.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\HLSLMaterialEditor.85.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\HLSLMaterial\\Source\\HLSLMaterialEditor\\Private\\HLSLMaterialFunctionLibraryEditor.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\HLSLMaterialEditor.85.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\HLSLMaterial\\Source\\HLSLMaterialEditor\\Private\\HLSLMaterialFunctionLibraryEditor.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\HLSLMaterialEditor.85.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\HLSLMaterial\\Source\\HLSLMaterialEditor\\Private\\HLSLMaterialFunctionLibraryFactory.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\HLSLMaterialEditor.85.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\HLSLMaterial\\Source\\HLSLMaterialEditor\\Private\\HLSLMaterialMessages.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\HLSLMaterialEditor.85.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\HLSLMaterial\\Source\\HLSLMaterialEditor\\Private\\HLSLMaterialMessages.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\HLSLMaterialEditor.85.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\HLSLMaterial\\Source\\HLSLMaterialEditor\\Private\\HLSLMaterialParser.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\HLSLMaterialEditor.85.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\HLSLMaterial\\Source\\HLSLMaterialEditor\\Private\\HLSLMaterialParser.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\HLSLMaterialEditor.85.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\HLSLMaterial\\Source\\HLSLMaterialEditor\\Public\\HLSLMaterialSettings.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\HLSLMaterialEditor.85.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\HLSLMaterial\\Source\\HLSLMaterialRuntime\\HLSLMaterialRuntime.Build.cs",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\HLSLMaterialRuntime.84.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\HLSLMaterial\\Source\\HLSLMaterialRuntime\\Private\\HLSLMaterialFunctionLibrary.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\HLSLMaterialRuntime.84.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\HLSLMaterial\\Source\\HLSLMaterialRuntime\\Private\\HLSLMaterialRuntimeModule.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\HLSLMaterialRuntime.84.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\HLSLMaterial\\Source\\HLSLMaterialRuntime\\Private\\HLSLMaterialUtilities.cpp",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\HLSLMaterialRuntime.84.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\HLSLMaterial\\Source\\HLSLMaterialRuntime\\Public\\HLSLMaterialFunctionLibrary.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\HLSLMaterialRuntime.84.rsp"
+		],
+		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
+	},
+	{
+		"file": "E:\\Dowload\\UEdownload\\ZeroGame\\Plugins\\HLSLMaterial\\Source\\HLSLMaterialRuntime\\Public\\HLSLMaterialUtilities.h",
+		"arguments": [
+			"E:\\Software\\VS\\ide\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe",
+			"@E:\\Dowload\\UEdownload\\ZeroGame\\.vscode\\compileCommands_ZeroGame\\HLSLMaterialRuntime.84.rsp"
 		],
 		"directory": "E:\\UE\\UE_5.5\\Engine\\Source"
 	},

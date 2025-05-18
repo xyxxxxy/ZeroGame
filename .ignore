@@ -17,6 +17,7 @@
 /Plugins/Foo/Shaders
 /Plugins/GameplayMessageRouter/Intermediate
 /Plugins/GenericMessage/Intermediate
+/Plugins/HLSLMaterial/Intermediate
 /Plugins/LyraInventory/Content
 /Plugins/LyraInventory/Intermediate
 /Plugins/ModularGameplayActors/Intermediate

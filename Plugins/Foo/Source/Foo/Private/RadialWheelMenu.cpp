@@ -15,6 +15,7 @@ void URadialWheelMenu::SynchronizeProperties()
     {
         DynMaterial->SetScalarParameterValue("Count", Count);
         DynMaterial->SetScalarParameterValue("Index", Index);
+        DynMaterial->SetScalarParameterValue("InnerRadius", InnerRadius);
     }
     Super::SynchronizeProperties();
 }
@@ -36,10 +37,10 @@ TSharedRef<SWidget> URadialWheelMenu::RebuildWidget()
             DynMaterial = UMaterialInstanceDynamic::Create(BackgroundMaterial, this);
             DynMaterial->SetScalarParameterValue("Count", Count);
             DynMaterial->SetScalarParameterValue("Index", Index);
+            DynMaterial->SetScalarParameterValue("InnerRadius", InnerRadius);
             SlateBrush.SetResourceObject(DynMaterial);
         }
     }
-
 
     MyRadialWheelMenu = SNew(SRadialWheelMenu)
                             .WidthOverrideAttr(WidthOverride)
@@ -53,19 +54,36 @@ TSharedRef<SWidget> URadialWheelMenu::RebuildWidget()
     return MyRadialWheelMenu.ToSharedRef();
 }
 
-FReply URadialWheelMenu::OnMouseMove(const FGeometry &Geometry, const FPointerEvent &PointerEvent)
+void URadialWheelMenu::SetIndex(int32 InIndex)
 {
-    // 直接捕获鼠标在屏幕上的位置的话返回的是在整个显示视口的位置
-    // 所以需要转换成当前控件的位置也就SizeBob的位置
-    FDeprecateSlateVector2D MousePostion = Geometry.AbsoluteToLocal(PointerEvent.GetScreenSpacePosition());
-    // 创建一个静态方法来获取Index
-    // 需要参数OuterRadius，InnerRadius来计算是否在圆内
-    Index = GetCurrentSectorIndex(Count, MousePostion, WidthOverride / 2, InnerRadius);
-    DynMaterial->SetScalarParameterValue("Index", Index);
-    return FReply::Handled();
+    if(Index != InIndex)
+    {
+        Index = InIndex;
+        if(DynMaterial)
+        {
+            DynMaterial->SetScalarParameterValue("Index", Index);
+        }
+    }
 }
 
-int32 URadialWheelMenu::GetCurrentSectorIndex(int32 SectorCount, FVector2D MousePosition, float OuterRadius, float InnerRadius)
+int32 URadialWheelMenu::GetIndex() const
 {
-    return 0;
+    return Index;
+}
+
+void URadialWheelMenu::SetCount(int32 InCount)
+{
+    if(Count != InCount)
+    {
+        Count = InCount;
+        if(DynMaterial)
+        {
+            DynMaterial->SetScalarParameterValue("Count", Count);
+        }
+    }
+}
+
+int32 URadialWheelMenu::GetCount() const
+{
+    return Count;
 }
