@@ -21,9 +21,22 @@ public:
     virtual FReply NativeOnMouseMove( const FGeometry& InGeometry, const FPointerEvent& InMouseEvent ) override;
     virtual FReply NativeOnMouseWheel( const FGeometry& InGeometry, const FPointerEvent& InMouseEvent ) override;
 
+    UFUNCTION(BlueprintImplementableEvent, Category = "RadialWheelMenu")
+    void OnSelectChanged(int32 PreviousIndex, int32 CurrentIndex);
+    void OnSelectChangedNative(int32 PreviousIndex, int32 CurrentIndex);
+
 private:
+    void SetIndexByAnalogValue();
+
+public:
+    UPROPERTY(EditAnyWhere, BlueprintReadOnly, meta = (ClampMin = "0.0", ClampMax = "1.0"), Category = "RadialWheelMenu")
+    float DeadZone = 0.5f;
+
+protected:
     UPROPERTY(BlueprintReadOnly, meta = (BindWidget, BlueprintProtected = true, AllowPrivateAccess = true))
     TObjectPtr<URadialWheelMenu> RadialWheelMenu;
+
+    bool IsPlayerUsingGamePad();
 
 private:
     float PositionX = 0.f;

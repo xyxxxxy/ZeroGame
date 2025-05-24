@@ -3,11 +3,14 @@
 #include "CoreMinimal.h"
 
 #include "Components/Widget.h"
+#include "Containers/Ticker.h"
 #include "RadialWheelMenu.Generated.h"
 
 struct FSlateBrush;
 class UMaterialInstanceDynamic;
 class SRadialWheelMenu;
+
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnIndexSelectChangedEvent, int32, PreviousIndex, int32, CurrentIndex);
 
 UCLASS(MinimalAPI)
 class URadialWheelMenu : public UWidget
@@ -34,6 +37,13 @@ protected:
 #endif
 
 public:
+    float GetWidthOverride() const;
+
+    float GetInnerRadiusCoefficient() const
+    {
+        return InnerRadiusCoefficient;
+    }
+
     UFUNCTION(BlueprintCallable)
     void SetIndex(int32 InIndex);
 
@@ -47,6 +57,10 @@ public:
     int32 GetCount() const;
 
 public:
+    UFUNCTION(BlueprintCallable, Category = "Radial Wheel Menu")
+    void AddItem(UUserWidget* InWidget);
+
+public:
     UPROPERTY(EditAnyWhere, BlueprintReadOnly, Category = "RadialWheelMenu")
     int32 Count = 6;
     
@@ -54,16 +68,25 @@ public:
     int32 Index = 0;
 
     UPROPERTY(EditAnyWhere, BlueprintReadOnly, Category = "RadialWheelMenu")
-    float WidthOverride = 100.f;
+    float WidthOverride = 500.f;
 
     UPROPERTY(EditAnyWhere, BlueprintReadOnly, Category = "RadialWheelMenu")
-    float HeightOverride = 100.f;
+    float HeightOverride = 500.f;
+
+    UPROPERTY(EditAnyWhere, BlueprintReadOnly, Category = "RadialWheelMenu")
+    FVector2D ItemOffset = FVector2D(10.0f, 10.0f);
 
     UPROPERTY(EditAnyWhere, BlueprintReadOnly, Category = "RadialWheelMenu")
     TObjectPtr<UMaterialInterface> BackgroundMaterial;
 
     UPROPERTY(EditAnyWhere, BlueprintReadOnly, Category = "RadialWheelMenu")
-    float InnerRadius = 0.25f;
+    float InnerRadiusCoefficient = 0.25f;
+
+public:
+    UPROPERTY(BlueprintAssignable, Category="RadialWheelMenu | Event")
+	FOnIndexSelectChangedEvent OnIndexSelected;
+
+    TArray<TObjectPtr<UUserWidget>> ListItems;
 
 private:
 
@@ -75,4 +98,10 @@ private:
     TSharedPtr<SRadialWheelMenu> MyRadialWheelMenu;
     // 存储Image的画笔对象
     FSlateBrush SlateBrush;
+
+    
+
+private:
+    FTSTicker::FDelegateHandle SlotHandle;
+	FTSTicker::FDelegateHandle RefreshHandle;
 };
